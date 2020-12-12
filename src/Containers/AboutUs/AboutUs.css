@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.about-us-section {
+  width: 100vw;
+  /* min-height: 100vh; */
+  font-family: "Raleway", sans-serif;
+  color: white;
+  padding-bottom: 3rem;
+  background: #6d296d;
+  background: -webkit-linear-gradient(to top, #6d296d, #a03d4e);
+
+  background: linear-gradient(to top, #6d296d, #a03d4e);
+}
+
+.about-us-title {
+  position: relative;
+  font-size: 3rem;
+  text-align: right;
+  margin-right: 2.5em;
+  top: 5rem;
+}
+
+.about-us-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 1.5em;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  border-radius: 40px;
+}
+
+.building-reflection {
+  width: 55em;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .about-us-title {
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 0;
+    top: 2rem;
+  }
+  .about-us-text {
+    padding: 20px 30px;
+    margin-top: 3em;
+  }
+}
