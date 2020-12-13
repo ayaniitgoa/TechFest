@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.ind-eve {
+  background: #6d296d;
+  background: linear-gradient(to bottom, #a03d4e, #6d296d);
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  width: 100vw;
+  padding-bottom: 30px;
+}
+.ind-event-top {
+  display: flex;
+  padding-top: 3rem;
+  align-items: center;
+}
+
+.ind-event-back {
+  font-size: 3rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+.ind-event-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.ind-event-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-left: 20px;
+
+  color: white;
+  /* position: relative;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+.ind-event-poster {
+  width: 20em;
+  height: 30em;
+  z-index: 10;
+  position: relative;
+  bottom: 0;
+}
+
+.ind-event-text {
+  width: 50vw;
+  color: white;
+  background-color: white;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.ind-event-text p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.ind-pantheon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80vw;
+}
+
+.ind-register-btn {
+  position: relative;
+  border: none;
+  left: 62vw;
+  top: 1vh;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-size: 2rem;
+  z-index: 10;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 640px) {
+  .ind-event-back {
+    font-size: 2rem;
+  }
+
+  .ind-event-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+  }
+
+  .ind-event-poster {
+    width: 20rem;
+    margin-bottom: 1rem;
+    height: 20em;
+    z-index: 10;
+    position: relative;
+    bottom: 0;
+  }
+
+  .ind-event-text {
+    width: 90vw;
+    color: white;
+    background-color: white;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 50px;
+  }
+
+  .ind-register-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

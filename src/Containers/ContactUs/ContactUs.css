@@ -27,9 +27,12 @@
 .contact-photo {
   width: 10rem;
   border-radius: 50%;
-
+  height: 10rem;
+  object-fit: fill;
   margin-bottom: 2rem;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 }
 
