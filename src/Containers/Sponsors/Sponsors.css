@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.sponsors-section {
+  width: 100vw;
+  height: 100%;
+  background-color: #0d0265;
+  position: relative;
+  /* padding-bottom: 3em; */
+  /* background: linear-gradient(to bottom, #0d0265, #0e5896); */
+}
+
+.sponsors-title {
+  position: relative;
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 1.5em;
+  top: 5rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.poseidon-img {
+  width: 25em;
+  position: relative;
+  left: -20px;
+  margin-top: 10em;
+  /* display: none; */
+}
+
+/* .bubble {
+  position: absolute;
+  top: 5rem;
+}
+
+.bubble-img {
+  width: 8em;
+}
+
+.bubble-img-1 {
+  position: relative;
+  left: 40vw;
+  top: 20px;
+}
+.bubble-img-2 {
+  position: relative;
+  left: 54vw;
+  top: 7em;
+}
+.bubble-img-3 {
+  position: relative;
+  left: 30vw;
+  top: 15em;
+}
+.bubble-img-4 {
+  position: relative;
+  left: 42vw;
+  top: 20em;
+} */
+@media only screen and (max-width: 650px) {
+  .sponsors-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .poseidon-img {
+    width: 20em;
+  }
+}

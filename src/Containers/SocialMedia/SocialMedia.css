@@ -1,0 +1,32 @@
+.social-media-box {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.social-left-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 20rem;
+}
+
+.social-icons {
+  color: white;
+  width: 15rem;
+  text-align: center;
+}
+
+.social-icons i {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.copyright-info {
+  width: 15rem;
+  margin: 20px 40px;
+}
