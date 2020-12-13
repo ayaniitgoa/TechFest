@@ -1,0 +1,40 @@
+.events-section{
+    width: 100vw !important;
+    /* min-height: 100vh; */
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding-bottom: 3rem;
+    background: #6d296d;
+    background: linear-gradient(to top, #4F1D6B, #6d296d);
+}
+
+.events-title {
+    position: relative;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 1.5em;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    }
+.building {
+    width: 55em;
+    position: absolute;
+    right: 0;
+    }
+.buttons{
+    padding-top: 5rem;
+    padding-left: 4.2rem
+}
+
+.btn{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    width: 35rem;
+}
