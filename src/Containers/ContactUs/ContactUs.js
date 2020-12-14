@@ -1,7 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
 import underwaterCity from "./underwater-city.svg";
-import contact from "./contact.jpg";
 import aadilPhoto from "./aadil.jpeg";
 import shreyasPhoto from "./shreyas.jpg";
 import AnmoldeepPhoto from "./Anmoldeep.jpg";
