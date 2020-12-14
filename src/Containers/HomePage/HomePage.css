@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 .home-page {
   width: 100vw;
   background: linear-gradient(to bottom, #4600b2, #c0575e, #c1585d, #a03d4e);
@@ -83,6 +84,31 @@
   margin-top: 0em;
 }
 
+.auth-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  left: 4vw;
+  /* top: -10px; */
+}
+
+.auth-buttons a button {
+  padding: 10px 20px;
+  width: 8em;
+  font-size: 1.5em;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.auth-buttons a button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 820px) {
   .moon-logo {
     pointer-events: fill;
@@ -115,6 +141,12 @@
     top: 4vh;
     margin-left: 5.5em;
   }
+
+  .auth-buttons a button {
+    padding: 10px 20px;
+    width: 7em;
+    font-size: 1em;
+  }
 }
 @media only screen and (max-width: 650px) {
   .top-bar {
@@ -140,5 +172,16 @@
     height: 4vh;
     top: 3vh;
     margin-left: 3em;
+  }
+  .auth-buttons a button {
+    padding: 5px 20px;
+    width: 9em;
+    font-size: 0.5em;
+    /* margin-top: 10em; */
+  }
+
+  .auth-buttons {
+    margin-top: 2em;
+    margin-left: 2vw;
   }
 }

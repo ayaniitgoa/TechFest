@@ -33,6 +33,14 @@ function HomePage() {
       <Navbar />
       <div className="image-container-home">
         <img className="sky-img" src={sky} alt="" />
+        <div className="auth-buttons">
+          <a href="/">
+            <button>Sign Up</button>
+          </a>
+          <a href="/">
+            <button>Login</button>
+          </a>
+        </div>
         <div className="buildings-div">
           <img className="buildings-img" src={buildings} alt="" />
           <img src={sand} className="sand-img" alt="" />
