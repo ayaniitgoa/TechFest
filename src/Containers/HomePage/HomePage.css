@@ -184,4 +184,9 @@
     margin-top: 2em;
     margin-left: 2vw;
   }
+
+  .nav-cross {
+    font-size: 2em;
+    color: white;
+  }
 }
