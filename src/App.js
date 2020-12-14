@@ -5,6 +5,7 @@ import PageNotFound from "./Containers/404Page/PageNotFound";
 
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
 import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
+import Register from "./Containers/Register/Register";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="/event/:eventName/register"
             exact
           />
+          <Route component={Register} path="/register" exact />
           <Route component={PageNotFound} />
         </Switch>
       </div>

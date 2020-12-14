@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 .ind-eve {
   background: #6d296d;
-  background: linear-gradient(to bottom, #a03d4e, #6d296d);
+  background: linear-gradient(to bottom, #85325f, #6d296d);
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   position: relative;
@@ -51,7 +51,7 @@
   color: white;
   background-color: white;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2rem;
   border-radius: 50px;
 }
@@ -79,7 +79,7 @@
   font-size: 2rem;
   z-index: 10;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (max-width: 640px) {

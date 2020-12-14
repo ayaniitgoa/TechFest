@@ -8,6 +8,7 @@ import iitgoaLogo from "./IIT-Goa-Logo-White.svg";
 import cepheusLogo from "./cepheus-logo-2.svg";
 import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const [showNav, setShowNav] = useState(false);
@@ -34,12 +35,13 @@ function HomePage() {
       <div className="image-container-home">
         <img className="sky-img" src={sky} alt="" />
         <div className="auth-buttons">
-          <a href="/">
+          <Link to="/register">
             <button>Sign Up</button>
-          </a>
-          <a href="/">
+          </Link>
+
+          <Link to="/register">
             <button>Login</button>
-          </a>
+          </Link>
         </div>
         <div className="buildings-div">
           <img className="buildings-img" src={buildings} alt="" />

@@ -24,12 +24,19 @@ function IndividualEvent(props) {
         <h1 className="ind-event-title">{eventData && eventData.label}</h1>
       </div>
       <div className="ind-event-content">
-        <img className="ind-event-poster" src={eventData.posterLink} alt="" />
+        <img
+          className="ind-event-poster"
+          src="https://images.unsplash.com/photo-1511461744085-90a4d1c66be3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          alt=""
+        />
         <div className="ind-event-text">
           <p>{eventData && eventData.eventText}</p>
         </div>
       </div>
-      <Link to={`/event/${props.match.params.eventName}/register`}>
+      {/* <Link to={`/event/${props.match.params.eventName}/register`}>
+        <button className="ind-register-btn">Register</button>
+      </Link> */}
+      <Link to={`/register`}>
         <button className="ind-register-btn">Register</button>
       </Link>
       <img className="ind-pantheon" src={pantheon} alt="" />

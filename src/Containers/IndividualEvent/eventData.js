@@ -49,7 +49,7 @@ export const data = [
     eventName: "fizzbuzz",
     label: "FIZZBUZZ",
     posterLink:
-      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+      "https://images.unsplash.com/photo-1511461744085-90a4d1c66be3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
     eventText:
       " “Coding is the language of the future.” This exciting event is bound to bring out your inner coding genius. You have to solve a total of 6 to 7 questions ranging in their difficulty level. But do not fret, even if you are an absolute beginner, this event ensures that everyone, no matter what their level is, will get something to solve. Do you have what it takes to survive Fizzbuzz and come out on top?",
     date: "16th January, 2021- 7pm to 10pm",
@@ -116,7 +116,7 @@ export const data = [
     numOfFields: 3,
   },
   {
-    eventName: "pythonizeeverything",
+    eventName: "takecharge",
     label: "TAKE CHARGE",
     posterLink:
       "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
