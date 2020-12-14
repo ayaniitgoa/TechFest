@@ -4,6 +4,7 @@ import underwaterCity from "./underwater-city.svg";
 import contact from "./contact.jpg";
 import aadilPhoto from "./aadil.jpeg";
 import shreyasPhoto from "./shreyas.jpg";
+import AnmoldeepPhoto from "./Anmoldeep.jpg";
 
 function ContactUs() {
   return (
@@ -11,7 +12,7 @@ function ContactUs() {
       <h2 className="contact-us-title">CONTACT US</h2>
       <div className="contacts">
         <div className="individual-contact">
-          <img className="contact-photo" src={contact} alt="" />
+          <img className="contact-photo" src={AnmoldeepPhoto} alt="" />
           <p className="contact-text contact-name">Anmoldeep Singh, PR Head </p>
           <p className="contact-text contact-number">+91 9682118778</p>
           <p className="contact-text contact-number">

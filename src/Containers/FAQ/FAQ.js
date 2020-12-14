@@ -63,7 +63,7 @@ export default class FAQ extends Component {
             className="faq__left__button"
             onClick={() => this.handleBackPage()}
           >
-            <img src={leftIcon} className="left__button" />
+            <img src={leftIcon} alt="left" className="left__button" />
           </div>
           <div className="row faq__questions__div">
             {questions.map((quest, index) => {
@@ -74,7 +74,7 @@ export default class FAQ extends Component {
                 return (
                   <div
                     className={
-                      this.state.questionIncrease == 1
+                      this.state.questionIncrease === 1
                         ? "full__question__box__large"
                         : "full__question__box"
                     }
@@ -85,13 +85,14 @@ export default class FAQ extends Component {
                   </div>
                 );
               }
+              return null;
             })}
           </div>
           <div
             className="faq__right__button"
             onClick={() => this.handleForwardPage()}
           >
-            <img src={rightIcon} className="right__button" />
+            <img alt="right-btn" src={rightIcon} className="right__button" />
           </div>
         </div>
       </div>

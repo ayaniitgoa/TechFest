@@ -28,7 +28,7 @@
   width: 10rem;
   border-radius: 50%;
   height: 10rem;
-  object-fit: fill;
+  object-fit: cover;
   margin-bottom: 2rem;
   position: relative;
   left: 50%;
