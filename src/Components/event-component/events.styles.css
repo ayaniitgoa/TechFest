@@ -1,0 +1,8 @@
+.eventdiv{
+    align-content: center;
+    width: 40vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px;
+}

@@ -1,31 +1,34 @@
+
 .events-section{
     width: 100vw !important;
     /* min-height: 100vh; */
     font-family: "Raleway", sans-serif;
     color: white;
-    padding-bottom: 3rem;
     background: #6d296d;
     background: linear-gradient(to top, #4F1D6B, #6d296d);
+    z-index: -3;
 }
 
 .events-title {
-    position: relative;
     font-size: 3rem;
     text-align: left;
-    margin-left: 1.5em;
-    top: 1.5rem;
+    margin-bottom: 5rem;
+    top: 3rem;
     bottom: 1.5rem;
     color: white;
     font-family: "Raleway", sans-serif;
     }
 .building {
-    width: 55em;
-    position: absolute;
+    width: 60em;
+    position:absolute;
     right: 0;
+    z-index: 0;
     }
 .buttons{
-    padding-top: 5rem;
-    padding-left: 4.2rem
+    padding-left: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .btn{
@@ -36,5 +39,38 @@
     font-size: 1.5rem;
     border-radius: 30px;
     flex-wrap: nowrap;
-    width: 35rem;
+    width: 30rem;
+    font-weight: bolder;
+}
+
+nav {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+article {
+    float: left;
+    width: 60%;
+    justify-content: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.second{
+    margin-left: 17rem;
+    margin-top: 2rem;
+}
+
+.event-div{
+    padding-left: '5rem';
+    z-index: 10;
+}
+
+@media screen and (max-width:600px) {
+    .left .right {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
 }

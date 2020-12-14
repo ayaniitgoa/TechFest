@@ -1,6 +1,9 @@
 import React from "react";
 import "./EventsPage.css";
 import pantheon from "./pantheon.svg";
+import WorkShopComp from '../../Components/event-component/workshop.component.jsx';
+import TalksComp from '../../Components/event-component/talks.component.jsx';
+import CompetitionComp from '../../Components/event-component/competition.component.jsx';
 
 function Events() {
   return (
@@ -10,14 +13,23 @@ function Events() {
         src={pantheon}
         alt="Building"
       />
-      <h2 className='events-title'>Events</h2>
-      <div className="buttons">
-        
-        <p><button type="button" class="btn btn-light">Competitions</button></p>
-        <p><button type="button" class="btn btn-light">Workshops</button></p>
-        <p><button type="button" class="btn btn-light">Talks</button></p>
+      <div className='row left'>
+        <nav className='buttons'>
+        <h1 className='events-title'>EVENTS</h1>
+          <button type="button" className="btn btn-light">Competitions</button>
+          <button type="button" className="btn btn-light">Workshops</button>
+          <button type="button" className="btn btn-light">Talks</button>
+        </nav>
+        <article className='column right'>
+          <div className='second'>
+            <button type="button" className="btn btn-light" style={{width: '20rem'}}>Rulebook</button>
+          </div>
+          <div className='event-div'>
+            <WorkShopComp />
+          </div>
+        </article>
+        </div>
       </div>
-    </div>
   );
 }
 
