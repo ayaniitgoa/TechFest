@@ -3,7 +3,17 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
+.App{
+  position: relative;
+}
+#navinAPP{
+  z-index: 15;
+  position: relative;
+}
+#anotherinAPP{
+  z-index: 14;
+  position: relative;
+}
 body {
   overflow-x: hidden;
 }

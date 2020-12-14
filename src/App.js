@@ -8,11 +8,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
-        <Switch>
-          <Route component={SiteContainer} path="/" exact />
-          <Route component={PageNotFound} />
-        </Switch>
+        <div id="navinAPP">
+          <Navbar  />
+        </div>
+        <div id="anotherinAPP">
+          <Switch>
+            <Route component={SiteContainer} path="/" exact />
+            <Route component={PageNotFound} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

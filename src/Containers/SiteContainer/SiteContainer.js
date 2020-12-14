@@ -12,8 +12,12 @@ import "./SiteContainer.css";
 function SiteContainer() {
   return (
     <div>
-      <HomePage />
-      <AboutUs />
+      <div id="homepagediv">
+        <HomePage />
+      </div>
+      <div id="aboutusdiv">
+        <AboutUs />
+      </div>
       <EventsPage />
       <Schedule />
       <Sponsors />
