@@ -1,0 +1,8 @@
+#homepagediv{
+    position: relative;
+    z-index: 1;
+}
+#aboutusdiv{
+    position: relative;
+    z-index: 2;
+}

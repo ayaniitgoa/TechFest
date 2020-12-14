@@ -1,0 +1,89 @@
+.vline{
+    height: auto;
+    border-right: 0.1vw solid grey;
+    display: "inline-block";
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+  
+body {
+    overflow-x: hidden;
+}
+
+.navbar-section {
+    padding-left: 25%;
+    position: relative;
+    top: 25.422vh;
+}
+  
+.nav-fields {
+    width: 100%;
+}
+  
+.nav-text {
+    display: flex;
+    position: absolute;
+    /*margin-right: 30px;
+    top: 80px;
+    right: 20vw;
+    width: 65vw;*/
+    width: 50%;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: white;
+    border: 1vw solid white;
+    border-radius: 2vw;
+}
+  
+.nav-text a {
+    color: grey;
+    text-decoration: none;
+}
+  
+.ham-div {
+    display: none;
+}
+  
+.hamburger {
+    position: absolute;
+    right: 70px;
+    font-size: 35px;
+    top: 15px;
+  
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 1039px) {
+    .nav-text {
+      flex-direction: column;
+      background-color: #b9b9ce;
+      width: 100vw;
+      margin: 0;
+      top: -50vh;
+      height: 50vh;
+      align-items: center;
+      transition: 0.5s ease-in-out all;
+    }
+  
+    .ham-div {
+      position: relative;
+  
+      display: block;
+    }
+  
+    .nav-text.active {
+      top: 0vh;
+    }
+    .hamburger {
+      color: #151e68;
+    }
+}
+
+  
