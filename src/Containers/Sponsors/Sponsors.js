@@ -5,7 +5,7 @@ import bubble from "./bubble.svg";
 
 function Sponsors() {
   return (
-    <div className="sponsors-section">
+    <div id="sponsor-section" className="sponsors-section">
       <h2 className="sponsors-title">SPONSORS</h2>
       <div className="bubble">
         <div className="bubble-col-1">

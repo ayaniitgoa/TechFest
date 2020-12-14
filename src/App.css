@@ -6,4 +6,9 @@
 
 body {
   overflow-x: hidden;
+  width: 100vw !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
