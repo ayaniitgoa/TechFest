@@ -56,7 +56,7 @@ export default class FAQ extends Component {
 
   render() {
     return (
-      <div className="faq__section">
+      <div id="faq-section" className="faq__section">
         <h2 className="faq__title">FAQ</h2>
         <div className="faq__bottom__div">
           <div
