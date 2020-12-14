@@ -22,7 +22,7 @@ export default class FAQ extends Component {
 
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
-    if (window.innerWidth < 990) {
+    if (window.innerWidth < 800) {
       this.setState({
         questionNum: 1,
         questionIncrease: 1,
@@ -46,7 +46,7 @@ export default class FAQ extends Component {
   };
   handleBackPage = () => {
     this.setState(() => {
-      if (this.state.questionNum > 4) {
+      if (this.state.questionNum > this.state.questionIncrease) {
         return {
           questionNum: this.state.questionNum - this.state.questionIncrease,
         };
