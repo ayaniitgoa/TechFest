@@ -1,53 +1,46 @@
 const questions = [
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    question: "How is Cepheus being conducted this year?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "Owing to the pandemic, offline interaction is not a viable option, as far as safety is concerned. Adapting to the circumstances, IIT Goa’s pioneering Techfest will be held completely on online platforms.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.2",
+    question: "What would the virtual experience be like ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "In one word it can be described as a “ Unique” experience that you can bag up . Do stay connected to us through social media !!",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.3",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+    question: "What are the dates of Cepheus 2021 ?",
+    answer: "Cepheus will be held from to",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.4",
+    question: "Who can attend Cepheus?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "The Techfest is open to all. Anyone who wishes to bring their technical senses into play or to reinforce their knowledge is more than welcome to join us in this first ever Technical fest of IIT Goa.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.5",
+    question: "What should I do to attend Cepheus this year ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "To be a part of Cepheus, you must register via the link : cepheus.com/register ",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.6",
+    question: "What is the lineup and event schedule this year?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "The event lineup and schedule can be found on website cepheus.com/schedule and also on the Cepheus brochure.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.7",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+    question: "How do I register for the competitions ?",
+    answer: "Go cepheus.com/register to register.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.8",
+    question: "Is there a registration fee for participating ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "Participating in the competitions is absolutely free of cost. No registration fee is involved.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.9",
+    question: "What should I do after completing registration ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
-  },
-  {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.0",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget odio est. Pellentesque elementum, diam sit amet facilisis gravida, nisi augue rhoncus nibh, quis sodales lorem nisl at ligula. Morbi accumsan iaculis mauris quis semper. Ut sodales justo eu elit pellentesque hendrerit. Aliquam ut ipsum neque. Nulla tincidunt egestas ante quis vestibulum. Suspendisse rhoncus egestas urna, id vestibulum nunc porttitor ac. Pellentesque sit amet dui magna. Sed porta, augue ac bibendum pharetra, nunc ipsum dictum felis, vel tristique justo tortor eu diam. Cras eu risus risus. Fusce iaculis finibus gravida. Sed eu diam pharetra, condimentum orci quis, mollis magna.",
+      "After registering, you will get an email that will confirm your registration. Keep following our updates on social media and email.",
   },
 ];
 
