@@ -25,7 +25,6 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  margin-top: -2em;
 }
 .faq__left__button {
   height: 100%;
@@ -97,4 +96,13 @@
   max-width: 80%;
   height: auto;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .faq__title {
+    font-size: 1.5rem;
+  }
+  .question__div {
+    font-size: 1rem;
+  }
 }
