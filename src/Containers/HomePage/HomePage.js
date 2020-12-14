@@ -11,7 +11,9 @@ function HomePage() {
   return (
     <div>
       <div id="skyimg">
-        <img src={iitlogo} id="iitlogo"></img>
+        <div id="iitlogocontainer">
+          <img src={iitlogo} id="iitlogo"></img>
+        </div>
         <img src={line} id="line"></img>
         <div id="cephlogocontainer">
           <img src={cephlogo} id="cephlogo"></img>
