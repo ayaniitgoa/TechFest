@@ -16,7 +16,7 @@ function NavbarTwo() {
       <a href="#sponsor-section" className="nav-two-link">
         SPONSORS
       </a>
-      <a href="/" className="nav-two-link">
+      <a href="#faq-section" className="nav-two-link">
         FAQ
       </a>
       <a href="#contact-us-section" className="nav-two-link">

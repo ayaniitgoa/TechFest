@@ -16,7 +16,7 @@ function Navbar() {
       <a href="#sponsor-section" className="navbar-link">
         SPONSORS
       </a>
-      <a href="/" className="navbar-link">
+      <a href="#faq-section" className="navbar-link">
         FAQ
       </a>
       <a href="#contact-us-section" className="navbar-link last-link-nav">
