@@ -16,7 +16,7 @@ function HomePage() {
   };
 
   return (
-    <div className="home-page">
+    <div id="home-page" className="home-page">
       <div className={`navbar-two ${showNav && "active"}`}>
         <div onClick={showNavbar} className="nav-cross-div">
           <i className="fas fa-times nav-cross"></i>

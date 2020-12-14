@@ -21,7 +21,7 @@ function IndividualEvent(props) {
         <Link to="/">
           <i className="ind-event-back fas fa-chevron-left"></i>
         </Link>
-        <h1 className="ind-event-title">{eventData && eventData.eventName}</h1>
+        <h1 className="ind-event-title">{eventData && eventData.label}</h1>
       </div>
       <div className="ind-event-content">
         <img className="ind-event-poster" src={eventData.posterLink} alt="" />
