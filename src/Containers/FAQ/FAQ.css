@@ -105,4 +105,8 @@
   .question__div {
     font-size: 1rem;
   }
+
+  .faq__bottom__div {
+    margin-top: -7em;
+  }
 }
