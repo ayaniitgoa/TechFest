@@ -8,7 +8,7 @@ import IndividualEventRegistraion from "./Containers/IndividualEventRegister/Ind
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ""}>
+    <Router>
       <div className="App">
         <Switch>
           <Route component={SiteContainer} path="/" exact />
