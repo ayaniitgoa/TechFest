@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import SiteContainer from "./Containers/SiteContainer/SiteContainer";
 import PageNotFound from "./Containers/404Page/PageNotFound";
 
@@ -8,7 +8,7 @@ import IndividualEventRegistraion from "./Containers/IndividualEventRegister/Ind
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ""}>
+    <Router>
       <div className="App">
         <Switch>
           <Route component={SiteContainer} path="/" exact />
