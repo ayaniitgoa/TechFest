@@ -20,6 +20,11 @@
   padding: 10px 20px;
   border-right: black solid 1px;
   text-align: center;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: black;
 }
 
 .last-link-nav {
