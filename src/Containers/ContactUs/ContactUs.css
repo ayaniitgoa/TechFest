@@ -75,6 +75,12 @@
   background: none !important;
 }
 
+@media only screen and (min-width: 2200px) {
+  .underwater-city {
+    /* width: 90vw; */
+    margin-top: -25vh;
+  }
+}
 @media only screen and (max-width: 800px) {
   .contact-text {
     font-size: 0.9rem;

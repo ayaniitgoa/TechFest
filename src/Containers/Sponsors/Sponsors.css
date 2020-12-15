@@ -102,3 +102,51 @@
     top: 0vh;
   }
 }
+@media only screen and (min-width: 1650px) {
+  .bubble-img-1 {
+    position: relative;
+    left: 40vw;
+    top: 5vh;
+  }
+
+  .bubble-img-2 {
+    position: relative;
+    left: 50vw;
+    top: 10vh;
+  }
+  .bubble-img-3 {
+    position: relative;
+    left: 45vw;
+    top: 5vh;
+  }
+
+  .bubble-img-4 {
+    position: relative;
+    left: 55vw;
+    top: 10vh;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  .bubble-img-1 {
+    position: relative;
+    left: 40vw;
+    top: 0vh;
+  }
+
+  .bubble-img-2 {
+    position: relative;
+    left: 50vw;
+    top: 5vh;
+  }
+  .bubble-img-3 {
+    position: relative;
+    left: 45vw;
+    top: 0vh;
+  }
+
+  .bubble-img-4 {
+    position: relative;
+    left: 55vw;
+    top: 5vh;
+  }
+}
