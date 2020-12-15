@@ -6,7 +6,7 @@
   background: linear-gradient(to bottom, #0e5896, #000000);
   padding-top: 5rem;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   margin-top: 0em;
 }
 
@@ -17,11 +17,11 @@
 }
 
 .contacts {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   width: 80vw;
   margin: 0 auto;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 2rem;
 }
 
@@ -31,9 +31,9 @@
   height: 10rem;
   object-fit: cover;
   margin-bottom: 2rem;
-  position: relative;
+  /* position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   z-index: 10;
 }
 
@@ -42,6 +42,9 @@
   text-align: center;
   padding: 7px;
   border-radius: 30px;
+  width: 90%;
+  position: relative;
+
   /* z-index: 1; */
 }
 .underwater-img-div {
@@ -59,6 +62,17 @@
 
   position: relative;
   /* right: -65px; */
+}
+
+.individual-contact {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slick-next {
+  background: none !important;
 }
 
 @media only screen and (max-width: 650px) {

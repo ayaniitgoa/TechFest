@@ -13,7 +13,6 @@ function SiteContainer() {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
-    console.log("a");
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 100) {
         setShowBackToTop(true);
