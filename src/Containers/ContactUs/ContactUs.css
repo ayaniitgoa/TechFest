@@ -91,4 +91,8 @@
   .contact-us-section {
     margin-top: -1em;
   }
+
+  .contact-text {
+    font-size: 0.7rem;
+  }
 }
