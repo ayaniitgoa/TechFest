@@ -80,9 +80,9 @@
   overflow: scroll;
   opacity: 1;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 .faq__right__button {
   height: 100%;
