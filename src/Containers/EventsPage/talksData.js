@@ -18,6 +18,8 @@ const talksData = [{
     date: "",
 
     numOfFields: 3,
-  },
+  }
 
 ]
+
+export default talksData;
