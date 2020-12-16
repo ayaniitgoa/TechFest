@@ -99,9 +99,15 @@
 
 .fish {
   position: absolute;
-  width: 100vw;
-  top: 0;
-  /* z-index: 10; */
+  width: 110vw;
+  /* height: 100vh; */
+  /* transform: scale(1.5); */
+  /* top: 0; */
+  right: -50px;
+  bottom: 0;
+  top: 0rem;
+  z-index: 10;
+  /* left: -130vw; */
   opacity: 0.6;
   /* display: none; */
 }
@@ -134,6 +140,11 @@
 
   .content-row {
     padding: 0px 0;
+  }
+
+  .fish {
+    width: 120vw;
+    top: 10%;
   }
 }
 

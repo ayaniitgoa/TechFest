@@ -1,7 +1,7 @@
 import "./Schedule.css";
 import React from "react";
 import Tabs from "./Tabs";
-import Fish from "./fish.svg";
+import Fish from "./less-fish.svg";
 
 const Day1Content = () => {
   return (
