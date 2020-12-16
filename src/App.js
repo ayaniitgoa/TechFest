@@ -13,7 +13,11 @@ function App() {
       <div className="App">
         <Switch>
           <Route component={SiteContainer} path="/" exact />
-          <Route component={IndividualEvent} path="/event/:eventName" exact />
+          <Route
+            component={IndividualEvent}
+            path="/event/:eventName(fizzbuzz|fiducia|beattheheat|arduinostrial|code2play|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|logicacircuito|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality)"
+            exact
+          />
           <Route
             component={IndividualEventRegistraion}
             path="/event/:eventName/register"
