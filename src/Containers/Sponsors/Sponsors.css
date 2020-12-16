@@ -4,6 +4,7 @@
   height: 100%;
   background-color: #0d0265;
   position: relative;
+  padding-top: 0vh;
 }
 
 .sponsors-title {
@@ -14,6 +15,7 @@
   top: 5rem;
   color: white;
   font-family: "Raleway", sans-serif;
+  z-index: 13;
 }
 
 .poseidon-img {
@@ -27,6 +29,8 @@
   width: 10em;
   /* position: relative; */
   margin-top: 3vh;
+  position: relative;
+  z-index: 13;
 }
 .bubble-img-1 {
   position: relative;

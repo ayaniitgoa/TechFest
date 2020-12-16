@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.schedule {
+  padding-top: 3rem;
+  position: relative;
+  background: linear-gradient(to bottom, #511d6b, #0d0265);
+}
+.schedule-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* height: 75vw; */
+  font-family: "Raleway", sans-serif;
+  width: 100vw;
+}
+.schedule-title {
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  position: relative;
+  z-index: 13;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.tab-list {
+  border: 0px solid #ccc;
+  background-color: gainsboro;
+  border-radius: 49px;
+  width: 21rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 12;
+}
+
+.tab-list-item {
+  list-style-type: none;
+  width: 7rem;
+  height: 100%;
+  border-radius: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 1px 1px;
+}
+
+.tab-content {
+  display: flex;
+  /* margin-top: 2rem; */
+  margin-bottom: 2rem;
+}
+
+.content-container {
+  background-color: white;
+  margin-top: 2rem;
+  width: 65vw;
+  /* height: 30vh; */
+
+  border-radius: 49px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 11;
+}
+.content-row {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+  position: relative;
+}
+#time,
+#event {
+  flex: 0.4;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.fish {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  /* z-index: 10; */
+  opacity: 0.6;
+  /* display: none; */
+}
+
+@media only screen and (max-width: 650px) {
+  .tab-list-container {
+    margin-top: 1rem;
+  }
+  .tab-content {
+    margin-top: 1rem;
+  }
+  .content-container {
+    width: 22rem;
+    /* height: 65vw; */
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  #event,
+  #time {
+    font-size: 12px;
+  }
+
+  .schedule-title {
+    font-size: 1.5em;
+  }
+
+  .tab-list-item {
+    font-size: 0.9em;
+  }
+
+  .content-row {
+    padding: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content-container {
+    width: 20rem;
+    /* height: 40vh; */
+    /* margin-top: 1em; */
+    border-radius: 20px;
+  }
+  .tab-list {
+    width: 19rem;
+  }
+}
