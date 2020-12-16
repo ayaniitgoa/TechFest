@@ -10,7 +10,7 @@ function NavbarTwo() {
       <a href="/" className="nav-two-link">
         EVENTS
       </a>
-      <a href="/" className="nav-two-link">
+      <a href="#schedule-section" className="nav-two-link">
         SCHEDULE
       </a>
       <a href="#sponsor-section" className="nav-two-link">

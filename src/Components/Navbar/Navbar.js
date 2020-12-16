@@ -10,7 +10,7 @@ function Navbar() {
       <a href="/" className="navbar-link">
         EVENTS
       </a>
-      <a href="/" className="navbar-link">
+      <a href="#schedule-section" className="navbar-link">
         SCHEDULE
       </a>
       <a href="#sponsor-section" className="navbar-link">
