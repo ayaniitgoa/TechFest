@@ -49,6 +49,7 @@ const Day2Content = () => {
 
 function Schedule() {
   return (
+
     <div id="schedule-section" className="schedule">
       <div className="schedule-title">
         <p>SCHEDULE</p>
@@ -67,6 +68,7 @@ function Schedule() {
           </div>
         </Tabs>
       </div>
+
     </div>
   );
 }
