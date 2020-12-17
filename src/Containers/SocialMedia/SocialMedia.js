@@ -14,9 +14,10 @@ function SocialMedia() {
           <i className=" fab fa-facebook"></i>
           <i className="fab fa-instagram"></i>
           <i className="fab fa-twitter"></i>
+          <i className="fab fa-discord"></i>
         </div>
         <div className="copyright-info">
-          <p>copyright info</p>
+          <p>©2020 - All Rights Reserved - IIT-GOA</p>
         </div>
       </div>
     </div>
