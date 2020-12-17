@@ -85,7 +85,7 @@ export default class Events extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className="events-section" id="EVENTS">
+      <div className="events-section" id="events-section">
         <img className="building" src={pantheon} alt="Building" />
         <div style={{ paddingTop: "2rem" }}>
           <div className="row left">
