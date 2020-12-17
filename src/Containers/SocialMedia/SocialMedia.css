@@ -21,12 +21,14 @@
   text-align: center;
 }
 
-.social-icons i {
+.social-icons a i {
   font-size: 30px;
   margin: 0 10px;
+  color: white;
 }
 
 .copyright-info {
-  width: 15rem;
-  margin: 20px 40px;
+  width: 22rem;
+  margin: 20px 20px;
+  font-size: 0.85rem;
 }

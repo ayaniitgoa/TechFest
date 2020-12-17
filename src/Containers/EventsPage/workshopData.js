@@ -1,4 +1,5 @@
-const workshopData = [{
+const workshopData = [
+  {
     eventName: "fiducia",
     label: "FIDUCIA",
     posterLink:
@@ -29,7 +30,7 @@ const workshopData = [{
     numOfFields: 3,
   },
   {
-    eventName: "pythonizeeverything",
+    eventName: "takecharge",
     label: "TAKE CHARGE",
     posterLink:
       "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
@@ -38,6 +39,7 @@ const workshopData = [{
     date: "",
 
     numOfFields: 3,
-  },]
+  },
+];
 
 export default workshopData;

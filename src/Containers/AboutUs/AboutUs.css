@@ -32,7 +32,7 @@
 }
 
 .building-reflection {
-  width: 55em;
+  width: 75vw;
   position: absolute;
   right: 0;
 }
@@ -48,5 +48,10 @@
   .about-us-text {
     padding: 20px 30px;
     margin-top: 3em;
+    font-size: 1rem;
+  }
+
+  .about-us-title {
+    font-size: 1.5rem;
   }
 }

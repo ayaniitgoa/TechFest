@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "./EventsPage.css";
 import pantheon from "./pantheon.svg";
-import workshopData from './workshopData.js';
-import talksData from './talksData';
+import workshopData from "./workshopData.js";
+import talksData from "./talksData";
 import competitionData from "./competitionData";
+
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'

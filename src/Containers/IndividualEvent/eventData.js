@@ -1,4 +1,4 @@
-const competitionData = [
+export const data = [
   {
     eventName: "arduinostrial",
     label: "Arduino's Trial",
@@ -26,18 +26,45 @@ const competitionData = [
       "There’s no modern art as popular as coding. And there’s no pass-time as appealing as gaming. Code2Play invites the digital Picasso in you to develop a non-graphic terminal-based game on a given set of themes. It hardly matters if you enjoy the storyline or the multiplayer, because this event encourages both solo and team participation. Make sure to put your game-face on!",
     numOfFields: 3,
   },
-
+  {
+    eventName: "chitchatwithchatbot",
+    label: "CHIT CHAT WITH CHAT-BOT",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "Has the lockdown put a halt to your hangouts? We understand. Join us in a live coding workshop that’ll teach you how to build a chat-bot, without any prior knowledge about the same. You can also test your ability in a contest that will follow, where you’ll be asked to design a chat-bot of your own adhering to the given problem statement, so you never have to worry about having no one to talk to.",
+    numOfFields: 3,
+  },
+  {
+    eventName: "cyberexpert",
+    label: "CYBER EXPERT",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "“Living in a virtual world” is no longer a cliché. But unlike in The Matrix, the threats here are pretty real.. This talk is going to be delivered by the esteemed Mr. Rakshit Tandon who is an International Cybersecurity Expert to acquaint you with the renewed importance of Cybersecurity in times like this global pandemic or otherwise in an ever changing world, the unlimited career prospects in this field and ofcourse, how YOU can begin your Cybersecurity journey.",
+    date: "16th January, 2021- 11:00am to 12:00pm",
+    numOfFields: 3,
+  },
   {
     eventName: "fizzbuzz",
     label: "FIZZBUZZ",
     posterLink:
-      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+      "https://images.unsplash.com/photo-1511461744085-90a4d1c66be3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
     eventText:
       " “Coding is the language of the future.” This exciting event is bound to bring out your inner coding genius. You have to solve a total of 6 to 7 questions ranging in their difficulty level. But do not fret, even if you are an absolute beginner, this event ensures that everyone, no matter what their level is, will get something to solve. Do you have what it takes to survive Fizzbuzz and come out on top?",
     date: "16th January, 2021- 7pm to 10pm",
     numOfFields: 3,
   },
-
+  {
+    eventName: "fiducia",
+    label: "FIDUCIA",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "Insecure web applications are among the greatest security threats to organisations today. This session hosted by our very own technical clubs here at IIT Goa, The ArchiTechs and The InfoSec is aimed at helping you gain an appreciation of the attack surface complexity of modern web applications, an insight into how vulnerabilities manifest and how to detect them through means of inference and signatures.",
+    date: "10th January, 2021- 4:00pm to 5:00pm",
+    numOfFields: 3,
+  },
   {
     eventName: "framethecrane",
     label: "FRAME THE CRANE",
@@ -49,7 +76,7 @@ const competitionData = [
   },
   {
     eventName: "hackoverflow",
-    label: "HACK OVERFLOW",
+    label: "HACKOVERFLOW",
     posterLink:
       "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
     eventText:
@@ -77,6 +104,37 @@ const competitionData = [
     date: "",
     numOfFields: 3,
   },
-];
+  {
+    eventName: "pythonizeeverything",
+    label: "PYTHONIZE EVERYTHING",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "This event is not just an ordinary python workshop, it’s much much more. You’ll greatly enhance the python coder you have within you, along with also learning many different automated tasks you can do with python. Yeah, you heard it right, Automated! These include repetitive mundane tasks like taking backup of your system, sending emails, sending WhatsApp messages to a list of contacts, prioritising tasks, segregating stuff and much more.",
+    date: "",
 
-export default competitionData;
+    numOfFields: 3,
+  },
+  {
+    eventName: "takecharge",
+    label: "TAKE CHARGE",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "This extremely informative event will teach you much about the magical powers Linux has in this field of Operating Systems! You’ll also learn how to install Windows Subsystem for Linux(WSL), and after that you’ll smoothly wander in the commands of linux, which go way beyond just navigation in the terminal. If you got any queries regarding these things, this hands-on workshop is the best opportunity for you to clear them up!",
+    date: "",
+
+    numOfFields: 3,
+  },
+  {
+    eventName: "theillusivereality",
+    label: "THE ILLUSIVE REALITY",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "Augmented reality (AR) and Virtual Reality (VR) bridge the digital and physical worlds, and almost all of you must have experienced this extremely beautiful interactive environment. For this session, we have Mr. TBD who aims to expose students to the potential this technology holds in the coming years, especially in India, about it's industry, experience of working as an AR/VR developer and mostly give them the motivation to begin on this path.",
+    date: "",
+
+    numOfFields: 3,
+  },
+];
