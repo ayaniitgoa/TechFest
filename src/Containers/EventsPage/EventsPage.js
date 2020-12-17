@@ -9,6 +9,7 @@ import competitionData from "./competitionData";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 export default class Events extends Component {
   state = {
@@ -19,7 +20,7 @@ export default class Events extends Component {
   render() {
     const renderCompetitions = () =>
       competitionData.map((data) => (
-        <a href={`/event/${data.eventName}`} rel="noreferrer">
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -33,12 +34,12 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const renderWorkshops = () =>
       workshopData.map((data) => (
-        <a href={`/event/${data.eventName}`} rel="noreferrer">
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -52,12 +53,12 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const renderTalks = () =>
       talksData.map((data) => (
-        <a href={`/event/${data.eventName}`} rel="noreferrer">
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -71,7 +72,7 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const settings = {
@@ -96,7 +97,7 @@ export default class Events extends Component {
       slidesToScroll: 1,
     };
     return (
-      <Container fluid className="events-section" id="EVENTS">
+      <Container fluid className="events-section" id="events-section">
         <img className="building" src={pantheon} alt="Building" />
         <Row>
           <Col>
