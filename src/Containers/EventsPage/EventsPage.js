@@ -5,6 +5,7 @@ import pantheon from "./pantheon.svg";
 import workshopData from "./workshopData.js";
 import talksData from "./talksData";
 import competitionData from "./competitionData";
+import { Link } from "react-router-dom";
 
 export default class Events extends Component {
   state = {
@@ -16,10 +17,7 @@ export default class Events extends Component {
   render() {
     const renderCompetitions = () =>
       competitionData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -33,15 +31,12 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const renderWorkshops = () =>
       workshopData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -55,15 +50,12 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const renderTalks = () =>
       talksData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <Link to={`/event/${data.eventName}`} key={data.eventName}>
           <button
             type="button"
             key={data.eventName}
@@ -77,7 +69,7 @@ export default class Events extends Component {
           >
             {data.label}
           </button>
-        </a>
+        </Link>
       ));
 
     const settings = {
@@ -85,6 +77,7 @@ export default class Events extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 2,
+      rows: 2,
     };
     const settings2 = {
       infinite: true,
@@ -153,8 +146,8 @@ export default class Events extends Component {
                 >
                   Rulebook{" "}
                   <i
-                    class="fas fa-download"
-                    style={{ width: "calc(2rem / var(--size-divisor));" }}
+                    className="fas fa-download"
+                    style={{ width: "calc(2rem / var(--size-divisor))" }}
                   ></i>
                 </button>
               </div>
