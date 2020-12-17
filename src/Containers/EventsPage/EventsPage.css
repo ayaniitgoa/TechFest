@@ -7,7 +7,7 @@
   z-index: -3;
 }
 .buttons {
-  transform: translateY(10%);
+  margin-top: calc(1rem / var(--size-divisor));
   padding-bottom: 5rem;
 }
 .events-title {
@@ -27,12 +27,6 @@
   margin-top: 0;
   transform: translate(25%);
 }
-.event-content {
-  transform: translateX(10%);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
 .btn {
   background-color: white;
@@ -45,59 +39,86 @@
   width: calc(30rem / var(--size-divisor));
 }
 
-nav {
-  float: left;
-  width: 40%;
-  padding: 20px;
+.leftDiv {
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
-article {
-  float: left;
-  width: 60%;
-  justify-content: center;
-}
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 .second {
-  transform: translate(35%, 27%);
+  margin-left: 11.5rem;
 }
 :root {
   --size-divisor: 1;
+  --div-divisor: 1;
 }
 
 .event-div {
-  transform: translate(15%, 50%);
-  z-index: 10;
-}
-.right {
-  transform: translateY(7.5%);
+  margin-top: 7.5rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .left {
-    width: 100%;
+  :root {
     --size-divisor: 1.5;
+    --div-divisor: 2.3;
   }
-  .right {
-    width: 100%;
-    transform: translate(-5%, -17%);
+  .second {
+    margin-left: 3.5rem;
   }
   .event-div {
-    width: 115%;
-    transform: translate(14%, -30%);
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  .leftDiv {
+    margin-left: 0.5rem;
   }
   .buttons {
-    transform: translate(23%, -5%);
     padding-bottom: 0;
+    margin-left: 5vw;
+  }
+  .second {
+    width: 100%;
+    margin-left: 5vw;
+    padding-left: 2.2rem;
+    padding-top: 1.5rem;
   }
   .building {
     width: 130vw;
     margin-top: 7rem;
   }
+  .event-div {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 5vw;
+    padding-left: 1.8rem;
+    transform: translateY(-10%);
+  }
+}
+@media screen and (max-width: 380px) {
+  :root {
+    --size-divisor: 2;
+    --div-divisor: 3;
+  }
   .second {
-    transform: translate(41%, -8%);
+    width: 100%;
+    margin-left: 5vw;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+  }
+  .event-div {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 5vw;
+    padding-left: 1.4rem;
+    transform: translateY(-10%);
+  }
+  .buttons {
+    padding-bottom: 0;
+    margin-left: 5vw;
   }
 }
