@@ -18,15 +18,15 @@ export default class Events extends Component {
     render() {
         const renderCompetitions = () =>  competitionData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2 / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
 
         const renderWorkshops = () =>  workshopData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2 / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
 
         const renderTalks = () =>  talksData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2 / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
 
         const settings = {
             infinite: true,
@@ -87,7 +87,7 @@ export default class Events extends Component {
                         <div className='second'>
                         <button type="button" className="btn btn-light" 
                         style={{width: 'calc(15rem / var(--size-divisor))'}}>Rulebook  
-                        <i class="fas fa-download"  style={{width: 'calc(2rem / var(--size-divisor));'}}></i></button>
+                        <i className="fas fa-download"  style={{width: 'calc(2rem / var(--size-divisor))'}}></i></button>
                         </div>
                         <div
                             style={{
