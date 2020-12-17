@@ -75,7 +75,7 @@ export default class Events extends Component {
       ));
 
     const settings = {
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 2,
@@ -90,7 +90,7 @@ export default class Events extends Component {
       ],
     };
     const settings2 = {
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
