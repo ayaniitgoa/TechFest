@@ -1,0 +1,101 @@
+
+.events-section{
+    width: 100vw !important;
+    /* min-height: 100vh; */
+    font-family: "Raleway", sans-serif;
+    color: white;
+    background: #6d296d;
+    background: linear-gradient(to top, #4F1D6B, #6d296d);
+    z-index: -3;
+}
+.buttons{
+    transform: translateY(10%);
+    padding-bottom: 5rem;
+}
+.events-title {
+    font-size: calc(5rem / var(--size-divisor));
+    text-align: left;
+    margin-bottom: 4rem;
+    top: 3rem;
+    bottom: 1.5rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    }
+.building {
+    width: 80vw;
+    position:absolute;
+    right: 0;
+    z-index: 0;
+    margin-top: 0;
+    transform: translate(25%);
+    }
+.event-content{
+    transform: translateX(10%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: white;
+    text-align: center;
+    margin-bottom: calc(5rem / var(--size-divisor));
+    padding: calc(10px / var(--size-divisor));
+    font-size: calc(2rem / var(--size-divisor));
+    border-radius: calc(30px / var(--size-divisor));
+    flex-wrap: nowrap;
+    width: calc(30rem / var(--size-divisor));
+    
+}
+
+nav {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+article {
+    float: left;
+    width: 60%;
+    justify-content: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.second{
+    transform: translate(35%, 27%);
+}
+:root {
+    --size-divisor: 1;
+    }
+
+.event-div{
+    transform: translate(15%, 50%);
+    z-index: 10;
+}
+.right{
+    transform: translateY(7.5%);
+}
+
+@media screen and (max-width:1100px) {
+    .left {
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+        --size-divisor: 1.5;
+    }.right{
+        width:100%;
+        transform: translate(-5%, -17%);
+    }.event-div{
+        width:115%;
+        transform: translate(14%, -30%);
+    }.buttons{
+        transform: translate(23% ,-5%);
+        padding-bottom: 0;
+    }.building{
+        width: 130vw;
+        margin-top: 7rem;
+    }.second{
+        transform: translate(41%,-8%);
+    }
+}
