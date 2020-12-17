@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
-// import EventsPage from "../EventsPage/EventsPage";
+import EventsPage from "../EventsPage/EventsPage";
 import FAQ from "../FAQ/FAQ";
 import HomePage from "../HomePage/HomePage";
 import Schedule from "../Schedule/Schedule";
@@ -32,8 +32,8 @@ function SiteContainer() {
       </a>
       <HomePage />
       <AboutUs />
-      {/* <EventsPage />
-       */}
+      <EventsPage />
+
       <Schedule />
       <Sponsors />
       <FAQ />
