@@ -11,7 +11,7 @@
   padding-bottom: 5rem;
 }
 .events-title {
-  font-size: calc(5rem / var(--size-divisor));
+  font-size: 3rem;
   text-align: left;
   margin-bottom: 4rem;
   top: 3rem;
@@ -33,7 +33,7 @@
   text-align: center;
   margin-bottom: calc(5rem / var(--size-divisor));
   padding: calc(10px / var(--size-divisor));
-  font-size: calc(2rem / var(--size-divisor));
+  font-size: 1.5rem;
   border-radius: calc(30px / var(--size-divisor));
   flex-wrap: nowrap;
   width: calc(30rem / var(--size-divisor));
@@ -54,6 +54,10 @@
 
 .event-div {
   margin-top: 7.5rem;
+}
+
+.btn i {
+  margin-left: 10px !important;
 }
 
 @media screen and (max-width: 1100px) {
@@ -95,6 +99,18 @@
     margin-left: 5vw;
     padding-left: 1.8rem;
     transform: translateY(-10%);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .events-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 380px) {

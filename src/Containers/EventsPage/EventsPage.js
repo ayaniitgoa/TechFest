@@ -19,10 +19,7 @@ export default class Events extends Component {
   render() {
     const renderCompetitions = () =>
       competitionData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <a href={`/event/${data.eventName}`} rel="noreferrer">
           <button
             type="button"
             key={data.eventName}
@@ -41,10 +38,7 @@ export default class Events extends Component {
 
     const renderWorkshops = () =>
       workshopData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <a href={`/event/${data.eventName}`} rel="noreferrer">
           <button
             type="button"
             key={data.eventName}
@@ -63,10 +57,7 @@ export default class Events extends Component {
 
     const renderTalks = () =>
       talksData.map((data) => (
-        <a
-          href={`http://techfestcepheus.netlify.app/event/${data.eventName}`}
-          rel="noreferrer"
-        >
+        <a href={`/event/${data.eventName}`} rel="noreferrer">
           <button
             type="button"
             key={data.eventName}
