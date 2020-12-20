@@ -9,6 +9,7 @@ import cepheusLogo from "./cepheus-logo-2.svg";
 import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function HomePage() {
   const [showNav, setShowNav] = useState(false);
@@ -33,7 +34,14 @@ function HomePage() {
       </div>
       <Navbar />
       <div className="image-container-home">
-        <img className="sky-img" src={sky} alt="" />
+        <motion.img
+          initial={{ opacity: 0, y: "-100vh" }}
+          animate={{ opacity: 0.3, y: "0" }}
+          transition={{ duration: 1 }}
+          className="sky-img"
+          src={sky}
+          alt=""
+        />
         <div className="auth-buttons">
           <Link to="/register">
             <button>Sign Up</button>
@@ -44,8 +52,22 @@ function HomePage() {
           </Link>
         </div>
         <div className="buildings-div">
-          <img className="buildings-img" src={buildings} alt="" />
-          <img src={sand} className="sand-img" alt="" />
+          <motion.img
+            initial={{ x: "100vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="buildings-img"
+            src={buildings}
+            alt=""
+          />
+          <motion.img
+            initial={{ x: "-100vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+            src={sand}
+            className="sand-img"
+            alt=""
+          />
         </div>
       </div>
     </div>

@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutUs.css";
-import bulidingimg from "./buildings-reflection.svg";
+
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import Bg from "./Bg.js";
 
 function AboutUs() {
+  // const controls = useAnimation();
+  // const [ref, inView] = useInView();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start("visible");
+  //     console.log("reached");
+  //   }
+  // }, [controls, inView]);
   return (
     <div id="about-us" className="about-us-section">
-      <img
-        className="building-reflection"
-        src={bulidingimg}
-        alt="Building Reflection"
-      />
+      <Bg />
       <h2 className="about-us-title">ABOUT US</h2>
       <div className="about-us-text">
         <p>

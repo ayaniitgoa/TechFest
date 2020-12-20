@@ -2,6 +2,7 @@ import "./Schedule.css";
 import React from "react";
 import Tabs from "./Tabs";
 import Fish from "./less-fish.svg";
+import ScheduleBg from "./ScheduleBg";
 
 const Day1Content = () => {
   return (
@@ -49,12 +50,12 @@ const Day2Content = () => {
 
 function Schedule() {
   return (
-
     <div id="schedule-section" className="schedule">
       <div className="schedule-title">
         <p>SCHEDULE</p>
       </div>
-      <img alt="fish-bg" className="fish" src={Fish} />
+      {/* <img alt="fish-bg" className="fish" src={Fish} /> */}
+      <ScheduleBg />
       <div className="schedule-container">
         <Tabs>
           <div label="Day 1">
@@ -68,7 +69,6 @@ function Schedule() {
           </div>
         </Tabs>
       </div>
-
     </div>
   );
 }

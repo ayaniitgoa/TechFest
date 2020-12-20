@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./EventsPage.css";
 import pantheon from "./pantheon.svg";
 import workshopData from "./workshopData.js";
 import talksData from "./talksData";
@@ -10,6 +9,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import EventBg from "./EventBg";
+import "./EventsPage.css";
 
 export default class Events extends Component {
   state = {
@@ -98,7 +99,8 @@ export default class Events extends Component {
     };
     return (
       <Container fluid className="events-section" id="events-section">
-        <img className="building" src={pantheon} alt="Building" />
+        {/* <img className="building" src={pantheon} alt="Building" /> */}
+        <EventBg />
         <Row>
           <Col>
             <div className="leftDiv">

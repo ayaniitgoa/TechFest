@@ -8,6 +8,7 @@ import AnmoldeepPhoto from "./Anmoldeep.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ContactBg from "./ContactBg";
 
 function ContactUs() {
   var settings = {
@@ -80,7 +81,8 @@ function ContactUs() {
         </Slider>
       </div>
       <div className="underwater-img-div">
-        <img className="underwater-city" src={underwaterCity} alt="" />
+        {/* <img className="underwater-city" src={underwaterCity} alt="" /> */}
+        <ContactBg />
       </div>
     </div>
   );
