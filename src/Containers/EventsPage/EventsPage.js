@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import pantheon from "./pantheon.svg";
 import workshopData from "./workshopData.js";
 import talksData from "./talksData";
 import competitionData from "./competitionData";

@@ -1,20 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./AboutUs.css";
-
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
 import Bg from "./Bg.js";
 
 function AboutUs() {
-  // const controls = useAnimation();
-  // const [ref, inView] = useInView();
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     controls.start("visible");
-  //     console.log("reached");
-  //   }
-  // }, [controls, inView]);
   return (
     <div id="about-us" className="about-us-section">
       <Bg />
