@@ -1,1 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.ind-eve-register {
+  background: #6d296d;
+  background: linear-gradient(to bottom, #85325f, #6d296d);
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  width: 100vw;
+  padding-bottom: 30px;
+}
+
+.ind-event-back-register {
+  font-size: 3rem;
+  color: white;
+  margin-left: 2rem;
+  position: relative;
+  top: 2.5rem;
+}
+
+.ind-eve-register-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.ind-eve-title-register {
+  font-size: 3em;
+  text-align: center;
+}
+
+.ind-pantheon-register {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .ind-eve-title-register {
+    font-size: 2rem;
+    width: 70vw;
+  }
+
+  .ind-event-back-register {
+    font-size: 2rem;
+    color: white;
+    margin-left: 1rem;
+  }
+}

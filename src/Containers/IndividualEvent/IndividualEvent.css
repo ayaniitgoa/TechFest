@@ -39,8 +39,9 @@
 }
 
 .ind-event-poster {
-  width: 20em;
-  height: 30em;
+  /* width: 20em; */
+  /* height: 30em; */
+  width: 20rem;
   z-index: 10;
   position: relative;
   bottom: 0;
@@ -90,24 +91,24 @@
   }
 
   .ind-event-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* position: relative; */
-    top: 30px;
-    position: absolute;
-    left: 50%;
+    /* top: 30px; */
+    position: relative;
+    /* left: 50%; */
     text-align: center;
-    transform: translateX(-50%);
-    margin-left: 0;
+    /* transform: translateX(-50%); */
+    /* margin-left: 0; */
   }
 
   .ind-event-poster {
-    width: 20rem;
     margin-bottom: 1rem;
-    height: 20em;
+    width: 40%;
     z-index: 10;
     position: relative;
     bottom: 0;
-    margin-top: 20px;
+    margin-top: 3rem;
+    /* margin-top: 1rem; */
   }
 
   .ind-event-text {
@@ -115,13 +116,18 @@
     color: white;
     background-color: rgba(210, 192, 211, 1);
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 50px;
+  }
+
+  .ind-event-text p {
+    font-size: 1rem;
   }
 
   .ind-register-btn {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1rem;
   }
 }

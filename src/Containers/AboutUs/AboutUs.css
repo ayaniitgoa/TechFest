@@ -32,9 +32,15 @@
 }
 
 .building-reflection {
-  width: 75vw;
+  width: 65vw;
   position: absolute;
-  right: -10px;
+  right: 0px;
+}
+
+@media only screen and (max-width: 820px) {
+  .building-reflection {
+    width: 70vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {

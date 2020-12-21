@@ -1,28 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 .home-page {
   width: 100vw;
-  background: linear-gradient(to bottom, #4600b2, #c0575e, #c1585d, #a03d4e);
+  background: linear-gradient(
+    to bottom,
+    #95387b,
+    #8a3083,
+    #c0575e,
+    #c1585d,
+    #a03d4e
+  );
   position: relative;
-  height: 100%;
+  /* height: 100%; */
+  min-height: 100vh;
+}
+/* 
+.image-container-home {
+  position: absolute;
+} */
+
+.sand-img {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
 }
 
 .sky-img {
-  position: relative;
-  opacity: 0.3;
+  position: absolute;
+  opacity: 0;
+  top: 0;
   width: 100vw;
-  margin-top: 5rem;
+  /* margin-top: -15rem; */
 }
 .buildings-div {
-  position: relative;
-  margin-top: -2rem;
+  position: absolute;
+  /* margin-top: -16rem; */
+  bottom: 0;
+  right: 0;
+  z-index: 11;
 }
 
 .buildings-img {
-  width: 75vw;
-  position: absolute;
-  right: 0;
-  bottom: -10px;
-  z-index: 10;
+  width: 65vw;
 }
 
 .top-bar {
@@ -43,6 +64,7 @@
   height: 10vh;
   top: 4vh;
   margin-left: 7rem;
+  display: none;
 }
 .cepheus-top {
   width: 22em;
@@ -52,7 +74,7 @@
 .moon-logo {
   width: 8em;
   position: absolute;
-  right: 10vw;
+  right: 5vw;
   z-index: 100;
   pointer-events: none;
 }
@@ -92,6 +114,9 @@
   flex-direction: column;
   z-index: 1000;
   left: 4vw;
+  bottom: 2.6rem;
+
+  /* display: none;  */
   /* top: -10px; */
 }
 
@@ -114,6 +139,49 @@
 @media only screen and (max-width: 820px) {
   .moon-logo {
     pointer-events: fill;
+    width: 5em;
+    right: 8vw;
+  }
+
+  .auth-buttons a button {
+    padding: 9px 10px;
+    width: 8em;
+    font-size: 1em;
+    margin-top: 5px;
+    border-radius: 30px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .home-page {
+    min-height: 70vh;
+    /* min-height: 100vh; */
+  }
+
+  .buildings-div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .sand-img {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  .buildings-img {
+    width: 70vw;
+    z-index: 10;
+  }
+
+  .iitgoa-top {
+    width: 5em;
+  }
+  .cepheus-top {
+    width: 18em;
+    margin-left: 1rem;
   }
 }
 
@@ -145,14 +213,133 @@
   }
 
   .auth-buttons a button {
-    padding: 10px 20px;
-    width: 7em;
-    font-size: 1em;
+    padding: 10px 10px;
+    width: 10em;
+    font-size: 0.9em;
   }
 }
 @media only screen and (max-width: 650px) {
   .top-bar {
     margin-left: 1em;
+  }
+
+  .home-page {
+    min-height: 57vh;
+    /* min-height: 100vh; */
+  }
+  .iitgoa-top {
+    width: 4em;
+  }
+  .cepheus-top {
+    width: 14em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 4em;
+    position: absolute;
+    right: 10vw;
+  }
+
+  .nav-white-line {
+    width: 1em;
+    border-left: solid white 1px;
+    position: absolute;
+    height: 4vh;
+    top: 3vh;
+    margin-left: 3em;
+  }
+  .auth-buttons a button {
+    padding: 5px 10px;
+    width: 9em;
+    font-size: 1em;
+    /* margin-top: 10em; */
+  }
+
+  .auth-buttons {
+    margin-top: 2em;
+    margin-left: 2vw;
+  }
+
+  .nav-cross {
+    font-size: 2em;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+
+  .home-page {
+    min-height: 50vh;
+    /* min-height: 100vh; */
+  }
+  .iitgoa-top {
+    width: 4em;
+  }
+  .cepheus-top {
+    width: 14em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 4em;
+    position: absolute;
+    right: 10vw;
+  }
+
+  .sand-img {
+    width: 100vw;
+    height: 25vh;
+  }
+  .auth-buttons {
+    bottom: 20px;
+    left: 10px;
+  }
+  .auth-buttons a button {
+    padding: 5px 10px;
+    width: 8em;
+    font-size: 0.7em;
+    margin: 0;
+    margin-top: 5px;
+    /* margin-top: 10em; */
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+
+  .home-page {
+    min-height: 45vh;
+    /* min-height: 100vh; */
+  }
+  .iitgoa-top {
+    width: 3.2em;
+  }
+  .cepheus-top {
+    width: 12em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 3.5em;
+    position: absolute;
+    right: 10vw;
+  }
+
+  .sand-img {
+    width: 100vw;
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 377px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+
+  .home-page {
+    min-height: 40vh;
+    /* min-height: 100vh; */
   }
   .iitgoa-top {
     width: 2.5em;
@@ -167,28 +354,47 @@
     right: 10vw;
   }
 
-  .nav-white-line {
-    width: 1em;
-    border-left: solid white 1px;
-    position: absolute;
-    height: 4vh;
-    top: 3vh;
-    margin-left: 3em;
-  }
-  .auth-buttons a button {
-    padding: 5px 20px;
-    width: 9em;
-    font-size: 0.5em;
-    /* margin-top: 10em; */
+  .sand-img {
+    width: 100vw;
+    height: 18vh;
   }
 
   .auth-buttons {
-    margin-top: 2em;
-    margin-left: 2vw;
+    bottom: 10px;
   }
 
-  .nav-cross {
-    font-size: 2em;
-    color: white;
+  .auth-buttons a button {
+    padding: 5px 10px;
+    width: 7em;
+    font-size: 0.6em;
+    margin: 0;
+    /* margin-top: 10em; */
+  }
+}
+@media only screen and (max-width: 322px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+
+  .home-page {
+    min-height: 35vh;
+    /* min-height: 100vh; */
+  }
+  .iitgoa-top {
+    width: 2.5em;
+  }
+  .cepheus-top {
+    width: 10em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 3em;
+    position: absolute;
+    right: 10vw;
+  }
+
+  .sand-img {
+    width: 100vw;
+    height: 15vh;
   }
 }

@@ -36,7 +36,7 @@ function HomePage() {
       <div className="image-container-home">
         <motion.img
           initial={{ opacity: 0, y: "-100vh" }}
-          animate={{ opacity: 0.3, y: "0" }}
+          animate={{ opacity: 0.1, y: "0" }}
           transition={{ duration: 1 }}
           className="sky-img"
           src={sky}
@@ -51,21 +51,21 @@ function HomePage() {
             <button>Login</button>
           </Link>
         </div>
+        <motion.img
+          initial={{ x: "-100vw", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          src={sand}
+          className="sand-img"
+          alt=""
+        />
         <div className="buildings-div">
           <motion.img
             initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 2 }}
             className="buildings-img"
             src={buildings}
-            alt=""
-          />
-          <motion.img
-            initial={{ x: "-100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
-            src={sand}
-            className="sand-img"
             alt=""
           />
         </div>
