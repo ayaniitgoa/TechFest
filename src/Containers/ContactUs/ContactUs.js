@@ -4,6 +4,8 @@ import "./ContactUs.css";
 import aadilPhoto from "./aadil.jpeg";
 import shreyasPhoto from "./shreyas.jpg";
 import AnmoldeepPhoto from "./Anmoldeep.jpg";
+import DarshayPhoto from "./Darshay.jpg";
+import AaryanPhoto from "./Aaryan.jpg";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -76,6 +78,26 @@ function ContactUs() {
             <p className="contact-text contact-number">+91 8652845505</p>
             <p className="contact-text contact-number">
               aadil.khan.18001@iitgoa.ac.in
+            </p>
+          </div>
+          <div className="individual-contact">
+            <img className="contact-photo" src={DarshayPhoto} alt="" />
+            <p className="contact-text contact-name">
+              Darshay Naik, Events Head
+            </p>
+            <p className="contact-text contact-number">+91 9913759592</p>
+            <p className="contact-text contact-number">
+              darshay.naik.18003@iitgoa.ac.in
+            </p>
+          </div>
+          <div className="individual-contact">
+            <img className="contact-photo" src={AaryanPhoto} alt="" />
+            <p className="contact-text contact-name">
+              Aaryan Kadam, Events Head
+            </p>
+            <p className="contact-text contact-number">+91 9137901402</p>
+            <p className="contact-text contact-number">
+              aaryan.kadam.18002@iitgoa.ac.in
             </p>
           </div>
         </Slider>

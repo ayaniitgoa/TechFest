@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 .social-media-box {
   background-color: black;
   color: white;
@@ -6,6 +7,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100vw;
+  font-family: "Raleway", sans-serif;
 }
 
 .social-left-section {

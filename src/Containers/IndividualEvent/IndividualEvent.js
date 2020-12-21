@@ -18,9 +18,9 @@ function IndividualEvent(props) {
   return (
     <div className="ind-eve">
       <div className="ind-event-top">
-        <a href="/#events-section">
+        <Link to="/#events-section">
           <i className="ind-event-back fas fa-chevron-left"></i>
-        </a>
+        </Link>
         <p className="ind-event-title">{eventData && eventData.label}</p>
       </div>
       <div className="ind-event-content">

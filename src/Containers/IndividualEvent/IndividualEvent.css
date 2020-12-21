@@ -49,11 +49,13 @@
 .ind-event-text {
   width: 50vw;
   color: white;
-  background-color: white;
+  /* background-color: white; */
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(210, 192, 211, 0.8);
   padding: 2rem;
   border-radius: 50px;
+  position: relative;
+  z-index: 11;
 }
 
 .ind-event-text p {
@@ -79,7 +81,7 @@
   font-size: 2rem;
   z-index: 10;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(210, 192, 211, 0.8);
 }
 
 @media only screen and (max-width: 640px) {
@@ -111,9 +113,8 @@
   .ind-event-text {
     width: 90vw;
     color: white;
-    background-color: white;
+    background-color: rgba(210, 192, 211, 1);
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 2rem;
     border-radius: 50px;
   }
