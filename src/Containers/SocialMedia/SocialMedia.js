@@ -20,7 +20,7 @@ function SocialMedia() {
           <a href="https://twitter.com/cepheus_iitgoa?s=09">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="/">
+          <a href="https://discord.gg/nTamXZkB">
             <i className="fab fa-discord"></i>
           </a>
         </div>
