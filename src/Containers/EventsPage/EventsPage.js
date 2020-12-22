@@ -111,7 +111,7 @@ export default class Events extends Component {
                   href="#eventdiv"
                   onClick={() =>
                     this.setState({
-                      display1: !this.state.display1,
+                      display1: true,
                       display2: false,
                       display3: false,
                     })
@@ -126,7 +126,7 @@ export default class Events extends Component {
                   onClick={() =>
                     this.setState({
                       display1: false,
-                      display2: !this.state.display2,
+                      display2: true,
                       display3: false,
                     })
                   }
@@ -141,7 +141,7 @@ export default class Events extends Component {
                     this.setState({
                       display1: false,
                       display2: false,
-                      display3: !this.state.display3,
+                      display3: true,
                     })
                   }
                 >
