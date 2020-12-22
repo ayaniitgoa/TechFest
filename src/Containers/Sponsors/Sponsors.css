@@ -5,6 +5,7 @@
   background-color: #0d0265;
   position: relative;
   padding-top: 0vh;
+  padding-bottom: 3rem;
 }
 
 .sponsors-title {
@@ -54,6 +55,11 @@
   top: 23vh;
 }
 
+@media only screen and (max-width: 820px) {
+  .sponsors-section {
+    padding-bottom: 2rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .sponsors-title {
     text-align: center;

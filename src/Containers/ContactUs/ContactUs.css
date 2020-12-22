@@ -23,13 +23,15 @@
   width: 80vw;
   margin: 0 auto;
   /* flex-wrap: wrap; */
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  position: relative;
+  top: 3rem;
 }
 
 .contact-photo {
-  width: 10rem;
+  width: 12rem;
   border-radius: 50%;
-  height: 10rem;
+  height: 12rem;
   object-fit: cover;
   margin-bottom: 2rem;
   /* position: relative;
@@ -41,10 +43,11 @@
 .contact-text {
   background-color: white;
   text-align: center;
-  padding: 7px;
+  padding: 7px 9px;
   border-radius: 30px;
   width: 90%;
   position: relative;
+  font-size: 1.1rem;
 
   /* z-index: 1; */
 }
@@ -86,6 +89,11 @@
 @media only screen and (max-width: 800px) {
   .contact-text {
     font-size: 0.9rem;
+  }
+
+  .contact-photo {
+    width: 10rem;
+    height: 10rem;
   }
 }
 @media only screen and (max-width: 650px) {

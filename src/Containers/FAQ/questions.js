@@ -37,11 +37,6 @@ const questions = [
     answer:
       "Participating in the competitions is absolutely free of cost. No registration fee is involved.",
   },
-  {
-    question: "What should I do after completing registration?",
-    answer:
-      "After registering, you will get an email that will confirm your registration. Keep following our updates on social media and email.",
-  },
 ];
 
 export default questions;
