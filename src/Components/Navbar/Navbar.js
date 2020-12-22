@@ -5,22 +5,34 @@ function Navbar() {
   return (
     <div className="navbar">
       <a href="#about-us" className="navbar-link">
-        ABOUT US
+        <button className="nav-btn">
+          <p>ABOUT US</p>
+        </button>
       </a>
       <a href="#events-section" className="navbar-link">
-        EVENTS
+        <button className="nav-btn">
+          <p>EVENTS</p>
+        </button>
       </a>
       <a href="#schedule-section" className="navbar-link">
-        SCHEDULE
+        <button className="nav-btn">
+          <p>SCHEDULE</p>
+        </button>
       </a>
       <a href="#sponsor-section" className="navbar-link">
-        SPONSORS
+        <button className="nav-btn">
+          <p>SPONSORS</p>
+        </button>
       </a>
       <a href="#faq-section" className="navbar-link">
-        FAQ
+        <button className="nav-btn">
+          <p>FAQ</p>
+        </button>
       </a>
       <a href="#contact-us-section" className="navbar-link last-link-nav">
-        CONTACT US
+        <button className="nav-btn">
+          <p className="nav-text-last">CONTACT US</p>
+        </button>
       </a>
     </div>
   );
