@@ -18,33 +18,35 @@ export default class Events extends Component {
     render() {
         const renderCompetitions = () =>  competitionData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(35%, 30%)'}}>{data.label}</button></a>))
 
         const renderWorkshops = () =>  workshopData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(35%, 30%)'}}>{data.label}</button></a>))
 
         const renderTalks = () =>  talksData.map(data =>(
             <a href={`http://techfestcepheus.netlify.app/event/${data.eventName}`} rel="noreferrer">
-                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(15%, 30%)'}}>{data.label}</button></a>))
+                <button type="button" key={data.eventName} className="btn btn-light" style={{width: 'calc(10rem / var(--size-divisor))', height: 'calc(8rem / var(--size-divisor))', fontSize: 'calc(1.2rem / var(--size-divisor))', transform: 'translate(35%, 30%)'}}>{data.label}</button></a>))
 
         const settings = {
-            infinite: true,
+            infinite: false,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 2, 
+            rows: 2,
             responsive: [
             {
                 breakpoint: 1100,
                 settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                rows: 1,
                 },
             },
             ],
         };
         const settings2 = {
-            infinite: true,
+            infinite: false,
             speed: 500,
             slidesToShow: 2,
             slidesToScroll: 1
@@ -61,23 +63,23 @@ export default class Events extends Component {
                         <div className='leftDiv'>
                         <h1 className='events-title'>EVENTS</h1>
                         <div className='buttons'>
-                            <button type="button" className="btn btn-light" href='#eventdiv' onClick={() =>
+                            <button type="button" className="btn btn-light" id='eventdiv' onClick={() =>
                                 this.setState({
-                                    display1: !this.state.display1,
+                                    display1: true,
                                     display2: false,
                                     display3: false
                                 })}>Competitions</button>
                             <button type="button" className="btn btn-light" href='#eventdiv' onClick={() =>
                                 this.setState({
                                     display1: false,
-                                    display2: !this.state.display2,
+                                    display2: true,
                                     display3: false
                                 })}>Workshops</button>
                             <button type="button" className="btn btn-light" href='#eventdiv' onClick={() =>
                                 this.setState({
                                     display1: false,
                                     display2: false,
-                                    display3: !this.state.display3
+                                    display3: true
                                 })}>Talks</button>
                             </div>
                         </div> 
@@ -86,12 +88,13 @@ export default class Events extends Component {
                     <div className='event-div'>
                         <div className='second'>
                         <button type="button" className="btn btn-light" 
-                        style={{width: 'calc(15rem / var(--size-divisor))'}}>Rulebook  
-                        <i className="fas fa-download"  style={{width: 'calc(2rem / var(--size-divisor))'}}></i></button>
+                            style={{width: 'calc(15rem / var(--size-divisor))'}}>Rulebook  
+                            <i className="fas fa-download"  style={{width: 'calc(2rem / var(--size-divisor))'}}></i></button>
                         </div>
+                        <div className='slide-div'>
                         <div
                             style={{
-                                width: 'calc(600px / (var(--div-divisor))',
+                                width: 'calc(550px / (var(--div-divisor))',
                                 display: this.state.display1 ? "block" : "none"
                             }}>
                             <Slider {...settings}>
@@ -100,7 +103,7 @@ export default class Events extends Component {
                         </div>
                         <div
                             style={{
-                                width: 'calc(600px / var(--div-divisor))',
+                                width: 'calc(550px / var(--div-divisor))',
                                 display: this.state.display2 ? "block" : "none"
                             }}>
                             <Slider {...settings}>
@@ -109,12 +112,13 @@ export default class Events extends Component {
                         </div>
                         <div
                             style={{
-                                width: 'calc(600px / var(--div-divisor))',
+                                width: 'calc(550px / var(--size-divisor))',
                                 display: this.state.display3 ? "block" : "none"
                             }}>
                             <Slider {...settings2}>
                                 {renderTalks()}
                             </Slider>
+                        </div>
                         </div>
                         </div>
                     </Col>
