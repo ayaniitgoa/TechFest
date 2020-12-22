@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
-.page-not-found {
-  background: linear-gradient(to bottom, #4600b2, #4e2466);
-  width: 100vw;
-  height: 100vh;
-  color: white;
+.no-register-div {
+  background: linear-gradient(to bottom, #85325f, #6d296d);
+  background: #6d296d;
   font-family: "Raleway", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
-
-.text404 {
-  margin-top: -9rem;
-  font-size: 6rem;
-}
-
-.text-pg {
+.no-register-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
+  color: white;
 }
 
-.go-back-404 {
+.go-back {
   padding: 10px 20px;
   width: 8em;
   font-size: 1.5em;
@@ -32,6 +33,7 @@
   border: none;
   font-family: "Raleway", sans-serif;
 }
-.go-back-404:focus {
+
+.go-back:focus {
   outline: none;
 }

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+.home-page {
+  width: 100vw;
+  background: linear-gradient(to bottom, #4600b2, #c0575e, #c1585d, #a03d4e);
+  position: relative;
+}
+
+.sky-img {
+  position: relative;
+  opacity: 0.3;
+  width: 100vw;
+  margin-top: 5rem;
+}
+.buildings-div {
+  position: relative;
+  margin-top: -2rem;
+}
+
+.buildings-img {
+  width: 75vw;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.top-bar {
+  padding-top: 1em;
+  position: absolute;
+  margin-left: 2em;
+  width: 100%;
+}
+
+.iitgoa-top {
+  width: 6em;
+}
+
+.nav-white-line {
+  width: 1em;
+  border-left: solid white 1px;
+  position: absolute;
+  height: 10vh;
+  top: 4vh;
+  margin-left: 7rem;
+}
+.cepheus-top {
+  width: 22em;
+  margin-left: 2rem;
+}
+
+.moon-logo {
+  width: 8em;
+  position: absolute;
+  right: 10vw;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.nav-cross-div {
+  cursor: pointer;
+  position: absolute;
+  right: 5vw;
+  top: 10px;
+}
+
+.nav-cross {
+  font-size: 3em;
+  color: white;
+}
+
+.navbar-two {
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(to bottom, #4600b2, #c0575e);
+  z-index: 100000;
+  position: absolute;
+  margin-top: -50vh;
+  transition: 0.5s ease-in-out all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  margin-top: 0em;
+}
+
+.auth-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  left: 4vw;
+  /* top: -10px; */
+}
+
+.auth-buttons a button {
+  padding: 10px 20px;
+  width: 8em;
+  font-size: 1.5em;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.auth-buttons a button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 820px) {
+  .moon-logo {
+    pointer-events: fill;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+  .iitgoa-top {
+    width: 5em;
+  }
+  .cepheus-top {
+    width: 18em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 5em;
+    position: absolute;
+    right: 10vw;
+    cursor: pointer;
+  }
+
+  .nav-white-line {
+    width: 1em;
+    border-left: solid white 1px;
+    position: absolute;
+    height: 8vh;
+    top: 4vh;
+    margin-left: 5.5em;
+  }
+
+  .auth-buttons a button {
+    padding: 10px 20px;
+    width: 7em;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .top-bar {
+    margin-left: 1em;
+  }
+  .iitgoa-top {
+    width: 2.5em;
+  }
+  .cepheus-top {
+    width: 10em;
+    margin-left: 1rem;
+  }
+  .moon-logo {
+    width: 3em;
+    position: absolute;
+    right: 10vw;
+  }
+
+  .nav-white-line {
+    width: 1em;
+    border-left: solid white 1px;
+    position: absolute;
+    height: 4vh;
+    top: 3vh;
+    margin-left: 3em;
+  }
+  .auth-buttons a button {
+    padding: 5px 20px;
+    width: 9em;
+    font-size: 0.5em;
+    /* margin-top: 10em; */
+  }
+
+  .auth-buttons {
+    margin-top: 2em;
+    margin-left: 2vw;
+  }
+
+  .nav-cross {
+    font-size: 2em;
+    color: white;
+  }
+}
