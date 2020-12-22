@@ -29,7 +29,7 @@ export default class Events extends Component {
               width: "calc(10rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: "translate(15%, 30%)",
+              transform: 'translate(35%, 30%)',
             }}
           >
             {data.label}
@@ -48,7 +48,7 @@ export default class Events extends Component {
               width: "calc(10rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: "translate(15%, 30%)",
+              transform: 'translate(35%, 30%)',
             }}
           >
             {data.label}
@@ -67,7 +67,7 @@ export default class Events extends Component {
               width: "calc(10rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: "translate(15%, 30%)",
+              transform: 'translate(35%, 30%)',
             }}
           >
             {data.label}
@@ -78,14 +78,16 @@ export default class Events extends Component {
     const settings = {
       infinite: false,
       speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 2,
+      slidesToShow: 2,
+      slidesToScroll: 2, 
+      rows: 2,
       responsive: [
         {
           breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            rows: 1,
           },
         },
       ],
@@ -158,16 +160,17 @@ export default class Events extends Component {
                   className="btn btn-light"
                   style={{ width: "calc(15rem / var(--size-divisor))" }}
                 >
-                  Rulebook
+                  Rulebook    
                   <i
                     className="fas fa-download"
                     style={{ width: "calc(2rem / var(--size-divisor))" }}
                   ></i>
                 </button>
               </div>
+              <div className='slide-div'>
               <div
                 style={{
-                  width: "calc(600px / (var(--div-divisor))",
+                  width: "calc(550px / (var(--div-divisor))",
                   display: this.state.display1 ? "block" : "none",
                 }}
               >
@@ -175,7 +178,7 @@ export default class Events extends Component {
               </div>
               <div
                 style={{
-                  width: "calc(600px / var(--div-divisor))",
+                  width: "calc(550px / var(--div-divisor))",
                   display: this.state.display2 ? "block" : "none",
                 }}
               >
@@ -183,16 +186,19 @@ export default class Events extends Component {
               </div>
               <div
                 style={{
-                  width: "calc(600px / var(--div-divisor))",
+                  width: "calc(550px / var(--div-divisor))",
                   display: this.state.display3 ? "block" : "none",
                 }}
               >
                 <Slider {...settings2}>{renderTalks()}</Slider>
               </div>
+              </div>
             </div>
+  
           </Col>
         </Row>
       </Container>
     );
   }
 }
+
