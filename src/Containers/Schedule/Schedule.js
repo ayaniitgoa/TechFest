@@ -7,6 +7,11 @@ const Day1Content = () => {
   return (
     <div className="content-container">
       <div className="content-row">
+        <p id="event">EVENT</p>
+        <p>|</p>
+        <p id="time">TIME</p>
+      </div>
+      <div className="content-row">
         <p id="event">CYBER EXPERT (TALK)</p>
         <p>|</p>
         <p id="time">11:00am to 12:00pm</p>
@@ -33,6 +38,11 @@ const Day1Content = () => {
 const Day2Content = () => {
   return (
     <div className="content-container">
+      <div className="content-row">
+        <p id="event">EVENT</p>
+        <p>|</p>
+        <p id="time">TIME</p>
+      </div>
       <div className="content-row">
         <p id="event">CYBER EXPERT (TALK)</p>
         <p>|</p>
