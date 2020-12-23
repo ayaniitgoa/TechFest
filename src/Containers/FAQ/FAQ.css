@@ -90,9 +90,9 @@
   opacity: 1;
   border-radius: 20px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 .faq__right__button {
   height: 100%;

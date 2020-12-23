@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import EventBg from "./EventBg";
 import "./EventsPage.css";
+import RuleBook from "./Rulebook.pdf";
 
 export default class Events extends Component {
   state = {
@@ -25,7 +26,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            id='grid-buttons'
+            id="grid-buttons"
           >
             {data.label}
           </button>
@@ -39,7 +40,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            id='grid-buttons'
+            id="grid-buttons"
           >
             {data.label}
           </button>
@@ -53,7 +54,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            id='grid-buttons'
+            id="grid-buttons"
           >
             {data.label}
           </button>
@@ -64,7 +65,7 @@ export default class Events extends Component {
       infinite: false,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 2, 
+      slidesToScroll: 2,
       rows: 2,
       responsive: [
         {
@@ -140,50 +141,50 @@ export default class Events extends Component {
           <Col>
             <div className="event-div">
               <div className="second">
-                <button
-                  type="button"
-                  className="btn btn-light"
-                  style={{ width: "calc(15rem / var(--size-divisor))" }}
+                <a href={RuleBook} target="_blank" rel="noreferrer">
+                  <button
+                    type="button"
+                    className="btn btn-light"
+                    style={{ width: "calc(15rem / var(--size-divisor))" }}
+                  >
+                    Rulebook
+                    <i
+                      className="fas fa-download"
+                      style={{ width: "calc(2rem / var(--size-divisor))" }}
+                    ></i>
+                  </button>
+                </a>
+              </div>
+              <div className="slide-div">
+                <div
+                  style={{
+                    width: "calc(550px / (var(--div-divisor))",
+                    display: this.state.display1 ? "block" : "none",
+                  }}
                 >
-                  Rulebook    
-                  <i
-                    className="fas fa-download"
-                    style={{ width: "calc(2rem / var(--size-divisor))" }}
-                  ></i>
-                </button>
-              </div>
-              <div className='slide-div'>
-              <div
-                style={{
-                  width: "calc(550px / (var(--div-divisor))",
-                  display: this.state.display1 ? "block" : "none",
-                }}
-              >
-                <Slider {...settings}>{renderCompetitions()}</Slider>
-              </div>
-              <div
-                style={{
-                  width: "calc(550px / var(--div-divisor))",
-                  display: this.state.display2 ? "block" : "none",
-                }}
-              >
-                <Slider {...settings}>{renderWorkshops()}</Slider>
-              </div>
-              <div
-                style={{
-                  width: "calc(550px / var(--div-divisor))",
-                  display: this.state.display3 ? "block" : "none",
-                }}
-              >
-                <Slider {...settings2}>{renderTalks()}</Slider>
-              </div>
+                  <Slider {...settings}>{renderCompetitions()}</Slider>
+                </div>
+                <div
+                  style={{
+                    width: "calc(550px / var(--div-divisor))",
+                    display: this.state.display2 ? "block" : "none",
+                  }}
+                >
+                  <Slider {...settings}>{renderWorkshops()}</Slider>
+                </div>
+                <div
+                  style={{
+                    width: "calc(550px / var(--div-divisor))",
+                    display: this.state.display3 ? "block" : "none",
+                  }}
+                >
+                  <Slider {...settings2}>{renderTalks()}</Slider>
+                </div>
               </div>
             </div>
-  
           </Col>
         </Row>
       </Container>
     );
   }
 }
-
