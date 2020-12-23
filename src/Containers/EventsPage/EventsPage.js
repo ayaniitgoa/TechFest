@@ -26,7 +26,7 @@ export default class Events extends Component {
             key={data.eventName}
             className="btn btn-light"
             style={{
-              width: "calc(10rem / var(--size-divisor))",
+              width: "calc(11rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
               transform: 'translate(35%, 30%)',
@@ -45,7 +45,7 @@ export default class Events extends Component {
             key={data.eventName}
             className="btn btn-light"
             style={{
-              width: "calc(10rem / var(--size-divisor))",
+              width: "calc(11rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
               transform: 'translate(35%, 30%)',
@@ -64,7 +64,7 @@ export default class Events extends Component {
             key={data.eventName}
             className="btn btn-light"
             style={{
-              width: "calc(10rem / var(--size-divisor))",
+              width: "calc(11rem / var(--size-divisor))",
               height: "calc(8rem / var(--size-divisor))",
               fontSize: "calc(1.2rem / var(--size-divisor))",
               transform: 'translate(35%, 30%)',
