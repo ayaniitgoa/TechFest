@@ -18,11 +18,11 @@ function App() {
             path="/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality)"
             exact
           />
-          <Route
+          {/* <Route
             component={IndividualEventRegistraion}
             path="/event/:eventName/register"
             exact
-          />
+          /> */}
           <Route component={Register} path="/register" exact />
           <Route component={PageNotFound} />
         </Switch>
