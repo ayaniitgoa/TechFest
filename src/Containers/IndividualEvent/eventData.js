@@ -8,8 +8,8 @@ export const data = [
     numOfFields: 5,
   },
   {
-    eventName: "beattheheat",
-    label: "BEAT THE HEAT",
+    eventName: "coolyourengine",
+    label: "COOL YOUR ENGINE",
     posterLink: "beattheheat.png",
     eventText:
       "Don’t you hate it when things start boiling up? You’ll be required to use that passion, along with your technical abilities, to design a heat shield for a given engine so that it attains the lowest possible temperature. You also need to make sure that the heat is uniformly distributed throughout the engine, so that you don’t end up burning anyone’s rear. ",

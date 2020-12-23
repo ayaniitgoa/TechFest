@@ -92,14 +92,15 @@
   }
 
   .ind-event-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     /* position: relative; */
     /* top: 30px; */
     position: relative;
     /* left: 50%; */
     text-align: center;
     /* transform: translateX(-50%); */
-    /* margin-left: 0; */
+    /* margin-left: -2px; */
+    /* width: 100%; */
   }
 
   .ind-event-poster {
