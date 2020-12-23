@@ -4,7 +4,7 @@ import SiteContainer from "./Containers/SiteContainer/SiteContainer";
 import PageNotFound from "./Containers/404Page/PageNotFound";
 
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
-import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
+// import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
 import Register from "./Containers/Register/Register";
 
 function App() {
