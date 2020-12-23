@@ -66,6 +66,13 @@
 .slide-div {
   margin-left: 1rem;
 }
+.slick-prev:before {
+  font-size: calc(40px / var(--size-divisor));
+}
+
+.slick-next:before {
+  font-size: calc(40px / var(--size-divisor));
+}
 
 #grid-buttons {
   width: calc(11rem / var(--size-divisor));
