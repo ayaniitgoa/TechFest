@@ -3,6 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { data } from "./eventData";
 import "./IndividualEvent.css";
 import pantheon from "./pantheon.svg";
+// import cyber from "./posters/cyberSecurity.png";
 
 function IndividualEvent(props) {
   const [eventData, setEventData] = useState({});
@@ -26,7 +27,7 @@ function IndividualEvent(props) {
       <div className="ind-event-content">
         <img
           className="ind-event-poster"
-          src="https://images.unsplash.com/photo-1511461744085-90a4d1c66be3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src={process.env.PUBLIC_URL + `/posters/${eventData.posterLink}`}
           alt=""
         />
         <div className="ind-event-text">

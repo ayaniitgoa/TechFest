@@ -41,7 +41,8 @@
 .ind-event-poster {
   /* width: 20em; */
   /* height: 30em; */
-  width: 20rem;
+  width: 30vw;
+  height: 50vh;
   z-index: 10;
   position: relative;
   bottom: 0;
@@ -103,11 +104,11 @@
 
   .ind-event-poster {
     margin-bottom: 1rem;
-    width: 40%;
+    width: 80vw;
     z-index: 10;
     position: relative;
     bottom: 0;
-    margin-top: 3rem;
+    margin-top: 0rem;
     /* margin-top: 1rem; */
   }
 
