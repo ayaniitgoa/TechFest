@@ -10,10 +10,6 @@ const questions = [
       "In one word it can be described as a “ Unique” experience that you can bag up . Do stay connected to us through social media!!",
   },
   {
-    question: "What are the dates of Cepheus 2021?",
-    answer: "Cepheus will be held from 10th to 12th January.",
-  },
-  {
     question: "Who can attend Cepheus?",
     answer:
       "The Techfest is open to all. Anyone who wishes to bring their technical senses into play or to reinforce their knowledge is more than welcome to join us in this first ever Technical fest of IIT Goa.",
