@@ -34,12 +34,12 @@ function IndividualEvent(props) {
           <p>{eventData && eventData.eventText}</p>
         </div>
       </div>
-      <Link to={`/event/${props.match.params.eventName}/register`}>
-        <button className="ind-register-btn">Register</button>
-      </Link>
-      {/* <Link to={`/register`}>
+      {/* <Link to={`/event/${props.match.params.eventName}/register`}>
         <button className="ind-register-btn">Register</button>
       </Link> */}
+      <Link to={`/register`}>
+        <button className="ind-register-btn">Register</button>
+      </Link>
       <img className="ind-pantheon" src={pantheon} alt="" />
     </div>
   );
