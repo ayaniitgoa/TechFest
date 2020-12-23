@@ -67,6 +67,13 @@
   margin-left: 1rem;
 }
 
+#grid-buttons{
+  width: calc(11rem / var(--size-divisor));
+  height: calc(8rem / var(--size-divisor));
+  font-size: calc(1.2rem / var(--size-divisor));
+  transform: translate(35%, 30%);
+}
+
 @media screen and (max-width: 1100px) {
   :root {
     --size-divisor: 1.5;
@@ -149,12 +156,16 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+  }#grid-buttons{
+    transform: translate(25%, 28%);
   }
 }
 @media screen and (max-width: 380px) {
   :root {
     --size-divisor: 2;
     --div-divisor: 2.6;
+  }#grid-buttons{
+    transform: translate(15%, 28%);
   }
 }
 

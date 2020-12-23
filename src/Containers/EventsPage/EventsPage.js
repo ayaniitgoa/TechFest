@@ -25,12 +25,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            style={{
-              width: "calc(10rem / var(--size-divisor))",
-              height: "calc(8rem / var(--size-divisor))",
-              fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: 'translate(35%, 30%)',
-            }}
+            id='grid-buttons'
           >
             {data.label}
           </button>
@@ -44,12 +39,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            style={{
-              width: "calc(10rem / var(--size-divisor))",
-              height: "calc(8rem / var(--size-divisor))",
-              fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: 'translate(35%, 30%)',
-            }}
+            id='grid-buttons'
           >
             {data.label}
           </button>
@@ -63,12 +53,7 @@ export default class Events extends Component {
             type="button"
             key={data.eventName}
             className="btn btn-light"
-            style={{
-              width: "calc(10rem / var(--size-divisor))",
-              height: "calc(8rem / var(--size-divisor))",
-              fontSize: "calc(1.2rem / var(--size-divisor))",
-              transform: 'translate(35%, 30%)',
-            }}
+            id='grid-buttons'
           >
             {data.label}
           </button>

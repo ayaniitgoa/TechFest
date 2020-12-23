@@ -15,7 +15,7 @@ function App() {
           <Route component={SiteContainer} path="/" exact />
           <Route
             component={IndividualEvent}
-            path="/event/:eventName(fizzbuzz|fiducia|beattheheat|arduinostrial|code2play|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|logicacircuito|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality)"
+            path="/event/:eventName(fizzbuzz|fiducia|beattheheat|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality)"
             exact
           />
           <Route
