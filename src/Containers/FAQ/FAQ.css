@@ -5,7 +5,7 @@
   background: #0d0265;
   background: -webkit-linear-gradient(to bottom, #0d0265, #0e5896);
   background: linear-gradient(to bottom, #0d0265, #0e5896);
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-bottom: 8rem;
@@ -80,11 +80,13 @@
   height: 70%;
   font-size: 1rem;
   overflow: scroll;
+  overflow-x: hidden;
   opacity: 1;
+  border-radius: 20px;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
-} */
+}
 
 .faq__right__button {
   height: 100%;
