@@ -29,7 +29,9 @@
   margin-top: 0;
   transform: translate(25%);
 }
-
+a[style] {
+  width : 0% !important;
+}
 .btn {
   background-color: white;
   text-align: center;
