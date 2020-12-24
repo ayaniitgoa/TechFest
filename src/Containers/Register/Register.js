@@ -1,16 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Register.css";
+import { useHistory } from "react-router-dom";
 
 function Register() {
+  let history = useHistory();
   return (
     <div className="no-register-div">
       <div className="no-register-text">
         <p>Registration Process Will Start Soon!</p>
       </div>
-      <Link to="/">
-        <button className="go-back">Go Back</button>
-      </Link>
+      <button onClick={() => history.goBack()} className="go-back">
+        Go Back
+      </button>
     </div>
   );
 }

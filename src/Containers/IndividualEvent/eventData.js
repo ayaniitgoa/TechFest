@@ -10,7 +10,7 @@ export const data = [
   {
     eventName: "coolyourengine",
     label: "COOL YOUR ENGINE",
-    posterLink: "beattheheat.png",
+    posterLink: "coolyourengine.png",
     eventText:
       "Don’t you hate it when things start boiling up? You’ll be required to use that passion, along with your technical abilities, to design a heat shield for a given engine so that it attains the lowest possible temperature. You also need to make sure that the heat is uniformly distributed throughout the engine, so that you don’t end up burning anyone’s rear. ",
     numOfFields: 3,
@@ -34,9 +34,9 @@ export const data = [
   {
     eventName: "cyberexpert",
     label: "CYBER EXPERT",
-    posterLink: "talk-one.png",
+    posterLink: "talk-three.png",
     eventText:
-      "“Living in a virtual world” is no longer a cliché. But unlike in The Matrix, the threats here are pretty real.. This talk is going to be delivered by the esteemed Mr. Rakshit Tandon who is an International Cybersecurity Expert to acquaint you with the renewed importance of Cybersecurity in times like this global pandemic or otherwise in an ever changing world, the unlimited career prospects in this field and ofcourse, how YOU can begin your Cybersecurity journey.",
+      "Founder of Hackershala, is a veteran in the field of Cyber Security with an experience spanning over two decades during which he has worked as faculty at Police Academies & has taken workshops on Cyber Safety at FICCO, FLO, CII, UN Department of Security & Safety. He is working as a Cyber Security consultant for the IAMAI and is an Advisor to the Cyber Peace Foundation. His extensive contributions in Cyber Security have resulted in him bagging numerous coveted awards and he’s one of the most accomplished people in that field.",
     date: "16th January, 2021- 11:00am to 12:00pm",
     numOfFields: 3,
   },
@@ -52,7 +52,7 @@ export const data = [
   {
     eventName: "fiducia",
     label: "FIDUCIA",
-    posterLink: "fiducia.jpg",
+    posterLink: "fiducia.png",
     eventText:
       "Insecure web applications are among the greatest security threats to organisations today. This session hosted by our very own technical clubs here at IIT Goa, The ArchiTechs and The InfoSec is aimed at helping you gain an appreciation of the attack surface complexity of modern web applications, an insight into how vulnerabilities manifest and how to detect them through means of inference and signatures.",
     date: "10th January, 2021- 4:00pm to 5:00pm",
@@ -78,7 +78,7 @@ export const data = [
   {
     eventName: "circuitaldilemma",
     label: "CIRCUITAL DILEMMA",
-    posterLink: "circuital.jpg",
+    posterLink: "circuital.png",
     eventText:
       "This exciting event is all about showcasing the Einstein-like logical abilities you have in yourself, with a touch of circuit knowledge. You’ll have to design the best possible circuit for the given logical problem statement by using the given basic circuit elements, ensuring that all the time and other constraints are taken care of.",
     date: "16th January, 2021- 12:00pm",
@@ -116,10 +116,19 @@ export const data = [
   {
     eventName: "theillusivereality",
     label: "THE ILLUSIVE REALITY",
-    posterLink:
-      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    posterLink: "talk-one.png",
     eventText:
-      "Augmented reality (AR) and Virtual Reality (VR) bridge the digital and physical worlds, and almost all of you must have experienced this extremely beautiful interactive environment. For this session, we have Mr. TBD who aims to expose students to the potential this technology holds in the coming years, especially in India, about it's industry, experience of working as an AR/VR developer and mostly give them the motivation to begin on this path.",
+      "Having 25+ years of experience in digital tech besides being Country Manager of Yahoo, Altavista, ViaMichelin, Lycos&Napster he founded “Second stAR VR” which is dedicated to adoption of AR and VR,  on which he’s also written a wide-selling book. He is a partner of the business schools in Italy for AR & VR. Since 2019, he is with PwC Technology Consulting as a Senior Advisor for AR & VR whose focus is on the link between AR, Industry 4.0 and IOT change the standards of integrated services.",
+    date: "",
+
+    numOfFields: 3,
+  },
+  {
+    eventName: "xyz",
+    label: "XYZ",
+    posterLink: "talk-two.png",
+    eventText:
+      "(PhD Univ of Wisconsin-Madison), the co-founder of Convergent Science. He’s one of the original developers of Converge, a CFD solver. Besides, he’s a Fellow of Society of Automotive Engineers, the executive committee of the American Society of Mechanical Engineers and is the 2019 recipient of ASME Internal Combustion Engine Award. Apart from being the author of LISA Spray Breakup model which received international recognition, he has written various research papers in the same domain.",
     date: "",
 
     numOfFields: 3,
