@@ -11,16 +11,32 @@ function SocialMedia() {
           <p>techfest@iitgoa.ac.in</p>
         </div>
         <div className="social-icons">
-          <a href="https://www.facebook.com/pages/category/Festival/Cepheus-IIT-GOA-103726818293218/">
+          <a
+            href="https://www.facebook.com/pages/category/Festival/Cepheus-IIT-GOA-103726818293218/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className=" fab fa-facebook"></i>
           </a>
-          <a href="https://instagram.com/cepheus_iitgoa?igshid=yi42u07kqfpa">
+          <a
+            href="https://instagram.com/cepheus_iitgoa?igshid=yi42u07kqfpa"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://twitter.com/cepheus_iitgoa?s=09">
+          <a
+            href="https://twitter.com/cepheus_iitgoa?s=09"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://discord.gg/nTamXZkB">
+          <a
+            href="https://discord.gg/bbnt3RFxzH"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-discord"></i>
           </a>
         </div>
