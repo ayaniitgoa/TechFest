@@ -18,7 +18,17 @@ const talksData = [{
     date: "",
 
     numOfFields: 3,
-  }
+  },
+  {
+    eventName: "iceevhybrid",
+    label: "ICE-EV Hybrid",
+    posterLink: "talk-two.png",
+    eventText:
+      "(PhD Univ of Wisconsin-Madison), the co-founder of Convergent Science. He’s one of the original developers of Converge, a CFD solver. Besides, he’s a Fellow of Society of Automotive Engineers, the executive committee of the American Society of Mechanical Engineers and is the 2019 recipient of ASME Internal Combustion Engine Award. Apart from being the author of LISA Spray Breakup model which received international recognition, he has written various research papers in the same domain.",
+    date: "",
+
+    numOfFields: 3,
+  },
 
 ]
 
