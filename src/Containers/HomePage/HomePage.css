@@ -114,10 +114,15 @@
   flex-direction: column;
   z-index: 1000;
   left: 4vw;
-  bottom: 2.6rem;
+  bottom: 5rem;
 
   /* display: none;  */
   /* top: -10px; */
+}
+
+.google-button {
+  position: relative;
+  z-index: 10000;
 }
 
 .auth-buttons a button {

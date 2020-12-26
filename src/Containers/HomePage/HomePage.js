@@ -10,11 +10,17 @@ import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { GoogleLogin } from "react-google-login";
 
 function HomePage() {
   const [showNav, setShowNav] = useState(false);
+
   const showNavbar = () => {
     setShowNav(!showNav);
+  };
+
+  const responseGoogle = (response) => {
+    console.log(response);
   };
 
   return (
@@ -42,15 +48,22 @@ function HomePage() {
           src={sky}
           alt=""
         />
+
+        <GoogleLogin
+          clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
+          buttonText="Login"
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+          cookiePolicy={"single_host_origin"}
+          className="google-button"
+        />
+
         <div className="auth-buttons">
           <Link to="/register">
-            <button>Sign Up</button>
-          </Link>
-
-          <Link to="/register">
-            <button>Login</button>
+            <button>Register</button>
           </Link>
         </div>
+
         <motion.img
           initial={{ x: "-100vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

@@ -4,7 +4,7 @@ import SiteContainer from "./Containers/SiteContainer/SiteContainer";
 import PageNotFound from "./Containers/404Page/PageNotFound";
 
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
-// import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
+import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
 import Register from "./Containers/Register/Register";
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
             path="/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)"
             exact
           />
-          {/* <Route
+          <Route
             component={IndividualEventRegistraion}
-            path="/event/:eventName/register"
+            path="/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)/register"
             exact
-          /> */}
+          />
           <Route component={Register} path="/register" exact />
           <Route component={PageNotFound} />
         </Switch>
