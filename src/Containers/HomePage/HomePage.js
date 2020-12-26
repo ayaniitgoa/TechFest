@@ -8,11 +8,11 @@ import iitgoaLogo from "./IIT-Goa-Logo-White.svg";
 import cepheusLogo from "./cepheus-logo-2.svg";
 import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { GoogleLogin } from "react-google-login";
+import { withRouter } from "react-router-dom";
 
-function HomePage() {
+function HomePage(props) {
   const [showNav, setShowNav] = useState(false);
 
   const showNavbar = () => {
@@ -20,7 +20,10 @@ function HomePage() {
   };
 
   const responseGoogle = (response) => {
-    console.log(response);
+    console.log(response.profileObj.email);
+    localStorage.setItem("userInfo", response.profileObj.email);
+    console.log(props);
+    props.history.push("/register");
   };
 
   return (
@@ -49,19 +52,15 @@ function HomePage() {
           alt=""
         />
 
-        <GoogleLogin
-          clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
-          buttonText="Login"
-          onSuccess={responseGoogle}
-          onFailure={responseGoogle}
-          cookiePolicy={"single_host_origin"}
-          className="google-button"
-        />
-
         <div className="auth-buttons">
-          <Link to="/register">
-            <button>Register</button>
-          </Link>
+          <GoogleLogin
+            clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
+            buttonText="Register"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={"single_host_origin"}
+            className="google-button"
+          />
         </div>
 
         <motion.img
@@ -87,4 +86,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default withRouter(HomePage);

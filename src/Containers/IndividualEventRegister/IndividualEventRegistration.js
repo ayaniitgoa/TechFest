@@ -95,15 +95,19 @@ function IndividualEventRegistraion(props) {
               <div className="ind-eve-register-fields">
                 {Array.apply(null, { length: numOfFields }).map((e, i) => (
                   <div key={i} className="">
-                    <input
-                      name={`email${i + 1}`}
-                      placeholder={`email${i + 1}`}
-                      autoComplete="none"
-                      type="email"
-                      onChange={(e) => {
-                        updateEmails(i, e.target.value);
-                      }}
-                    />
+                    <label className="input-container">
+                      Email {`${i + 1}`}
+                      <input
+                        className="input-field"
+                        name={`email${i + 1}`}
+                        // placeholder={`email${i + 1}`}
+                        autoComplete="none"
+                        type="email"
+                        onChange={(e) => {
+                          updateEmails(i, e.target.value);
+                        }}
+                      />
+                    </label>
                   </div>
                 ))}
               </div>

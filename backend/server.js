@@ -57,22 +57,41 @@ app.get("/", (req, res) => {
 
 // Routes
 
-app.post("/api/register/mail", (req, res) => {
+// app.post("/api/register/google", async (req, res) => {
+//   try {
+//     console.log(req.body.email);
+//     const email = req.body.email;
+//     await User.findOne({ email }, async (err, user) => {
+//       if (err) {
+//         return res.send({
+//           status: 409,
+//           msg: "Registration unsuccessful, please try again later!",
+//         });
+//       } else {
+//         const newUser = new User({
+//           email,
+//         });
+//         await newUser.save();
+//       }
+//     });
+//   } catch (error) {}
+// });
+
+app.post("/api/register/mail", async (req, res) => {
   try {
     let email = req.body.email;
     let name = req.body.name;
     let contact = req.body.contact;
     let college = req.body.college;
-    let password = req.body.password;
 
-    if (!email || !name || !contact || !college || !password) {
+    if (!email || !name || !contact || !college) {
       return res.send({
         status: "409",
         msg: "Please fill all the fields",
       });
     }
 
-    User.findOne({ email }, (err, user) => {
+    await User.findOne({ email }, async (err, user) => {
       if (err)
         return res.send({
           status: 409,
@@ -85,80 +104,6 @@ app.post("/api/register/mail", (req, res) => {
         });
       }
       if (!user) {
-        const token = jwt.sign(
-          {
-            email,
-            name,
-            contact,
-            college,
-            password,
-          },
-          "secret",
-          { expiresIn: "1h" }
-        );
-
-        let transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: {
-            user: "ayanadhya1999@gmail.com",
-            pass: "1234ayan",
-          },
-        });
-
-        let mailOptions = {
-          from: "ayanadhya1999@gmail.com",
-          to: email,
-          subject: "Cepheus Registration",
-          html: pug.renderFile(`${__dirname}/views/index.pug`, {
-            email,
-            name,
-            contact,
-            college,
-            password,
-            link: `${process.env.backendURL}/api/confirmregistration/${token}`,
-          }),
-        };
-
-        transporter.sendMail(mailOptions, (err, info) => {
-          console.log(err);
-          if (err)
-            return res.send({
-              status: 409,
-              msg: "Registration unsuccessful, please try again later!",
-            });
-          else {
-            return res.send({
-              status: 200,
-              msg: "Please check your mail and confirm registration!",
-            });
-          }
-        });
-      }
-    });
-  } catch (error) {
-    res.send({
-      status: 400,
-      msg: "Some error occured, please try again later!",
-    });
-  }
-});
-
-app.get("/api/confirmregistration/:token", async (req, res) => {
-  try {
-    const token = req.params.token;
-    jwt.verify(token, "secret", async (err, decoded) => {
-      if (err) {
-        return res.send({
-          status: 409,
-          msg: "Registration unsuccessful, please try again later!",
-        });
-      } else {
-        const email = decoded.email;
-        const password = decoded.password;
-        const college = decoded.college;
-        const contact = decoded.contact;
-        const name = decoded.name;
-
         await User.findOne({ email: email }, async (err, doc) => {
           if (err)
             return res.send({
@@ -167,26 +112,26 @@ app.get("/api/confirmregistration/:token", async (req, res) => {
             });
           if (doc) res.redirect(`${process.env.frontendURL}`);
           if (!doc) {
-            const hashedPassword = await bcrypt.hash(password, 10);
-
             const newUser = new User({
               email,
-              password: hashedPassword,
               college,
               contact,
-              uid: uuidv4(),
               name,
             });
             await newUser.save();
-            res.redirect(`${process.env.frontendURL}`);
+            res.send({
+              status: 201,
+              msg: "Successfully registered!",
+            });
           }
         });
       }
     });
   } catch (error) {
+    console.log(error);
     res.send({
       status: 400,
-      msg: "Some error occured! Please try again later!",
+      msg: "Some error occured, please try again later!",
     });
   }
 });

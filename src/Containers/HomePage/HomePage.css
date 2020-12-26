@@ -109,13 +109,14 @@
 }
 
 .auth-buttons {
+  color: black !important;
   position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 1000;
   left: 4vw;
   bottom: 5rem;
-
+  border-radius: 50px !important;
   /* display: none;  */
   /* top: -10px; */
 }
@@ -123,10 +124,31 @@
 .google-button {
   position: relative;
   z-index: 10000;
+  border-radius: 90px !important;
+  width: 10em;
+  justify-content: center;
+  color: black !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none;
 }
 
-.auth-buttons a button {
-  padding: 10px 20px;
+.google-button:focus {
+  outline: none;
+}
+
+.google-button div {
+  display: none;
+}
+.google-button span {
+  font-family: "Raleway", sans-serif !important;
+  color: black !important;
+  font-size: 1.5rem !important;
+  font-weight: bolder;
+  padding: 10px !important;
+}
+
+/* .auth-buttons a button {
   width: 8em;
   font-size: 1.5em;
   margin-top: 10px;
@@ -135,7 +157,7 @@
   outline: none;
   border: none;
   font-family: "Raleway", sans-serif;
-}
+} */
 
 .auth-buttons a button:focus {
   outline: none;

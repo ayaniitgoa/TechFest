@@ -12,6 +12,10 @@
 
   flex-direction: column;
 }
+
+.college-select {
+  border: none;
+}
 .no-register-text {
   display: flex;
   justify-content: center;
