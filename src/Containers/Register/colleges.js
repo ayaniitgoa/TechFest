@@ -1553,7 +1553,7 @@ export const universities = [
     town: "Chennai",
   },
   {
-    name: "Indian School of Mines",
+    name: "Indian Institute of Technology (ISM), Dhanbad",
     url: "https://www.4icu.org/reviews/2039.htm",
     town: "Dhanbad",
   },
