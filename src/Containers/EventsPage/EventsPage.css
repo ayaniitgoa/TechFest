@@ -21,7 +21,7 @@
   color: white;
   font-family: "Raleway", sans-serif;
 }
-.building {
+.building-events {
   width: 80vw;
   position: absolute;
   right: 0;
@@ -30,7 +30,7 @@
   transform: translate(25%);
 }
 a[style] {
-  width : 0% !important;
+  width: 0% !important;
 }
 .btn {
   background-color: white;

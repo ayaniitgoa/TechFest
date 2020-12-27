@@ -2,7 +2,7 @@
 
 .ind-eve-register {
   background: #6d296d;
-  background: linear-gradient(to bottom, #85325f, #6d296d);
+  background: linear-gradient(to bottom, #85325f, #6d296d, #6a2a6e);
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   position: relative;
@@ -35,6 +35,20 @@
   border: none;
 }
 
+.ind-eve-register-fields {
+  width: 55vw;
+}
+
+.ind-eve-register-fields input {
+  border-radius: 30px;
+  height: 6vh;
+}
+
+.ind-eve-register-fields label {
+  margin-top: 7px;
+  font-size: 1.3rem;
+}
+
 .ind-event-back-register {
   font-size: 3rem;
   margin-left: 2rem;
@@ -57,16 +71,38 @@
   text-align: center;
 }
 
+.ind-register-label {
+  color: white;
+}
+
 .ind-pantheon-register {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 80vw;
+  opacity: 0.5;
+}
+.ind-submit {
+  position: relative;
+
+  left: 50%;
+  margin-top: 25px;
+  transform: translateX(-50%);
+  background-color: white;
+  height: 55px;
+  width: 160px;
+  border-radius: 49px;
+
+  border: none;
+}
+
+.ind-submit:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 800px) {
   .ind-eve-title-register {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 70vw;
   }
 
@@ -74,5 +110,27 @@
     font-size: 2rem;
     color: white;
     margin-left: 1rem;
+  }
+
+  .ind-eve-register-fields {
+    width: 70vw;
+  }
+  .ind-eve-register-fields label {
+    margin-top: 7px;
+    font-size: 1rem;
+  }
+
+  .ind-submit {
+    position: relative;
+
+    left: 50%;
+    margin-top: 25px;
+    transform: translateX(-50%);
+    background-color: white;
+    height: 40px;
+    width: 110px;
+    border-radius: 49px;
+
+    border: none;
   }
 }

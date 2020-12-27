@@ -84,7 +84,14 @@ app.post("/api/register/mail", async (req, res) => {
     let contact = req.body.contact;
     let college = req.body.college;
 
-    if (!email || !name || !contact || !college) {
+    if (!email) {
+      return res.send({
+        status: "409",
+        msg: "Please register using Google from the Home Page",
+      });
+    }
+
+    if (!name || !contact || !college) {
       return res.send({
         status: "409",
         msg: "Please fill all the fields",

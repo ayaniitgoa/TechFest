@@ -19,7 +19,7 @@ function EventBg() {
         ref={ref}
         animate={controls}
         initial="hidden"
-        className="building"
+        className="building-events"
         src={pantheon}
         alt="Building"
         variants={{

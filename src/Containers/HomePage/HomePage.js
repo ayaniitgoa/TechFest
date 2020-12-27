@@ -20,8 +20,13 @@ function HomePage(props) {
   };
 
   const responseGoogle = (response) => {
-    console.log(response.profileObj.email);
+    console.log(response);
+    JSON.stringify([response.profileObj.name, response.profileObj.email]);
     localStorage.setItem("userInfo", response.profileObj.email);
+    localStorage.setItem(
+      "userInfo2",
+      JSON.stringify([response.profileObj.name, response.profileObj.email])
+    );
     console.log(props);
     props.history.push("/register");
   };

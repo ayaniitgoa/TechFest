@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
-// import Sky from "./sky.svg";
-// import Sand from "./sands.svg";
-// import Building from "./buildings.svg";
+import Sky from "./sky.svg";
+import Sand from "./sands.svg";
+import Building from "./buildings.svg";
+import Moon from "./moon.svg";
 import { universities } from "./colleges";
 
 import { variables } from "../../variables";
@@ -22,6 +23,8 @@ function Register(props) {
   useEffect(() => {
     if (localStorage.getItem("userInfo")) {
       setEmail(localStorage.getItem("userInfo"));
+      const userInfo = JSON.parse(localStorage.getItem("userInfo2"));
+      setName(userInfo[0]);
     } else {
       props.history.push("/");
     }
@@ -56,9 +59,13 @@ function Register(props) {
   };
   return (
     <div className="register-div">
-      {/* <img src={Sky} className="sky"/>
-        <img src={Sand} className="sand"/>
-        <img src={Building} className="building"/> */}
+      <div className="background-register">
+        <img src={Sky} className="sky" />
+        <img src={Sand} className="sand" />
+        <img src={Building} className="building" />
+      </div>
+      <img src={Moon} className="moon" alt="" />
+
       <Link to="/">
         <i className="ind-event-back fas fa-chevron-left"></i>
       </Link>
@@ -77,69 +84,63 @@ function Register(props) {
       )}
       <form onSubmit={register}>
         <div className="registration-form">
-          <label className="input-container">
-            Name:
-            <input
-              className="input-field"
-              name="Name"
-              type="text"
-              value={name}
-              required
-              // placeholder="Name"
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            />
+          <label className="label-register-form" htmlFor="name">
+            Name
           </label>
-          <div className="input-container">
-            <label htmlFor="exampleFormControlSelect1">College</label>
-            <select
-              className="form-control college-select"
-              id="exampleFormControlSelect1"
-              onChange={(e) => {
-                setCollege(e.target.value);
-              }}
-            >
-              {universities.map((university, i) => {
-                return (
-                  <option key={i}>
-                    {" "}
-                    {university.name}
-                    {university.town ? "," : null} {university.town}{" "}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
 
-          {/* <label className="input-container">
-            College:
-            <input
-              className="input-field"
-              name="college"
-              type="text"
-              value={college}
-              required
-              onChange={(e) => {
-                setCollege(e.target.value);
-              }}
-            />
-          </label> */}
-          <label className="input-container">
-            Contact:
-            <input
-              className="input-field"
-              title="Enter 10 digit mobile number"
-              name="contact"
-              type="text"
-              value={contact}
-              required
-              pattern="[1-9]{1}[0-9]{9}"
-              onChange={(e) => {
-                setContact(e.target.value);
-              }}
-            />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value={name}
+            required
+            // placeholder="Name"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            className="form-control"
+          />
+
+          <label
+            className="label-register-form"
+            htmlFor="exampleFormControlSelect1"
+          >
+            College
           </label>
+          <select
+            className="form-control college-select"
+            id="exampleFormControlSelect1"
+            onChange={(e) => {
+              setCollege(e.target.value);
+            }}
+          >
+            {universities.map((university, i) => {
+              return (
+                <option key={i}>
+                  {" "}
+                  {university.name}
+                  {university.town ? "," : null} {university.town}{" "}
+                </option>
+              );
+            })}
+          </select>
+
+          <label className="label-register-form" htmlFor="contact">
+            Contact
+          </label>
+          <input
+            id="contact"
+            className="form-control"
+            title="Enter 10 digit mobile number"
+            name="contact"
+            type="text"
+            value={contact}
+            required
+            pattern="[1-9]{1}[0-9]{9}"
+            onChange={(e) => {
+              setContact(e.target.value);
+            }}
+          />
 
           <button type="submit" className="sign-up">
             Register
