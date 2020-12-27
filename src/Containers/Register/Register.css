@@ -175,8 +175,35 @@
     width: 100%;
     position: relative;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-top: -6px;
     /* left: 50%; */
     /* transform: translateX(-50%); */
+  }
+
+  .sign-up {
+    position: relative;
+
+    left: 50%;
+    margin-top: 25px;
+    transform: translateX(-50%);
+    background-color: white;
+    height: 40px;
+    width: 110px;
+    border-radius: 49px;
+
+    border: none;
+  }
+
+  .label-register-form {
+    color: white;
+    margin-top: 17px;
+    font-size: 1.1rem;
+  }
+
+  .registration-form > input,
+  .registration-form > select {
+    height: 6vh;
+    border-radius: 30px;
   }
 }
