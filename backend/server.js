@@ -186,6 +186,35 @@ app.post("/api/:eventName/register", async (req, res) => {
         msg: "Atleast one participant email is required",
       });
     }
+
+    if (req.params.eventName === "arduinostrial" && req.body.email.length < 2) {
+      return res.send({
+        status: 409,
+        msg: "Each team should have two members.",
+      });
+    }
+    if (req.params.eventName === "uniteforunity" && req.body.email.length < 3) {
+      return res.send({
+        status: 409,
+        msg: "Each team must have atleast three members.",
+      });
+    }
+    if (req.params.eventName === "hackoverflow" && req.body.email.length < 3) {
+      return res.send({
+        status: 409,
+        msg: "Each team must have atleast three members.",
+      });
+    }
+    if (
+      req.params.eventName === "chitchatwithchatbot" &&
+      req.body.email.length < 3
+    ) {
+      return res.send({
+        status: 409,
+        msg: "Each team must have atleast three members.",
+      });
+    }
+
     for (var i = 0; i < req.body.email.length; i++) {
       await User.findOne({ email: req.body.email[i] }, (err, user) => {
         console.log(user);

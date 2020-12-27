@@ -101,6 +101,15 @@
   opacity: 0.2;
 }
 
+.reg-back-btn {
+  font-size: 3rem;
+  margin-left: 2rem;
+  position: relative;
+  top: 3.5rem;
+  z-index: 15;
+  color: white;
+}
+
 .sand {
   width: 100vw;
   position: absolute;
@@ -133,14 +142,6 @@
   opacity: 0.3;
 }
 
-.ind-event-back {
-  position: relative;
-  left: 30px;
-  top: 30px;
-  margin: 0;
-  z-index: 17;
-}
-
 @media screen and (max-width: 850px) {
   .registration-form {
     width: 70vw;
@@ -166,6 +167,15 @@
   .sand {
     height: 35vh;
   }
+
+  .reg-back-btn {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    position: relative;
+    top: 2.5rem;
+    z-index: 15;
+    color: white;
+  }
 }
 @media screen and (max-width: 500px) {
   .moon {
@@ -175,21 +185,24 @@
     opacity: 0.3;
   }
 
-  .ind-event-back {
-    position: relative;
-    top: 60px;
-    left: 10px;
-    font-size: 1.5rem;
-  }
-
   .register-div > p {
     width: 100%;
     position: relative;
     text-align: center;
     font-size: 1.7rem;
     margin-top: -6px;
+    margin-bottom: 30px;
     /* left: 50%; */
     /* transform: translateX(-50%); */
+  }
+
+  .reg-back-btn {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    position: relative;
+    top: 3.5rem;
+    z-index: 15;
+    color: white;
   }
 
   .sign-up {

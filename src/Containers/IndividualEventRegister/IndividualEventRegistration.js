@@ -73,7 +73,7 @@ function IndividualEventRegistraion(props) {
     <div>
       <div className="ind-eve-register">
         <Link to="/">
-          <i className="ind-event-back-register ind-event-back fas fa-chevron-left"></i>
+          <i className="ind-event-back-register fas fa-chevron-left"></i>
         </Link>
         <div className="ind-eve-register-main">
           <div className="ind-eve-title-register">
@@ -96,7 +96,11 @@ function IndividualEventRegistraion(props) {
                 {Array.apply(null, { length: numOfFields }).map((e, i) => (
                   <div key={i} className="">
                     <label className="ind-register-label">
-                      {i === 0 ? "Team Leader" : `Team Member ${i + 1}`}
+                      {numOfFields === 1
+                        ? "Please enter your email"
+                        : i === 0
+                        ? "Team Leader"
+                        : `Team Member ${i + 1}`}
                     </label>
                     <input
                       className="form-control"

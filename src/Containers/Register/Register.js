@@ -68,7 +68,7 @@ function Register(props) {
       <img src={Moon} className="moon" alt="" />
 
       <Link to="/">
-        <i className="ind-event-back fas fa-chevron-left"></i>
+        <i className="reg-back-btn fas fa-chevron-left"></i>
       </Link>
 
       <p className="title">Cepheus Registration</p>

@@ -17,7 +17,10 @@
 .ind-event-back {
   font-size: 3rem;
   color: white;
-  margin-left: 2rem;
+  position: relative;
+  left: 10px;
+  top: 0px !important;
+  /* margin-left: -2rem; */
 }
 
 .ind-event-content {
@@ -30,7 +33,7 @@
 .ind-event-title {
   font-size: 3rem;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 80px;
 
   color: white;
   /* position: relative;
@@ -89,15 +92,23 @@
 @media only screen and (max-width: 640px) {
   .ind-event-back {
     font-size: 2rem;
+    position: absolute;
+    top: -30px;
   }
 
   .ind-event-title {
     font-size: 1.8rem;
     /* position: relative; */
     /* top: 30px; */
-    position: relative;
+    /* margin-left: 30px; */
+    position: absolute;
     /* left: 50%; */
     text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 0;
+
     /* transform: translateX(-50%); */
     /* margin-left: -2px; */
     /* width: 100%; */
@@ -109,7 +120,7 @@
     z-index: 10;
     position: relative;
     bottom: 0;
-    margin-top: 0rem;
+    margin-top: 2.5rem;
     /* margin-top: 1rem; */
   }
 
@@ -131,5 +142,14 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;
+  }
+
+  .ind-event-back {
+    /* font-size: 3rem; */
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 0px !important;
+    /* margin-left: -2rem; */
   }
 }

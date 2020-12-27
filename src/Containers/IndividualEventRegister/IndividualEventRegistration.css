@@ -55,6 +55,7 @@
   position: relative;
   top: 2.5rem;
   z-index: 15;
+  color: white;
 }
 
 .ind-eve-register-main {
@@ -107,9 +108,10 @@
   }
 
   .ind-event-back-register {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin-left: 1rem;
+    top: 30px;
   }
 
   .ind-eve-register-fields {

@@ -5,7 +5,7 @@ export const data = [
     posterLink: "arduino.png",
     eventText:
       "Atlantis is in havoc. Thanks to the sloppiness of you and your fellow staff members, there’s been a jailbreak. You have been summoned to the trial where you must complete a series of technical tasks to prove your innocence. You’ll be required to design a car that would detect and avoid obstacles in order to escort the convict back to prison, where you need to build a robust security system to ensure these shenanigans don’t occur again. See if you can swim away from this.",
-    numOfFields: 5,
+    numOfFields: 2,
   },
   {
     eventName: "coolyourengine",
@@ -21,7 +21,7 @@ export const data = [
     posterLink: "uniteforunity.png",
     eventText:
       "There’s no modern art as popular as coding. And there’s no pass-time as appealing as gaming. Unite for Unity invites the digital Picasso in you to develop a non-graphic terminal-based game on a given set of themes. It hardly matters if you enjoy the storyline or the multiplayer, because this event encourages both solo and team participation. Make sure to put your game-face on!",
-    numOfFields: 3,
+    numOfFields: 4,
   },
   {
     eventName: "chitchatwithchatbot",
@@ -29,7 +29,7 @@ export const data = [
     posterLink: "chitchat.png",
     eventText:
       "Has the lockdown put a halt to your hangouts? We understand. Join us in a live coding workshop that’ll teach you how to build a chat-bot, without any prior knowledge about the same. You can also test your ability in a contest that will follow, where you’ll be asked to design a chat-bot of your own adhering to the given problem statement, so you never have to worry about having no one to talk to.",
-    numOfFields: 3,
+    numOfFields: 4,
   },
   {
     eventName: "cyberexpert",
@@ -38,7 +38,7 @@ export const data = [
     eventText:
       "Founder of Hackershala, is a veteran in the field of Cyber Security with an experience spanning over two decades during which he has worked as faculty at Police Academies & has taken workshops on Cyber Safety at FICCO, FLO, CII, UN Department of Security & Safety. He is working as a Cyber Security consultant for the IAMAI and is an Advisor to the Cyber Peace Foundation. His extensive contributions in Cyber Security have resulted in him bagging numerous coveted awards and he’s one of the most accomplished people in that field.",
     date: "16th January, 2021- 11:00am to 12:00pm",
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "fizzbuzz",
@@ -56,7 +56,7 @@ export const data = [
     eventText:
       "Insecure web applications are among the greatest security threats to organisations today. This session hosted by our very own technical clubs here at IIT Goa, The ArchiTechs and The InfoSec is aimed at helping you gain an appreciation of the attack surface complexity of modern web applications, an insight into how vulnerabilities manifest and how to detect them through means of inference and signatures.",
     date: "10th January, 2021- 4:00pm to 5:00pm",
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "framethecrane",
@@ -64,7 +64,7 @@ export const data = [
     posterLink: "framethecrane.png",
     eventText:
       "In this thrilling open event, the participants are required to design a crane which can sustain maximum load, along with ensuring that certain constraints are satisfied. Don't worry, you won't have to carry all the weight( or should I say load?) on your shoulders alone! You can also choose to form a team consisting of at most 4 members.",
-    numOfFields: 3,
+    numOfFields: 4,
   },
   {
     eventName: "hackoverflow",
@@ -73,7 +73,7 @@ export const data = [
     eventText:
       "In this unparalleled event you’ll be working in a team, to create a web/app fulfilling all the given standards within 36 hours. But that’s not all!  You’ll be allotted points based on creativity too, because as we all know-There IS no innovation without creativity.",
     date: "16th January, 2021- 12:00pm",
-    numOfFields: 3,
+    numOfFields: 4,
   },
   {
     eventName: "circuitaldilemma",
@@ -101,7 +101,7 @@ export const data = [
       "This event is not just an ordinary python workshop, it’s much much more. You’ll greatly enhance the python coder you have within you, along with also learning many different automated tasks you can do with python. Yeah, you heard it right, Automated! These include repetitive mundane tasks like taking backup of your system, sending emails, sending WhatsApp messages to a list of contacts, prioritising tasks, segregating stuff and much more.",
     date: "",
 
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "takecharge",
@@ -111,7 +111,7 @@ export const data = [
       "This extremely informative event will teach you much about the magical powers Linux has in this field of Operating Systems! You’ll also learn how to install Windows Subsystem for Linux(WSL), and after that you’ll smoothly wander in the commands of linux, which go way beyond just navigation in the terminal. If you got any queries regarding these things, this hands-on workshop is the best opportunity for you to clear them up!",
     date: "",
 
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "theillusivereality",
@@ -121,7 +121,7 @@ export const data = [
       "Having 25+ years of experience in digital tech besides being Country Manager of Yahoo, Altavista, ViaMichelin, Lycos&Napster he founded “Second stAR VR” which is dedicated to adoption of AR and VR,  on which he’s also written a wide-selling book. He is a partner of the business schools in Italy for AR & VR. Since 2019, he is with PwC Technology Consulting as a Senior Advisor for AR & VR whose focus is on the link between AR, Industry 4.0 and IOT change the standards of integrated services.",
     date: "",
 
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "iceevhybrid",
@@ -131,6 +131,6 @@ export const data = [
       "(PhD Univ of Wisconsin-Madison), the co-founder of Convergent Science. He’s one of the original developers of Converge, a CFD solver. Besides, he’s a Fellow of Society of Automotive Engineers, the executive committee of the American Society of Mechanical Engineers and is the 2019 recipient of ASME Internal Combustion Engine Award. Apart from being the author of LISA Spray Breakup model which received international recognition, he has written various research papers in the same domain.",
     date: "",
 
-    numOfFields: 3,
+    numOfFields: 1,
   },
 ];

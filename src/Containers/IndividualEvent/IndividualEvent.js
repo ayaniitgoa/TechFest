@@ -20,7 +20,7 @@ function IndividualEvent(props) {
     <div className="ind-eve">
       <div className="ind-event-top">
         <a href="/#events-section">
-          <i className="ind-event-back fas fa-chevron-left"></i>
+          <i className="ind-event-back  fas fa-chevron-left"></i>
         </a>
         <p className="ind-event-title">{eventData && eventData.label}</p>
       </div>
