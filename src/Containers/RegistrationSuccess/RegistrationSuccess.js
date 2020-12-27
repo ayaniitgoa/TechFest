@@ -6,7 +6,6 @@ import Row from "react-bootstrap/Row";
 import { Link } from "react-router-dom";
 
 function RegistrationSuccess() {
-
   const calculateTimeLeft = () => {
     var countDownDate = new Date("Jan 15, 2021 00:00:00").getTime();
     var now = new Date().getTime();
@@ -18,11 +17,11 @@ function RegistrationSuccess() {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
-    };
-    return timeLeft;
-  }
-}
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+      return timeLeft;
+    }
+  };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   useEffect(() => {
@@ -31,7 +30,7 @@ function RegistrationSuccess() {
     }, 1000);
     return () => clearTimeout(timer);
   });
-  
+
   return (
     <div className="reg-sec">
       <Link to="/">
@@ -40,9 +39,9 @@ function RegistrationSuccess() {
       <img className="building-reg" src={pantheon} alt="Building" />
       <div className="main-div">
         <img className="logo" src={cepeus} alt="" />
-        <p className="heading">Registration SuccessFul!</p>
+        <p className="heading">Registration Successful!</p>
         <div className="timer-div">
-          <h4 className='timer-div-title'>COMING SOON</h4>
+          <h4 className="timer-div-title">COMING SOON</h4>
           <Row>
             <div className="cc-div">
               <div className="circle-div" id="days">

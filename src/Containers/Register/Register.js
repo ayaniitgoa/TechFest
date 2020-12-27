@@ -10,7 +10,6 @@ import { universities } from "./colleges";
 import { variables } from "../../variables";
 import Loader from "../../loader.svg";
 import Axios from "axios";
-import axios from "axios";
 import { withRouter } from "react-router-dom";
 function Register(props) {
   const [name, setName] = useState("");
@@ -20,28 +19,6 @@ function Register(props) {
   const [msg, setMsg] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [showLoader, setShowLoader] = useState(false);
-
-  useEffect(() => {
-    if (localStorage.getItem("userInfo")) {
-      const email = localStorage.getItem("userInfo");
-
-      axios
-        .post(
-          `${variables.backendURL}/api/checkuser`,
-
-          {
-            email,
-          },
-          { withCredentials: true }
-        )
-        .then((res) => {
-          if (res.data.user.email) {
-            console.log("user", res.data);
-            props.history.push("/register/success");
-          }
-        });
-    }
-  }, [props.history]);
 
   useEffect(() => {
     if (localStorage.getItem("userInfo")) {

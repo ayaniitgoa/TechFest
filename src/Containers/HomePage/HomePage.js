@@ -11,6 +11,8 @@ import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
 import { motion } from "framer-motion";
 import { GoogleLogin } from "react-google-login";
 import { withRouter } from "react-router-dom";
+import axios from "axios";
+import { variables } from "../../variables";
 
 function HomePage(props) {
   const [showNav, setShowNav] = useState(false);
@@ -21,14 +23,33 @@ function HomePage(props) {
 
   const responseGoogle = (response) => {
     console.log(response);
-    JSON.stringify([response.profileObj.name, response.profileObj.email]);
-    localStorage.setItem("userInfo", response.profileObj.email);
-    localStorage.setItem(
-      "userInfo2",
-      JSON.stringify([response.profileObj.name, response.profileObj.email])
-    );
-    console.log(props);
-    props.history.push("/register");
+    axios
+      .post(
+        `${variables.backendURL}/api/checkuser`,
+
+        {
+          email: response.profileObj.email,
+        },
+        { withCredentials: true }
+      )
+      .then((res) => {
+        if (res.data.user.email) {
+          console.log("user", res.data);
+          props.history.push("/register/success");
+        } else {
+          JSON.stringify([response.profileObj.name, response.profileObj.email]);
+          localStorage.setItem("userInfo", response.profileObj.email);
+          localStorage.setItem(
+            "userInfo2",
+            JSON.stringify([
+              response.profileObj.name,
+              response.profileObj.email,
+            ])
+          );
+          console.log(props);
+          props.history.push("/register");
+        }
+      });
   };
 
   return (
