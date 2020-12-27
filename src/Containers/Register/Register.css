@@ -110,10 +110,11 @@
   /* opacity: 0.3; */
 }
 
-.building {
+.building-reg-1 {
   position: absolute;
   z-index: 2;
   bottom: 0;
+  right: 0;
   /* opacity: 0.3; */
 }
 
