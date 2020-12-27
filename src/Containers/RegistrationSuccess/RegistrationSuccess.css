@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 .reg-sec {
   width: 100vw !important;
   height: 100vh;
@@ -28,7 +29,7 @@
   color: black;
   text-align: center;
   margin-top: 2rem;
-  padding: 10px 50px 20px 50px;
+  padding: 10px 50px 10px 50px;
   border-radius: 50px;
   position: relative;
   font-size: calc(3rem / var(--size-div));
@@ -64,7 +65,9 @@
   align-items: center;
   padding: 0 10px;
 }
-
+.timer-div-title{
+  font-size: 1.7rem;
+}
 h1 {
   text-align: center;
 }
@@ -101,17 +104,18 @@ h1 {
   }
   .heading {
     margin-top: 1.5rem;
-    padding: 8px 20px 15px 20px;
+    padding: 8px 20px 8px 20px;
     border-radius: 50px;
     position: relative;
     font-size: calc(3rem / var(--size-div));
+  }.timer-div-title{
+    font-size: 1.0rem;
   }
-  h4 {
-    font-size: 1.5rem;
-  }
+  
   .timer-div {
+    border-radius: 40px;
     font-size: 1rem;
-    padding: 10px 35px 15px 35px;
+    padding: 10px 30px 10px 30px;
   }
   .circle-div {
     margin-top: 10px;
