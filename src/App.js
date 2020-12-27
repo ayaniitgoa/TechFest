@@ -6,7 +6,7 @@ import PageNotFound from "./Containers/404Page/PageNotFound";
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
 import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
 import Register from "./Containers/Register/Register";
-import RegistrationSuccess from "./Containers/Registration/RegistrationSuccess";
+import RegistrationSuccess from "./Containers/RegistrationSuccess/RegistrationSuccess";
 // import EventRegistrationSuccess from "./Containers/EventRegistrationSuccess/EventRegistrationSuccess";
 
 function App() {
