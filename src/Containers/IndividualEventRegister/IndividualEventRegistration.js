@@ -96,12 +96,12 @@ function IndividualEventRegistraion(props) {
                 {Array.apply(null, { length: numOfFields }).map((e, i) => (
                   <div key={i} className="">
                     <label className="ind-register-label">
-                      Email {`${i + 1}`}
+                      {i === 0 ? "Team Leader" : `Team Member ${i + 1}`}
                     </label>
                     <input
                       className="form-control"
                       name={`email${i + 1}`}
-                      // placeholder={`email${i + 1}`}
+                      placeholder={`email`}
                       autoComplete="none"
                       type="email"
                       onChange={(e) => {
