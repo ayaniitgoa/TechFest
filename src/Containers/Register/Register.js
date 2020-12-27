@@ -60,9 +60,9 @@ function Register(props) {
   return (
     <div className="register-div">
       <div className="background-register">
-        <img src={Sky} className="sky" />
-        <img src={Sand} className="sand" />
-        <img src={Building} className="building" />
+        <img src={Sky} className="sky" alt="" />
+        <img src={Sand} className="sand" alt="" />
+        <img src={Building} className="building" alt="" />
       </div>
       <img src={Moon} className="moon" alt="" />
 
