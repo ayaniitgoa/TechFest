@@ -143,6 +143,39 @@ app.post("/api/register/mail", async (req, res) => {
   }
 });
 
+app.post("/api/checkuser", (req, res) => {
+  console.log(req.body);
+  try {
+    User.findOne({ email: req.body.email }, (err, user) => {
+      if (err) {
+        return res.send({
+          status: 400,
+          msg: "Registration failed, Please try again.",
+        });
+      }
+      if (!user) {
+        return res.send({
+          status: 200,
+          msg: "User not registered",
+          user: {},
+        });
+      }
+      if (user) {
+        return res.send({
+          status: 200,
+          msg: "User found",
+          user: user,
+        });
+      }
+    });
+  } catch (error) {
+    return res.send({
+      status: 400,
+      msg: "Registration unsuccessful! Please try again",
+    });
+  }
+});
+
 app.post("/api/:eventName/register", async (req, res) => {
   try {
     let userIds = [];

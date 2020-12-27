@@ -6,6 +6,7 @@ import PageNotFound from "./Containers/404Page/PageNotFound";
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
 import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
 import Register from "./Containers/Register/Register";
+import RegistrationSuccess from "./Containers/Registration/RegistrationSuccess";
 // import EventRegistrationSuccess from "./Containers/EventRegistrationSuccess/EventRegistrationSuccess";
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
             exact
           />
           <Route component={Register} path="/register" exact />
+          <Route
+            component={RegistrationSuccess}
+            path="/register/success"
+            exact
+          />
           {/* <Route
             component={EventRegistrationSuccess}
             path="/register/:eventName/success"
