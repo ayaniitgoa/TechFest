@@ -115,6 +115,7 @@
   z-index: 2;
   bottom: 0;
   right: 0;
+  width: 65vw;
   /* opacity: 0.3; */
 }
 
@@ -156,6 +157,14 @@
     position: absolute;
     width: 7rem;
     right: 20px;
+  }
+
+  .building-reg-1 {
+    width: 100vw;
+  }
+
+  .sand {
+    height: 35vh;
   }
 }
 @media screen and (max-width: 500px) {
