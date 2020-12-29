@@ -35,7 +35,7 @@ function HomePage(props) {
       .then((res) => {
         if (res.data.user.email) {
           console.log("user", res.data);
-          props.history.push("/register/success");
+          props.history.push("/~students/Cepheus/register/success");
         } else {
           JSON.stringify([response.profileObj.name, response.profileObj.email]);
           localStorage.setItem("userInfo", response.profileObj.email);
@@ -47,7 +47,7 @@ function HomePage(props) {
             ])
           );
           console.log(props);
-          props.history.push("/register");
+          props.history.push("/~students/Cepheus/register");
         }
       });
   };

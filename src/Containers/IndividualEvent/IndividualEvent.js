@@ -19,7 +19,7 @@ function IndividualEvent(props) {
   return (
     <div className="ind-eve">
       <div className="ind-event-top">
-        <a href="/#events-section">
+        <a href="/~students/Cepheus/#events-section">
           <i className="ind-event-back  fas fa-chevron-left"></i>
         </a>
         <p className="ind-event-title">{eventData && eventData.label}</p>
@@ -27,14 +27,19 @@ function IndividualEvent(props) {
       <div className="ind-event-content">
         <img
           className="ind-event-poster"
-          src={process.env.PUBLIC_URL + `/posters/${eventData.posterLink}`}
+          src={
+            process.env.PUBLIC_URL +
+            `/~students/Cepheus/posters/${eventData.posterLink}`
+          }
           alt=""
         />
         <div className="ind-event-text">
           <p>{eventData && eventData.eventText}</p>
         </div>
       </div>
-      <Link to={`/event/${props.match.params.eventName}/register`}>
+      <Link
+        to={`/~students/Cepheus/event/${props.match.params.eventName}/register`}
+      >
         <button className="ind-register-btn">Register</button>
       </Link>
       {/* <Link to={`/register`}>

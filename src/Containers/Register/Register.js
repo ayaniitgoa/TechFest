@@ -67,7 +67,7 @@ function Register(props) {
       </div>
       <img src={Moon} className="moon" alt="" />
 
-      <Link to="/">
+      <Link to="/~students/Cepheus">
         <i className="reg-back-btn fas fa-chevron-left"></i>
       </Link>
 
