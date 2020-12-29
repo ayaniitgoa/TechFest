@@ -89,26 +89,6 @@ app.get("/", (req, res) => {
 
 // Routes
 
-// app.post("/api/register/google", async (req, res) => {
-//   try {
-//     console.log(req.body.email);
-//     const email = req.body.email;
-//     await User.findOne({ email }, async (err, user) => {
-//       if (err) {
-//         return res.send({
-//           status: 409,
-//           msg: "Registration unsuccessful, please try again later!",
-//         });
-//       } else {
-//         const newUser = new User({
-//           email,
-//         });
-//         await newUser.save();
-//       }
-//     });
-//   } catch (error) {}
-// });
-
 app.post("/api/register/mail", async (req, res) => {
   try {
     let email = req.body.email;
