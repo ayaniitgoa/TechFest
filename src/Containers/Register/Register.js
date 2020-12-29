@@ -26,7 +26,7 @@ function Register(props) {
       const userInfo = JSON.parse(localStorage.getItem("userInfo2"));
       setName(userInfo[0]);
     } else {
-      props.history.push("/");
+      props.history.push("/~students/Cepheus");
     }
   }, [props.history]);
 
@@ -54,7 +54,7 @@ function Register(props) {
       } else {
         setMsg(res.data.msg);
         setErrMsg("");
-        props.history.push("/register/success");
+        props.history.push("/~students/Cepheus/register/success");
       }
     });
   };
