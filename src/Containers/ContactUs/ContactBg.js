@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 // import pantheon from "./pantheon.svg";
-import underwaterCity from "./underwater-city.svg";
+import underwaterCity from "./underwater-cityv2.svg";
 import "./ContactUs.css";
 
 function EventBg() {

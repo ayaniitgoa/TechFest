@@ -57,11 +57,11 @@
   position: relative;
   z-index: -1;
   width: 100vw;
-  /* right: -65px; */
+  right: 50px;
 }
 
 .underwater-city {
-  width: 100vw;
+  width: 116vw;
   margin-top: -50vh;
   /* margin-right: -65px; */
 
@@ -80,6 +80,10 @@
   background: none !important;
 }
 
+.mobile-contact-us {
+  display: none !important;
+}
+
 @media only screen and (min-width: 2200px) {
   .underwater-city {
     /* width: 90vw; */
@@ -91,6 +95,10 @@
     font-size: 0.9rem;
   }
 
+  .underwater-city {
+    width: 115vw;
+  }
+
   .contact-photo {
     width: 10rem;
     height: 10rem;
@@ -98,7 +106,7 @@
 }
 @media only screen and (max-width: 650px) {
   .underwater-city {
-    width: 100vw;
+    width: 130vw;
     margin-top: -15vh;
   }
   .underwater-img-div {
@@ -115,5 +123,13 @@
 
   .contact-text {
     font-size: 0.7rem;
+  }
+
+  .mobile-contact-us {
+    display: block !important;
+  }
+
+  .laptop-contact-us {
+    display: none !important;
   }
 }

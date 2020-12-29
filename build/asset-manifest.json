@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/~students/Cepheus/static/css/main.ea49f3e7.chunk.css",
-    "main.js": "/~students/Cepheus/static/js/main.235849a8.chunk.js",
-    "main.js.map": "/~students/Cepheus/static/js/main.235849a8.chunk.js.map",
+    "main.css": "/~students/Cepheus/static/css/main.2a3b092c.chunk.css",
+    "main.js": "/~students/Cepheus/static/js/main.9200fcc2.chunk.js",
+    "main.js.map": "/~students/Cepheus/static/js/main.9200fcc2.chunk.js.map",
     "runtime-main.js": "/~students/Cepheus/static/js/runtime-main.ba254852.js",
     "runtime-main.js.map": "/~students/Cepheus/static/js/runtime-main.ba254852.js.map",
     "static/css/2.0713ded5.chunk.css": "/~students/Cepheus/static/css/2.0713ded5.chunk.css",
-    "static/js/2.71bf288d.chunk.js": "/~students/Cepheus/static/js/2.71bf288d.chunk.js",
-    "static/js/2.71bf288d.chunk.js.map": "/~students/Cepheus/static/js/2.71bf288d.chunk.js.map",
+    "static/js/2.caf8d2af.chunk.js": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js",
+    "static/js/2.caf8d2af.chunk.js.map": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js.map",
     "static/js/3.fa02d948.chunk.js": "/~students/Cepheus/static/js/3.fa02d948.chunk.js",
     "static/js/3.fa02d948.chunk.js.map": "/~students/Cepheus/static/js/3.fa02d948.chunk.js.map",
     "index.html": "/~students/Cepheus/index.html",
     "static/css/2.0713ded5.chunk.css.map": "/~students/Cepheus/static/css/2.0713ded5.chunk.css.map",
-    "static/css/main.ea49f3e7.chunk.css.map": "/~students/Cepheus/static/css/main.ea49f3e7.chunk.css.map",
-    "static/js/2.71bf288d.chunk.js.LICENSE.txt": "/~students/Cepheus/static/js/2.71bf288d.chunk.js.LICENSE.txt",
+    "static/css/main.2a3b092c.chunk.css.map": "/~students/Cepheus/static/css/main.2a3b092c.chunk.css.map",
+    "static/js/2.caf8d2af.chunk.js.LICENSE.txt": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js.LICENSE.txt",
     "static/media/Aaryan.55931e7b.jpg": "/~students/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/~students/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
     "static/media/Darshay.8d0a931b.jpg": "/~students/Cepheus/static/media/Darshay.8d0a931b.jpg",
@@ -23,6 +23,7 @@
     "static/media/bubble.d0afba60.svg": "/~students/Cepheus/static/media/bubble.d0afba60.svg",
     "static/media/buildings-reflection.b690daec.svg": "/~students/Cepheus/static/media/buildings-reflection.b690daec.svg",
     "static/media/buildings.6d525537.svg": "/~students/Cepheus/static/media/buildings.6d525537.svg",
+    "static/media/buildingsv2.ddbb4dff.svg": "/~students/Cepheus/static/media/buildingsv2.ddbb4dff.svg",
     "static/media/cepheus-logo-2.890cf43f.svg": "/~students/Cepheus/static/media/cepheus-logo-2.890cf43f.svg",
     "static/media/cepheus-logo.890cf43f.svg": "/~students/Cepheus/static/media/cepheus-logo.890cf43f.svg",
     "static/media/leftButton.fbe4ffc1.svg": "/~students/Cepheus/static/media/leftButton.fbe4ffc1.svg",
@@ -38,13 +39,13 @@
     "static/media/sky.cc0b0681.svg": "/~students/Cepheus/static/media/sky.cc0b0681.svg",
     "static/media/slick-theme.css": "/~students/Cepheus/static/media/slick.c94f7671.ttf",
     "static/media/techfestlogo.fe7a0099.svg": "/~students/Cepheus/static/media/techfestlogo.fe7a0099.svg",
-    "static/media/underwater-city.f2bb11d3.svg": "/~students/Cepheus/static/media/underwater-city.f2bb11d3.svg"
+    "static/media/underwater-cityv2.656f8ce6.svg": "/~students/Cepheus/static/media/underwater-cityv2.656f8ce6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ba254852.js",
     "static/css/2.0713ded5.chunk.css",
-    "static/js/2.71bf288d.chunk.js",
-    "static/css/main.ea49f3e7.chunk.css",
-    "static/js/main.235849a8.chunk.js"
+    "static/js/2.caf8d2af.chunk.js",
+    "static/css/main.2a3b092c.chunk.css",
+    "static/js/main.9200fcc2.chunk.js"
   ]
 }

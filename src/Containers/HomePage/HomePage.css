@@ -294,6 +294,26 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .google-button {
+    position: relative;
+    z-index: 10000;
+    border-radius: 90px !important;
+    width: 7em;
+    justify-content: center;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    outline: none;
+  }
+
+  .google-button span {
+    font-family: "Raleway", sans-serif !important;
+    color: black !important;
+    font-size: 1rem !important;
+    font-weight: bolder;
+    padding: 10px !important;
+  }
+
   .top-bar {
     margin-left: 1em;
   }

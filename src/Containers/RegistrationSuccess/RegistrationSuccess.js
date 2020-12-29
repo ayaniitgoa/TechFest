@@ -33,7 +33,7 @@ function RegistrationSuccess() {
 
   return (
     <div className="reg-sec">
-      <Link to="/">
+      <Link to="/~students/Cepheus">
         <i className="back-button fas fa-chevron-left"></i>
       </Link>
       <img className="building-reg" src={pantheon} alt="Building" />

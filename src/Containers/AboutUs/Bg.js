@@ -23,7 +23,7 @@ function Bg() {
         src={bulidingimg}
         alt="Building Reflection"
         variants={{
-          visible: { x: 0, opacity: 1 },
+          visible: { x: 0, opacity: 1, zIndex: 10 },
           hidden: { x: "50vw", opacity: 0 },
         }}
         transition={{ duration: 1, delay: 2 }}

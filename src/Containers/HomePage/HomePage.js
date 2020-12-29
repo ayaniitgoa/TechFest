@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./HomePage.css";
 import sky from "./sky.svg";
-import buildings from "./buildings.svg";
+import buildings from "./buildingsv2.svg";
 import sand from "./sands.svg";
 import iitgoaLogo from "./IIT-Goa-Logo-White.svg";
 import cepheusLogo from "./cepheus-logo-2.svg";
