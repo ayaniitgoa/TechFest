@@ -27,10 +27,7 @@ function IndividualEvent(props) {
       <div className="ind-event-content">
         <img
           className="ind-event-poster"
-          src={
-            process.env.PUBLIC_URL +
-            `/~students/Cepheus/posters/${eventData.posterLink}`
-          }
+          src={process.env.PUBLIC_URL + `/posters/${eventData.posterLink}`}
           alt=""
         />
         <div className="ind-event-text">
