@@ -7,7 +7,7 @@ function PageNotFound() {
     <div className="page-not-found">
       <p className="text404">404</p>
       <p className="text-pg">Page Not Found</p>
-      <Link to="/">
+      <Link to="/~students/Cepheus">
         <button className="go-back-404">Go Back</button>
       </Link>
     </div>

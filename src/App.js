@@ -14,21 +14,25 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route component={SiteContainer} path="/" exact />
+          <Route component={SiteContainer} path="/~students/Cepheus" exact />
           <Route
             component={IndividualEvent}
-            path="/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)"
+            path="/~students/Cepheus/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)"
             exact
           />
           <Route
             component={IndividualEventRegistraion}
-            path="/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)/register"
+            path="/~students/Cepheus/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)/register"
             exact
           />
-          <Route component={Register} path="/register" exact />
+          <Route
+            component={Register}
+            path="/~students/Cepheus/register"
+            exact
+          />
           <Route
             component={RegistrationSuccess}
-            path="/register/success"
+            path="/~students/Cepheus/register/success"
             exact
           />
           {/* <Route
