@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/~students/Cepheus/static/css/main.2a3b092c.chunk.css",
-    "main.js": "/~students/Cepheus/static/js/main.5efdd139.chunk.js",
-    "main.js.map": "/~students/Cepheus/static/js/main.5efdd139.chunk.js.map",
-    "runtime-main.js": "/~students/Cepheus/static/js/runtime-main.ba254852.js",
-    "runtime-main.js.map": "/~students/Cepheus/static/js/runtime-main.ba254852.js.map",
+    "main.css": "/~students/Cepheus/static/css/main.7483ee55.chunk.css",
+    "main.js": "/~students/Cepheus/static/js/main.75d9c9af.chunk.js",
+    "main.js.map": "/~students/Cepheus/static/js/main.75d9c9af.chunk.js.map",
+    "runtime-main.js": "/~students/Cepheus/static/js/runtime-main.83405c9a.js",
+    "runtime-main.js.map": "/~students/Cepheus/static/js/runtime-main.83405c9a.js.map",
     "static/css/2.0713ded5.chunk.css": "/~students/Cepheus/static/css/2.0713ded5.chunk.css",
-    "static/js/2.caf8d2af.chunk.js": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js",
-    "static/js/2.caf8d2af.chunk.js.map": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js.map",
-    "static/js/3.fa02d948.chunk.js": "/~students/Cepheus/static/js/3.fa02d948.chunk.js",
-    "static/js/3.fa02d948.chunk.js.map": "/~students/Cepheus/static/js/3.fa02d948.chunk.js.map",
+    "static/js/2.5b9d74b9.chunk.js": "/~students/Cepheus/static/js/2.5b9d74b9.chunk.js",
+    "static/js/2.5b9d74b9.chunk.js.map": "/~students/Cepheus/static/js/2.5b9d74b9.chunk.js.map",
+    "static/js/3.49adbac2.chunk.js": "/~students/Cepheus/static/js/3.49adbac2.chunk.js",
+    "static/js/3.49adbac2.chunk.js.map": "/~students/Cepheus/static/js/3.49adbac2.chunk.js.map",
     "index.html": "/~students/Cepheus/index.html",
     "static/css/2.0713ded5.chunk.css.map": "/~students/Cepheus/static/css/2.0713ded5.chunk.css.map",
-    "static/css/main.2a3b092c.chunk.css.map": "/~students/Cepheus/static/css/main.2a3b092c.chunk.css.map",
-    "static/js/2.caf8d2af.chunk.js.LICENSE.txt": "/~students/Cepheus/static/js/2.caf8d2af.chunk.js.LICENSE.txt",
+    "static/css/main.7483ee55.chunk.css.map": "/~students/Cepheus/static/css/main.7483ee55.chunk.css.map",
+    "static/js/2.5b9d74b9.chunk.js.LICENSE.txt": "/~students/Cepheus/static/js/2.5b9d74b9.chunk.js.LICENSE.txt",
     "static/media/Aaryan.55931e7b.jpg": "/~students/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/~students/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
     "static/media/Darshay.8d0a931b.jpg": "/~students/Cepheus/static/media/Darshay.8d0a931b.jpg",
@@ -42,10 +42,10 @@
     "static/media/underwater-cityv2.656f8ce6.svg": "/~students/Cepheus/static/media/underwater-cityv2.656f8ce6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba254852.js",
+    "static/js/runtime-main.83405c9a.js",
     "static/css/2.0713ded5.chunk.css",
-    "static/js/2.caf8d2af.chunk.js",
-    "static/css/main.2a3b092c.chunk.css",
-    "static/js/main.5efdd139.chunk.js"
+    "static/js/2.5b9d74b9.chunk.js",
+    "static/css/main.7483ee55.chunk.css",
+    "static/js/main.75d9c9af.chunk.js"
   ]
 }
