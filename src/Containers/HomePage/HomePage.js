@@ -13,9 +13,11 @@ import { GoogleLogin } from "react-google-login";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
 import { variables } from "../../variables";
+import Loader from "../../loader.svg";
 
 function HomePage(props) {
   const [showNav, setShowNav] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
 
   const showNavbar = () => {
     setShowNav(!showNav);
@@ -23,6 +25,7 @@ function HomePage(props) {
 
   const responseGoogle = (response) => {
     console.log(response);
+    setShowLoader(true);
     axios
       .post(
         `${variables.backendURL}/api/checkuser`,
@@ -34,6 +37,9 @@ function HomePage(props) {
       .then((res) => {
         if (res.data.user.email) {
           console.log("user", res.data);
+          localStorage.setItem("userID", res.data.user.uid);
+          localStorage.setItem("userInfo", res.data.user.email);
+          console.log(res.data.user.uid);
           props.history.push("/~students/Cepheus/register/success");
         } else {
           JSON.stringify([response.profileObj.name, response.profileObj.email]);
@@ -48,6 +54,8 @@ function HomePage(props) {
           console.log(props);
           props.history.push("/~students/Cepheus/register");
         }
+
+        setShowLoader(false);
       });
   };
 
@@ -76,7 +84,7 @@ function HomePage(props) {
           src={sky}
           alt=""
         />
-
+        {showLoader && <img className="homepage-loader" src={Loader} alt="" />}
         <div className="techfest-date">15th - 17th Jan 2021</div>
 
         <div className="auth-buttons">

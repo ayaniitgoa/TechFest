@@ -137,6 +137,14 @@
   box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.27);
 }
 
+.homepage-loader {
+  position: absolute;
+  z-index: 100000000000000000000000;
+  top: 14rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .google-button {
   position: relative;
   z-index: 10000;

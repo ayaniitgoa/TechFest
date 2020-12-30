@@ -6,6 +6,16 @@ import Row from "react-bootstrap/Row";
 import { Link } from "react-router-dom";
 
 function RegistrationSuccess() {
+  const [userId, setUserID] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+
+  useEffect(() => {
+    if (localStorage.getItem("userID")) {
+      setUserID(localStorage.getItem("userID"));
+      setUserEmail(localStorage.getItem("userInfo"));
+    }
+  }, []);
+
   const calculateTimeLeft = () => {
     var countDownDate = new Date("Jan 15, 2021 00:00:00").getTime();
     var now = new Date().getTime();
@@ -40,8 +50,19 @@ function RegistrationSuccess() {
       <div className="main-div">
         <img className="logo" src={cepeus} alt="" />
         <p className="heading">Registration Successful!</p>
+        <div
+          className="user-id"
+          style={{ position: "relative", zIndex: 1000000000000 }}
+        >
+          Your Email: {userEmail}
+          <br />
+          Your ID: {userId}
+          <br />
+          Please do not share this with anyone!
+        </div>
         <div className="timer-div">
           <h4 className="timer-div-title">COMING SOON</h4>
+
           <Row>
             <div className="cc-div">
               <div className="circle-div" id="days">

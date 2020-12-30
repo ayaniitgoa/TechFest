@@ -22,6 +22,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.12",
     "morgan": "^1.10.0",
+    "nanoid": "^3.1.20",
     "nodemailer": "^6.4.17",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",

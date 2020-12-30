@@ -19,6 +19,11 @@ const user = new mongoose.Schema({
     type: String,
     trim: true,
   },
+
+  uid: {
+    type: String,
+    trim: true,
+  },
 });
 
 module.exports = mongoose.model("User", user);

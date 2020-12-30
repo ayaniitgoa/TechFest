@@ -11,33 +11,33 @@ function IndividualEventRegistraion(props) {
   const [numOfFields, setNumOfFields] = useState(0);
   const [eventLabel, setEventLabel] = useState("");
   const [eventname, setEventName] = useState("");
-  const [email, setEmail] = useState([]);
+  const [ids, setIDS] = useState([]);
   const [msg, setMsg] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [loader, setLoader] = useState(false);
 
-  const updateEmails = (index, val) => {
+  const updateIDs = (index, val) => {
     // console.log(index, val);
-    const updatedArray = [...email];
+    const updatedArray = [...ids];
     updatedArray[index] = val;
-    setEmail(updatedArray);
+    setIDS(updatedArray);
   };
 
-  const onEmailSubmit = (e) => {
+  const onIDSSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-    var filteredEmail = [];
-    console.log(email);
-    for (var i = 0; i < email.length; i++) {
-      if (email[i]) {
-        if (email[i].length > 0) {
-          filteredEmail.push(email[i]);
+    var filteredIDS = [];
+    console.log(ids);
+    for (var i = 0; i < ids.length; i++) {
+      if (ids[i]) {
+        if (ids[i].length > 0) {
+          filteredIDS.push(ids[i]);
         }
       }
     }
     axios
       .post(`${variables.backendURL}/api/${eventname}/register`, {
-        email: filteredEmail,
+        ids: filteredIDS,
       })
       .then((res) => {
         if (res.data.status >= 400) {
@@ -87,25 +87,25 @@ function IndividualEventRegistraion(props) {
             </div>
           )}
           {
-            <form onSubmit={onEmailSubmit}>
+            <form onSubmit={onIDSSubmit}>
               <div className="ind-eve-register-fields">
                 {Array.apply(null, { length: numOfFields }).map((e, i) => (
                   <div key={i} className="">
                     <label className="ind-register-label">
                       {numOfFields === 1
-                        ? "Please enter your email"
+                        ? "Please enter your ids"
                         : i === 0
                         ? "Team Leader"
                         : `Team Member ${i + 1}`}
                     </label>
                     <input
                       className="form-control"
-                      name={`email${i + 1}`}
-                      placeholder={`email`}
+                      name={`id ${i + 1}`}
+                      placeholder={`id`}
                       autoComplete="none"
-                      type="email"
+                      type="text"
                       onChange={(e) => {
-                        updateEmails(i, e.target.value);
+                        updateIDs(i, e.target.value);
                       }}
                     />
                   </div>

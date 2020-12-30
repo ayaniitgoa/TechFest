@@ -15,6 +15,7 @@ const jwt = require("jsonwebtoken");
 const pug = require("pug");
 const nodemailer = require("nodemailer");
 const morgan = require("morgan");
+const { nanoid } = require("nanoid");
 // const MongoStore = require("connect-mongo")(session);
 require("dotenv").config();
 //----------------------------------------- END OF IMPORTS---------------------------------------------------
@@ -93,9 +94,7 @@ app.get("/api/teams/:eventName", (req, res) => {
       }
     });
   } catch (error) {
-    res.send({
-      msg: "Error",
-    });
+    res.send([[]]);
   }
 });
 
@@ -142,17 +141,20 @@ app.post("/api/register/mail", async (req, res) => {
               msg: "Registration unsuccessful, please try again later!",
             });
           if (doc) res.redirect(`${process.env.frontendURL}`);
+          const uid = nanoid(10);
           if (!doc) {
             const newUser = new User({
               email,
               college,
               contact,
               name,
+              uid: uid,
             });
             await newUser.save();
             res.send({
               status: 201,
               msg: "Successfully registered!",
+              uid: uid,
             });
           }
         });
@@ -208,34 +210,34 @@ app.post("/api/:eventName/register", async (req, res) => {
   try {
     let userIds = [];
 
-    if (hasDuplicates(req.body.email)) {
-      return res.send({
-        status: 409,
-        msg: "Duplicate emails sent",
-      });
-    }
-
-    console.log(req.body.email);
-    if (!req.body || req.body.email.length < 1) {
+    console.log(req.body.ids);
+    if (!req.body || req.body.ids.length < 1) {
       return res.send({
         status: 409,
         msg: "Atleast one participant email is required",
       });
     }
 
-    if (req.params.eventName === "arduinostrial" && req.body.email.length < 2) {
+    if (hasDuplicates(req.body.ids)) {
+      return res.send({
+        status: 409,
+        msg: "Duplicate emails sent",
+      });
+    }
+
+    if (req.params.eventName === "arduinostrial" && req.body.ids.length < 2) {
       return res.send({
         status: 409,
         msg: "Each team should have two members.",
       });
     }
-    if (req.params.eventName === "uniteforunity" && req.body.email.length < 3) {
+    if (req.params.eventName === "uniteforunity" && req.body.ids.length < 3) {
       return res.send({
         status: 409,
         msg: "Each team must have atleast three members.",
       });
     }
-    if (req.params.eventName === "hackoverflow" && req.body.email.length < 3) {
+    if (req.params.eventName === "hackoverflow" && req.body.ids.length < 3) {
       return res.send({
         status: 409,
         msg: "Each team must have atleast three members.",
@@ -243,7 +245,7 @@ app.post("/api/:eventName/register", async (req, res) => {
     }
     if (
       req.params.eventName === "chitchatwithchatbot" &&
-      req.body.email.length < 3
+      req.body.ids.length < 3
     ) {
       return res.send({
         status: 409,
@@ -251,8 +253,8 @@ app.post("/api/:eventName/register", async (req, res) => {
       });
     }
 
-    for (var i = 0; i < req.body.email.length; i++) {
-      await User.findOne({ email: req.body.email[i] }, (err, user) => {
+    for (var i = 0; i < req.body.ids.length; i++) {
+      await User.findOne({ uid: req.body.ids[i] }, (err, user) => {
         console.log(user);
         if (err)
           return res.send({

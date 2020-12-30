@@ -35,6 +35,15 @@
   position: relative;
   font-size: calc(3rem / var(--size-div));
 }
+
+.user-id {
+  font-size: 1.2rem;
+  background-color: white;
+  color: black;
+  padding: 20px 50px;
+  border-radius: 40px;
+}
+
 .timer-div {
   background-color: #d7c2d1;
   text-align: center;
@@ -121,6 +130,14 @@ h1 {
   }
   .timer-div-title {
     font-size: 1rem;
+  }
+
+  .user-id {
+    font-size: 0.8rem;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 40px;
   }
 
   .timer-div {
