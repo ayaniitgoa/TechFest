@@ -37,10 +37,12 @@ function Participants(props) {
             {participantData.map((team, i) => {
               return (
                 <React.Fragment key={i}>
+                  <tr>
+                    <th scope="row" rowspan={team.length+1}>{i + 1}</th>
+                  </tr>
                   {team.map((each, j) => {
                     return (
                       <tr key={j}>
-                        <th scope="row">{i + 1}</th>
                         <td>{each.name}</td>
                         <td>{each.email}</td>
                         <td>{each.contact}</td>
