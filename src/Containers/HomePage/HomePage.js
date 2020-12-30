@@ -29,8 +29,7 @@ function HomePage(props) {
 
         {
           email: response.profileObj.email,
-        },
-        { withCredentials: true }
+        }
       )
       .then((res) => {
         if (res.data.user.email) {

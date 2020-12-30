@@ -7,6 +7,7 @@ import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
 import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
 import Register from "./Containers/Register/Register";
 import RegistrationSuccess from "./Containers/RegistrationSuccess/RegistrationSuccess";
+import Participants from "./Containers/Participants/Participants";
 // import EventRegistrationSuccess from "./Containers/EventRegistrationSuccess/EventRegistrationSuccess";
 
 function App() {
@@ -33,6 +34,11 @@ function App() {
           <Route
             component={RegistrationSuccess}
             path="/~students/Cepheus/register/success"
+            exact
+          />
+          <Route
+            component={Participants}
+            path="/~students/Cepheus/participants/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)"
             exact
           />
           {/* <Route

@@ -41,7 +41,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: process.env.frontendURL, // <-- location of the react app were connecting to
+    origin: "*", // <-- location of the react app were connecting to
     credentials: true,
   })
 );
@@ -55,37 +55,50 @@ app.get("/", (req, res) => {
   });
 });
 
-// app.get("/api/teams/:eventName", async (req, res) => {
-//   await Event.find({ name: req.params.eventName }, async (err, data) => {
-//     if (err) throw err;
-//     if (!data) {
-//       res.send({
-//         data: {},
-//       });
-//     }
-//     if (data) {
-//       var participantData = [];
+app.get("/api/teams/:eventName", (req, res) => {
+  try {
+    Event.find({ name: req.params.eventName }, async (err, data) => {
+      if (err)
+        return res.send({
+          msg: "Error",
+        });
+      if (!data) {
+        res.send({
+          data: {},
+        });
+      }
 
-//       for (var i = 0; i < data[0].teams.length; i++) {
-//         var pd = [];
-//         for (var j = 0; j < data[0].teams[i].participants.length; j++) {
-//           await User.findOne(
-//             { _id: data[0].teams[i].participants[j] },
-//             async (err, pD) => {
-//               if (err) throw err;
-//               if (pD) {
-//                 pd.push(pD);
-//               }
-//             }
-//           );
-//         }
-//         participantData.push(pd);
-//       }
+      if (data) {
+        var participantData = [];
 
-//       res.send(participantData);
-//     }
-//   });
-// });
+        for (var i = 0; i < data[0].teams.length; i++) {
+          var pd = [];
+          for (var j = 0; j < data[0].teams[i].participants.length; j++) {
+            await User.findOne(
+              { _id: data[0].teams[i].participants[j] },
+              async (err, pD) => {
+                if (err)
+                  return res.send({
+                    msg: "Error",
+                  });
+                if (pD) {
+                  pd.push(pD);
+                }
+              }
+            );
+          }
+          participantData.push(pd);
+        }
+
+        res.send(participantData);
+      }
+    });
+  } catch (error) {
+    res.send({
+      msg: "Error",
+    });
+  }
+});
 
 // Routes
 

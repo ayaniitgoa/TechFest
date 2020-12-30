@@ -42,7 +42,7 @@ function Register(props) {
         contact: Number(contact).valueOf(),
         college: college,
       },
-      withCredentials: true,
+
       url: `${variables.backendURL}/api/register/mail`,
     }).then((res) => {
       console.log(res);

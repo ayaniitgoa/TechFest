@@ -36,13 +36,9 @@ function IndividualEventRegistraion(props) {
       }
     }
     axios
-      .post(
-        `${variables.backendURL}/api/${eventname}/register`,
-        {
-          email: filteredEmail,
-        },
-        { withCredentials: true }
-      )
+      .post(`${variables.backendURL}/api/${eventname}/register`, {
+        email: filteredEmail,
+      })
       .then((res) => {
         if (res.data.status >= 400) {
           setErrMsg(res.data.msg);
