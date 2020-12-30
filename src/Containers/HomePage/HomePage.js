@@ -4,7 +4,7 @@ import "./HomePage.css";
 import sky from "./sky.svg";
 import buildings from "./buildingsv2.svg";
 import sand from "./sands.svg";
-import iitgoaLogo from "./IIT-Goa-Logo-White.svg";
+import iitgoaLogo from "./IIT-Goa-Logo-White.png";
 import cepheusLogo from "./cepheus-logo-2.svg";
 import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
@@ -76,6 +76,8 @@ function HomePage(props) {
           src={sky}
           alt=""
         />
+
+        <div className="techfest-date">15th - 17th Jan 2021</div>
 
         <div className="auth-buttons">
           <GoogleLogin

@@ -38,7 +38,7 @@ function App() {
           />
           <Route
             component={Participants}
-            path="/~students/Cepheus/participants/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)"
+            path="/~students/Cepheus/participants/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmVzdCI6IkNlcGhldXNpaXRnb2F0ZWNoZmVzdDgzMjA2NTM5NTkxMjM0IiwiaWF0IjoxNTE2MjM5MDIyfQ.mSWZCRAJlS7sKxxwgSDMOtZgiHqmpPAADcRZm-BF5X8"
             exact
           />
           {/* <Route

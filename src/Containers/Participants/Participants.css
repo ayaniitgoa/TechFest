@@ -1,4 +1,13 @@
 .participants-div {
   min-height: 100vh;
-  background: white !important;
+  background: rgb(80, 79, 79) !important;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-top: 2rem;
+}
+
+.participants-div p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
 }

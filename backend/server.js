@@ -42,7 +42,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
     origin: "*", // <-- location of the react app were connecting to
-    credentials: true,
   })
 );
 
@@ -201,9 +200,21 @@ app.post("/api/checkuser", (req, res) => {
   }
 });
 
+function hasDuplicates(array) {
+  return new Set(array).size !== array.length;
+}
+
 app.post("/api/:eventName/register", async (req, res) => {
   try {
     let userIds = [];
+
+    if (hasDuplicates(req.body.email)) {
+      return res.send({
+        status: 409,
+        msg: "Duplicate emails sent",
+      });
+    }
+
     console.log(req.body.email);
     if (!req.body || req.body.email.length < 1) {
       return res.send({

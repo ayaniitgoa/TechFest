@@ -121,6 +121,22 @@
   /* top: -10px; */
 }
 
+.techfest-date {
+  background: white;
+  position: absolute;
+  width: fit-content;
+  padding: 10px 20px;
+  bottom: 10rem;
+  left: 1vw;
+  border-radius: 30px;
+  z-index: 10000;
+  font-family: "Raleway", sans-serif !important;
+  color: black !important;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.27);
+}
+
 .google-button {
   position: relative;
   z-index: 10000;
@@ -275,6 +291,12 @@
     top: 3vh;
     margin-left: 3em;
   }
+
+  .techfest-date {
+    bottom: 5rem;
+    font-size: 1rem;
+  }
+
   .auth-buttons a button {
     padding: 5px 10px;
     width: 9em;
@@ -385,7 +407,7 @@
   }
 
   .home-page {
-    min-height: 37vh;
+    min-height: 43vh;
     /* min-height: 100vh; */
   }
   .iitgoa-top {
@@ -424,7 +446,7 @@
   }
 
   .home-page {
-    min-height: 32vh;
+    min-height: 36vh;
     /* min-height: 100vh; */
   }
   .iitgoa-top {

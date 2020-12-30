@@ -1,52 +1,58 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
 import "./Participants.css";
 import { variables } from "../../variables";
 
 function Participants(props) {
+  const [participantData, setParticipantData] = useState([]);
   useEffect(() => {
     // console.log(props.match.params.eventName);
     axios
       .get(`${variables.backendURL}/api/teams/${props.match.params.eventName}`)
       .then((res) => {
         console.log(res.data);
+        setParticipantData(res.data);
       });
   }, [props.match.params.eventName]);
 
   return (
     <div className="participants-div">
-      <h1>Participants</h1>
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Contact</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        {props.match.params.eventName.charAt(0).toUpperCase() +
+          props.match.params.eventName.slice(1)}{" "}
+        Participants
+      </p>
+      <div className="container table-responsive">
+        <table className="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Team No.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            {participantData.map((team, i) => {
+              return (
+                <React.Fragment key={i}>
+                  {team.map((each, j) => {
+                    return (
+                      <tr key={j}>
+                        <th scope="row">{i + 1}</th>
+                        <td>{each.name}</td>
+                        <td>{each.email}</td>
+                        <td>{each.contact}</td>
+                      </tr>
+                    );
+                  })}
+                </React.Fragment>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

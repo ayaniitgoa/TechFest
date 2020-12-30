@@ -1,7 +1,7 @@
 const competitionData = [
   {
     eventName: "arduinostrial",
-    label: "Arduino's Trial",
+    label: "ARDUINO'S TRIAL",
     posterLink: "arduino.png",
     eventText:
       "Atlantis is in havoc. Thanks to the sloppiness of you and your fellow staff members, there’s been a jailbreak. You have been summoned to the trial where you must complete a series of technical tasks to prove your innocence. You’ll be required to design a car that would detect and avoid obstacles in order to escort the convict back to prison, where you need to build a robust security system to ensure these shenanigans don’t occur again. See if you can swim away from this.",
