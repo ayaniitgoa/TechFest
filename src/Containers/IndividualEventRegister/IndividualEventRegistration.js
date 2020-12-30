@@ -41,7 +41,20 @@ function IndividualEventRegistraion(props) {
       })
       .then((res) => {
         if (res.data.status >= 400) {
-          setErrMsg(res.data.msg);
+          console.log(res.data);
+          var msgInvalid = "";
+          if (res.data.userId) {
+            res.data.userId.map((id, i) => {
+              return (msgInvalid += `${i > 0 ? `, ` : ""} ${id} `);
+            });
+
+            setErrMsg(
+              `Following id(s) are already registered:   ${msgInvalid}`
+            );
+          } else {
+            console.log(msg);
+            setErrMsg(res.data.msg);
+          }
           setMsg("");
         }
         if (res.data.status < 400) {
@@ -91,23 +104,25 @@ function IndividualEventRegistraion(props) {
               <div className="ind-eve-register-fields">
                 {Array.apply(null, { length: numOfFields }).map((e, i) => (
                   <div key={i} className="">
-                    <label className="ind-register-label">
-                      {numOfFields === 1
-                        ? "Please enter your ids"
-                        : i === 0
-                        ? "Team Leader"
-                        : `Team Member ${i + 1}`}
-                    </label>
-                    <input
-                      className="form-control"
-                      name={`id ${i + 1}`}
-                      placeholder={`id`}
-                      autoComplete="none"
-                      type="text"
-                      onChange={(e) => {
-                        updateIDs(i, e.target.value);
-                      }}
-                    />
+                    <div className="ind-reg-inp">
+                      <label className="ind-register-label">
+                        {numOfFields === 1
+                          ? "Please enter your ids"
+                          : i === 0
+                          ? "Team Leader"
+                          : `Team Member ${i + 1}`}
+                      </label>
+                      <input
+                        className="form-control"
+                        name={`id ${i + 1}`}
+                        placeholder={`id ${i + 1}`}
+                        autoComplete="none"
+                        type="text"
+                        onChange={(e) => {
+                          updateIDs(i, e.target.value);
+                        }}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>

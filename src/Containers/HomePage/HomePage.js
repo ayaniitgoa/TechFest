@@ -59,6 +59,10 @@ function HomePage(props) {
       });
   };
 
+  const errorResponseGoogle = (response) => {
+    setShowLoader(false);
+  };
+
   return (
     <div id="home-page" className="home-page">
       <div className={`navbar-two ${showNav && "active"}`}>
@@ -92,7 +96,7 @@ function HomePage(props) {
             clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
             buttonText="Register"
             onSuccess={responseGoogle}
-            onFailure={responseGoogle}
+            onFailure={errorResponseGoogle}
             cookiePolicy={"single_host_origin"}
             className="google-button"
           />

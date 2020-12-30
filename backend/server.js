@@ -214,14 +214,14 @@ app.post("/api/:eventName/register", async (req, res) => {
     if (!req.body || req.body.ids.length < 1) {
       return res.send({
         status: 409,
-        msg: "Atleast one participant email is required",
+        msg: "Atleast one participant id is required",
       });
     }
 
     if (hasDuplicates(req.body.ids)) {
       return res.send({
         status: 409,
-        msg: "Duplicate emails sent",
+        msg: "Duplicate ids entered.",
       });
     }
 
@@ -256,6 +256,7 @@ app.post("/api/:eventName/register", async (req, res) => {
     for (var i = 0; i < req.body.ids.length; i++) {
       await User.findOne({ uid: req.body.ids[i] }, (err, user) => {
         console.log(user);
+
         if (err)
           return res.send({
             status: 409,
@@ -302,6 +303,7 @@ app.post("/api/:eventName/register", async (req, res) => {
             });
           }
           if (doc) {
+            const invalidData = [];
             const doc = await Event.findOne({ name: req.params.eventName });
 
             for (var j = 0; j < doc.teams.length; j++) {
@@ -310,12 +312,18 @@ app.post("/api/:eventName/register", async (req, res) => {
                   if (
                     String(doc.teams[j].participants[k]) === String(userIds[m])
                   ) {
-                    return res.send({
-                      status: 400,
-                      msg: "One of the participants is already registered",
-                    });
+                    invalidData.push(req.body.ids[m]);
                   }
                 }
+              }
+              if (invalidData.length > 0) {
+                console.log(invalidData);
+
+                return res.send({
+                  status: 400,
+                  msg: "One of the participants is already registered",
+                  userId: invalidData,
+                });
               }
             }
 

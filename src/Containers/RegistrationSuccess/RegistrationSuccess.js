@@ -3,9 +3,9 @@ import "./RegistrationSuccess.css";
 import pantheon from "./pantheon.svg";
 import cepeus from "./cepheus-logo.svg";
 import Row from "react-bootstrap/Row";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-function RegistrationSuccess() {
+function RegistrationSuccess(props) {
   const [userId, setUserID] = useState("");
   const [userEmail, setUserEmail] = useState("");
 
@@ -13,8 +13,10 @@ function RegistrationSuccess() {
     if (localStorage.getItem("userID")) {
       setUserID(localStorage.getItem("userID"));
       setUserEmail(localStorage.getItem("userInfo"));
+    } else {
+      props.history.push("/~students/Cepheus");
     }
-  }, []);
+  }, [props.history]);
 
   const calculateTimeLeft = () => {
     var countDownDate = new Date("Jan 15, 2021 00:00:00").getTime();
@@ -58,7 +60,7 @@ function RegistrationSuccess() {
           <br />
           Your ID: {userId}
           <br />
-          Please do not share this with anyone!
+          Please do not share this with anyone other than your teammates!
         </div>
         <div className="timer-div">
           <h4 className="timer-div-title">COMING SOON</h4>
@@ -95,4 +97,4 @@ function RegistrationSuccess() {
   );
 }
 
-export default RegistrationSuccess;
+export default withRouter(RegistrationSuccess);
