@@ -41,7 +41,7 @@ function SocialMedia() {
           </a>
         </div>
         <div className="copyright-info">
-          <p>©2020 - All Rights Reserved - IIT-GOA</p>
+          <p>©2020 - All Rights Reserved - IIT GOA</p>
         </div>
       </div>
     </div>

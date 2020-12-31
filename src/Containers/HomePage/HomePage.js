@@ -38,11 +38,8 @@ function HomePage(props) {
         if (res.data.user.email) {
           localStorage.setItem("userID", res.data.user.uid);
           localStorage.setItem("userInfo", res.data.user.email);
-          localStorage.setItem(
-            "userEvents",
-            JSON.stringify(res.data.user.events)
-          );
-          props.history.push("/~students/Cepheus/register/success");
+          console.log(res.data.user.uid);
+          props.history.push("/Cepheus/register/success");
         } else {
           localStorage.setItem("userInfo", response.profileObj.email);
           localStorage.setItem(
@@ -52,9 +49,8 @@ function HomePage(props) {
               response.profileObj.email,
             ])
           );
-          // console.log(props);
-
-          props.history.push("/~students/Cepheus/register");
+          console.log(props);
+          props.history.push("/Cepheus/register");
         }
 
         setShowLoader(false);

@@ -22,7 +22,7 @@ export default class Events extends Component {
     const renderCompetitions = () =>
       competitionData.map((data) => (
         <Link
-          to={`/~students/Cepheus/event/${data.eventName}`}
+          to={`/Cepheus/event/${data.eventName}`}
           key={data.eventName}
         >
           <button
@@ -39,7 +39,7 @@ export default class Events extends Component {
     const renderWorkshops = () =>
       workshopData.map((data) => (
         <Link
-          to={`/~students/Cepheus/event/${data.eventName}`}
+          to={`/Cepheus/event/${data.eventName}`}
           key={data.eventName}
         >
           <button
@@ -56,7 +56,7 @@ export default class Events extends Component {
     const renderTalks = () =>
       talksData.map((data) => (
         <Link
-          to={`/~students/Cepheus/event/${data.eventName}`}
+          to={`/Cepheus/event/${data.eventName}`}
           key={data.eventName}
         >
           <button
