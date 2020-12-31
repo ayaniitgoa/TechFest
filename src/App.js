@@ -8,6 +8,7 @@ import IndividualEventRegistraion from "./Containers/IndividualEventRegister/Ind
 import Register from "./Containers/Register/Register";
 import RegistrationSuccess from "./Containers/RegistrationSuccess/RegistrationSuccess";
 import Participants from "./Containers/Participants/Participants";
+import AllUsers from "./Containers/AllUsers/AllUsers";
 // import EventRegistrationSuccess from "./Containers/EventRegistrationSuccess/EventRegistrationSuccess";
 
 function App() {
@@ -39,6 +40,11 @@ function App() {
           <Route
             component={Participants}
             path="/~students/Cepheus/participants/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|theillusivereality|iceevhybrid)/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmVzdCI6IkNlcGhldXNpaXRnb2F0ZWNoZmVzdDgzMjA2NTM5NTkxMjM0IiwiaWF0IjoxNTE2MjM5MDIyfQ.mSWZCRAJlS7sKxxwgSDMOtZgiHqmpPAADcRZm-BF5X8"
+            exact
+          />
+          <Route
+            component={AllUsers}
+            path="/~students/Cepheus/allusers/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmVzdCI6IkNlcGhldXNpaXRnb2F0ZWNoZmVzdDgzMjA2NTM5NTkxMjM0IiwiaWF0IjoxNTE2MjM5MDIyfQ.mSWZCRAJlS7sKxxwgSDMOtZgiHqmpPAADcRZm-BF5X8"
             exact
           />
           {/* <Route

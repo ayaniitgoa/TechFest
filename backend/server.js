@@ -16,6 +16,7 @@ const pug = require("pug");
 const nodemailer = require("nodemailer");
 const morgan = require("morgan");
 const { nanoid } = require("nanoid");
+const helmet = require("helmet");
 // const MongoStore = require("connect-mongo")(session);
 require("dotenv").config();
 //----------------------------------------- END OF IMPORTS---------------------------------------------------
@@ -38,6 +39,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
 // Middleware
+app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
@@ -63,12 +65,18 @@ app.get("/api/teams/:eventName", (req, res) => {
           msg: "Error",
         });
       if (!data) {
-        res.send({
-          data: {},
+        return res.send({
+          data: [[]],
         });
       }
 
-      if (data) {
+      if (data.length < 1) {
+        return res.send({
+          data: [[]],
+        });
+      }
+
+      if (data[0].teams) {
         var participantData = [];
 
         for (var i = 0; i < data[0].teams.length; i++) {
@@ -95,6 +103,19 @@ app.get("/api/teams/:eventName", (req, res) => {
     });
   } catch (error) {
     res.send([[]]);
+  }
+});
+
+app.get("/api/allusers", (req, res) => {
+  try {
+    User.find({}, (err, data) => {
+      if (err) return res.send({});
+      return res.send({
+        data,
+      });
+    });
+  } catch (error) {
+    return res.send({});
   }
 });
 

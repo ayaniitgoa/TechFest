@@ -5,14 +5,18 @@ import "./Participants.css";
 import { variables } from "../../variables";
 
 function Participants(props) {
-  const [participantData, setParticipantData] = useState([]);
+  const [participantData, setParticipantData] = useState([[]]);
   useEffect(() => {
     // console.log(props.match.params.eventName);
     axios
       .get(`${variables.backendURL}/api/teams/${props.match.params.eventName}`)
       .then((res) => {
         console.log(res.data);
-        setParticipantData(res.data);
+        if (res.data[0]) {
+          setParticipantData(res.data);
+        } else {
+          setParticipantData([[]]);
+        }
       });
   }, [props.match.params.eventName]);
 
@@ -24,13 +28,14 @@ function Participants(props) {
         Participants
       </p>
       <div className="container table-responsive">
-        <table className="table table-dark table-hover">
+        <table className="table table-bordered table-dark table-hover">
           <thead>
             <tr>
               <th scope="col">Team No.</th>
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Contact</th>
+              <th scope="col">UID</th>
             </tr>
           </thead>
           <tbody>
@@ -38,7 +43,9 @@ function Participants(props) {
               return (
                 <React.Fragment key={i}>
                   <tr>
-                    <th scope="row" rowspan={team.length+1}>{i + 1}</th>
+                    <th scope="row" rowSpan={team.length + 1}>
+                      {i + 1}
+                    </th>
                   </tr>
                   {team.map((each, j) => {
                     return (
@@ -46,6 +53,7 @@ function Participants(props) {
                         <td>{each.name}</td>
                         <td>{each.email}</td>
                         <td>{each.contact}</td>
+                        <td>{each.uid}</td>
                       </tr>
                     );
                   })}
