@@ -57,7 +57,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/api/teams/:eventName", (req, res) => {
+app.get(`/api/teams/:eventName/${process.env.protectedToken}`, (req, res) => {
   try {
     Event.find({ name: req.params.eventName }, async (err, data) => {
       if (err)
@@ -84,7 +84,7 @@ app.get("/api/teams/:eventName", (req, res) => {
           for (var j = 0; j < data[0].teams[i].participants.length; j++) {
             await User.findOne(
               { _id: data[0].teams[i].participants[j] },
-              async (err, pD) => {
+              (err, pD) => {
                 if (err)
                   return res.send({
                     msg: "Error",
@@ -106,7 +106,7 @@ app.get("/api/teams/:eventName", (req, res) => {
   }
 });
 
-app.get("/api/allusers", (req, res) => {
+app.get(`/api/allusers/${process.env.protectedToken}`, (req, res) => {
   try {
     User.find({}, (err, data) => {
       if (err) return res.send({});

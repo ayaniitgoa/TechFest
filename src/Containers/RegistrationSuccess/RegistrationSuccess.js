@@ -51,7 +51,7 @@ function RegistrationSuccess(props) {
       <img className="building-reg" src={pantheon} alt="Building" />
       <div className="main-div">
         <img className="logo" src={cepeus} alt="" />
-        <p className="heading">Registration Successful!</p>
+        <p className="heading">Registration Details</p>
         <div
           className="user-id"
           style={{ position: "relative", zIndex: 1000000000000 }}

@@ -18,7 +18,6 @@ function Register(props) {
   const [contact, setContact] = useState("");
   const [msg, setMsg] = useState("");
   const [errMsg, setErrMsg] = useState("");
-  const [userId, setUserID] = useState("");
   const [showLoader, setShowLoader] = useState(false);
 
   useEffect(() => {
@@ -56,7 +55,6 @@ function Register(props) {
         console.log(res.data);
         setMsg(res.data.msg);
         setErrMsg("");
-        setUserID(res.data.uid);
         localStorage.setItem("userID", res.data.uid);
         props.history.push("/~students/Cepheus/register/success");
       }

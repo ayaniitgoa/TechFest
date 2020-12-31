@@ -9,7 +9,7 @@ function AllUsers() {
   });
   useEffect(() => {
     axios
-      .get(`${variables.backendURL}/api/allusers`)
+      .get(`${variables.backendURL}/api/allusers/${variables.protectedToken}`)
       .then((res) => {
         console.log(res.data);
         setUserData(res.data);

@@ -28,6 +28,14 @@
   align-items: center;
 }
 
+.please-text {
+  color: black;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
 .input-field {
   /* flex: 0.8; */
   /* height: 90%; */
@@ -48,7 +56,8 @@
 .ind-eve-register-fields label {
   margin-top: 7px;
   font-size: 1.3rem;
-  width: 40vw;
+  width: 52vw;
+  /* margin-left: 1rem; */
 }
 
 .ind-event-back-register {
@@ -130,9 +139,14 @@
     font-size: 1rem;
   }
 
+  .alert {
+    margin-bottom: -1rem !important;
+    margin-top: 0 !important;
+  }
+
   .ind-reg-inp {
     display: flex;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     flex-direction: column;
   }
 
@@ -148,5 +162,13 @@
     border-radius: 49px;
 
     border: none;
+  }
+
+  .please-text {
+    color: black;
+    font-size: 0.8rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
   }
 }

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/~students/Cepheus/static/css/main.715ff800.chunk.css",
-    "main.js": "/~students/Cepheus/static/js/main.58ae2db2.chunk.js",
-    "main.js.map": "/~students/Cepheus/static/js/main.58ae2db2.chunk.js.map",
+    "main.css": "/~students/Cepheus/static/css/main.bd1640a3.chunk.css",
+    "main.js": "/~students/Cepheus/static/js/main.9788d7e7.chunk.js",
+    "main.js.map": "/~students/Cepheus/static/js/main.9788d7e7.chunk.js.map",
     "runtime-main.js": "/~students/Cepheus/static/js/runtime-main.48a4cb95.js",
     "runtime-main.js.map": "/~students/Cepheus/static/js/runtime-main.48a4cb95.js.map",
     "static/css/2.0713ded5.chunk.css": "/~students/Cepheus/static/css/2.0713ded5.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.dc787e3a.chunk.js.map": "/~students/Cepheus/static/js/3.dc787e3a.chunk.js.map",
     "index.html": "/~students/Cepheus/index.html",
     "static/css/2.0713ded5.chunk.css.map": "/~students/Cepheus/static/css/2.0713ded5.chunk.css.map",
-    "static/css/main.715ff800.chunk.css.map": "/~students/Cepheus/static/css/main.715ff800.chunk.css.map",
+    "static/css/main.bd1640a3.chunk.css.map": "/~students/Cepheus/static/css/main.bd1640a3.chunk.css.map",
     "static/js/2.86e02a67.chunk.js.LICENSE.txt": "/~students/Cepheus/static/js/2.86e02a67.chunk.js.LICENSE.txt",
     "static/media/Aaryan.55931e7b.jpg": "/~students/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/~students/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.48a4cb95.js",
     "static/css/2.0713ded5.chunk.css",
     "static/js/2.86e02a67.chunk.js",
-    "static/css/main.715ff800.chunk.css",
-    "static/js/main.58ae2db2.chunk.js"
+    "static/css/main.bd1640a3.chunk.css",
+    "static/js/main.9788d7e7.chunk.js"
   ]
 }

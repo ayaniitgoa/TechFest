@@ -89,6 +89,10 @@ function IndividualEventRegistraion(props) {
             <p>{eventLabel} Registration</p>
           </div>
           {loader && <img src={Loader} alt="" />}
+          <p className="please-text">
+            Please enter your ids <br /> You can get your ids by registering on
+            the Home Page.{" "}
+          </p>
           {msg && (
             <div className="alert alert-success alert-class" role="alert">
               {msg}
@@ -107,7 +111,7 @@ function IndividualEventRegistraion(props) {
                     <div className="ind-reg-inp">
                       <label className="ind-register-label">
                         {numOfFields === 1
-                          ? "Please enter your ids"
+                          ? "Please enter your id"
                           : i === 0
                           ? "Team Leader"
                           : `Team Member ${i + 1}`}

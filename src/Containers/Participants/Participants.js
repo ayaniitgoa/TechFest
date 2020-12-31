@@ -9,7 +9,9 @@ function Participants(props) {
   useEffect(() => {
     // console.log(props.match.params.eventName);
     axios
-      .get(`${variables.backendURL}/api/teams/${props.match.params.eventName}`)
+      .get(
+        `${variables.backendURL}/api/teams/${props.match.params.eventName}/${variables.protectedToken}`
+      )
       .then((res) => {
         console.log(res.data);
         if (res.data[0]) {
