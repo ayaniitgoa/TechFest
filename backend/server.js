@@ -44,6 +44,30 @@ app.get("/", (req, res) => {
   });
 });
 
+async function preProcess(data, res) {
+  var participantData = [];
+  for (var i = 0; i < data[0].teams.length; i++) {
+    var pd = [];
+    for (var j = 0; j < data[0].teams[i].participants.length; j++) {
+      await User.findOne(
+        { _id: data[0].teams[i].participants[j] },
+        (err, pD) => {
+          if (err)
+            return res.send({
+              msg: "Error",
+            });
+          if (pD) {
+            pd.push(pD);
+          }
+        }
+      ).exec();
+    }
+    participantData.push(pd);
+  }
+
+  return res.send(participantData);
+}
+
 app.get(`/api/teams/:eventName/${process.env.protectedToken}`, (req, res) => {
   try {
     Event.find({ name: req.params.eventName }, async (err, data) => {
@@ -64,28 +88,7 @@ app.get(`/api/teams/:eventName/${process.env.protectedToken}`, (req, res) => {
       }
 
       if (data[0].teams) {
-        var participantData = [];
-
-        for (var i = 0; i < data[0].teams.length; i++) {
-          var pd = [];
-          for (var j = 0; j < data[0].teams[i].participants.length; j++) {
-            await User.findOne(
-              { _id: data[0].teams[i].participants[j] },
-              (err, pD) => {
-                if (err)
-                  return res.send({
-                    msg: "Error",
-                  });
-                if (pD) {
-                  pd.push(pD);
-                }
-              }
-            );
-          }
-          participantData.push(pd);
-        }
-
-        res.send(participantData);
+        preProcess(data, res);
       }
     });
   } catch (error) {
@@ -186,6 +189,7 @@ app.post("/api/checkuser", (req, res) => {
         return res.send({
           status: 400,
           msg: "Registration failed, Please try again.",
+          user: user,
         });
       }
       if (!user) {
@@ -219,7 +223,7 @@ app.post("/api/:eventName/register", async (req, res) => {
   try {
     let userIds = [];
 
-    console.log(req.body.ids);
+    // console.log(req.body.ids);
     if (!req.body || req.body.ids.length < 1) {
       return res.send({
         status: 409,
@@ -264,8 +268,6 @@ app.post("/api/:eventName/register", async (req, res) => {
 
     for (var i = 0; i < req.body.ids.length; i++) {
       await User.findOne({ uid: req.body.ids[i] }, (err, user) => {
-        console.log(user);
-
         if (err)
           return res.send({
             status: 409,
@@ -275,7 +277,7 @@ app.post("/api/:eventName/register", async (req, res) => {
           userIds = [];
           return res.send({
             status: 400,
-            msg: "One of the users is not registered",
+            msg: "Unregistered user id(s) entered.",
           });
         }
         if (user) {
@@ -305,9 +307,8 @@ app.post("/api/:eventName/register", async (req, res) => {
                 },
               ],
             });
-            await newEvent.save();
+            newEvent.save();
 
-            console.log("reached");
             for (var i = 0; i < req.body.ids.length; i++) {
               console.log("reached", req.params.eventName, req.body.ids[i]);
               await User.findOneAndUpdate(
@@ -332,7 +333,6 @@ app.post("/api/:eventName/register", async (req, res) => {
           }
           if (doc) {
             const invalidData = [];
-            console.log("reached1");
             const doc = await Event.findOne({ name: req.params.eventName });
 
             for (var j = 0; j < doc.teams.length; j++) {

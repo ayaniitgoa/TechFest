@@ -26,6 +26,7 @@ function Register(props) {
   useEffect(() => {
     if (localStorage.getItem("userInfo")) {
       setEmail(localStorage.getItem("userInfo"));
+
       const userInfo = JSON.parse(localStorage.getItem("userInfo2"));
       setName(userInfo[0]);
     } else {
@@ -71,6 +72,7 @@ function Register(props) {
         setMsg(res.data.msg);
         setErrMsg("");
         localStorage.setItem("userID", res.data.uid);
+        localStorage.setItem("userEvents", JSON.stringify([]));
         props.history.push("/Cepheus/register/success");
       }
     });

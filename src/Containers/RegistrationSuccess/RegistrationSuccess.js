@@ -5,6 +5,8 @@ import cepeus from "./cepheus-logo.svg";
 import Row from "react-bootstrap/Row";
 import { Link, withRouter } from "react-router-dom";
 import { data } from "../IndividualEvent/eventData";
+import axios from "axios";
+import { variables } from "../../variables";
 
 function RegistrationSuccess(props) {
   const [userId, setUserID] = useState("");
@@ -15,22 +17,38 @@ function RegistrationSuccess(props) {
     if (localStorage.getItem("userID")) {
       setUserID(localStorage.getItem("userID"));
       setUserEmail(localStorage.getItem("userInfo"));
-      const eventsData = JSON.parse(localStorage.getItem("userEvents"));
-      setUserEvents([]);
-      for (var i = 0; i < eventsData.length; i++) {
-        for (var j = 0; j < data.length; j++) {
-          if (data[j].eventName === eventsData[i]) {
-            const label = data[j].label.replace(/\w\S*/g, function (txt) {
-              return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-            });
-            setUserEvents((userEvents) => [...userEvents, label]);
+
+      axios
+        .post(`${variables.backendURL}/api/checkuser`, {
+          email: localStorage.getItem("userInfo"),
+        })
+        .then((res) => {
+          if (res.data.user) {
+            setUserID(res.data.user.uid);
+            setUserEvents([]);
+            for (var i = 0; i < res.data.user.events.length; i++) {
+              for (var j = 0; j < data.length; j++) {
+                if (data[j].eventName === res.data.user.events[i]) {
+                  const label = data[j].label.replace(/\w\S*/g, function (txt) {
+                    return (
+                      txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+                    );
+                  });
+                  setUserEvents((userEvents) => [...userEvents, label]);
+                }
+              }
+            }
+          } else {
+            setUserID("");
+            setUserEmail([]);
+            setUserEmail("");
           }
-        }
-      }
+        });
     } else {
       props.history.push("/Cepheus");
     }
-  }, [props.history]);
+    // eslint-disable-next-line
+  }, []);
 
   const calculateTimeLeft = () => {
     var countDownDate = new Date("Jan 15, 2021 00:00:00").getTime();
@@ -66,19 +84,17 @@ function RegistrationSuccess(props) {
       <div className="main-div">
         <img className="logo" src={cepeus} alt="" />
         <p className="heading">Registration Details</p>
-        <div
-          className="user-id"
-          style={{ position: "relative", zIndex: 1000000000000 }}
-        >
+        <div className="user-id">
           Your Email: {userEmail}
           <br />
           Your ID: {userId}
           <br />
           {userEvents.length > 0 ? "Events registered:" : null}
           <ul>
-            {userEvents.map((e, i) => {
-              return <li key={i}>{e}</li>;
-            })}
+            {userEvents.length > 0 &&
+              userEvents.map((e, i) => {
+                return <li key={i}>{e}</li>;
+              })}
           </ul>
           Please do not share your id with anyone other than your teammates!
         </div>

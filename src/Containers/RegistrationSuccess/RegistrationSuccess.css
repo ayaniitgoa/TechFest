@@ -2,10 +2,11 @@
 .reg-sec {
   font-family: "Raleway", sans-serif;
   width: 100vw !important;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   background: linear-gradient(to top, #62276e, #883660);
   z-index: -3;
+  padding-bottom: 5vh;
 }
 .building-reg {
   width: 80vw;
@@ -42,6 +43,8 @@
   color: black;
   padding: 20px 50px;
   border-radius: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .timer-div {
