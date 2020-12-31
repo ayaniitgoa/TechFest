@@ -26,7 +26,7 @@ function Register(props) {
       const userInfo = JSON.parse(localStorage.getItem("userInfo2"));
       setName(userInfo[0]);
     } else {
-      props.history.push("/~students/Cepheus");
+      props.history.push("/Cepheus");
     }
   }, [props.history]);
 
@@ -56,7 +56,7 @@ function Register(props) {
         setMsg(res.data.msg);
         setErrMsg("");
         localStorage.setItem("userID", res.data.uid);
-        props.history.push("/~students/Cepheus/register/success");
+        props.history.push("/Cepheus/register/success");
       }
     });
   };
@@ -69,7 +69,7 @@ function Register(props) {
       </div>
       <img src={Moon} className="moon" alt="" />
 
-      <Link to="/~students/Cepheus">
+      <Link to="/Cepheus">
         <i className="reg-back-btn fas fa-chevron-left"></i>
       </Link>
 

@@ -81,7 +81,7 @@ function IndividualEventRegistraion(props) {
   return (
     <div>
       <div className="ind-eve-register">
-        <Link to="/~students/Cepheus">
+        <Link to="/Cepheus">
           <i className="ind-event-back-register fas fa-chevron-left"></i>
         </Link>
         <div className="ind-eve-register-main">

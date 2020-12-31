@@ -14,7 +14,7 @@ function RegistrationSuccess(props) {
       setUserID(localStorage.getItem("userID"));
       setUserEmail(localStorage.getItem("userInfo"));
     } else {
-      props.history.push("/~students/Cepheus");
+      props.history.push("/Cepheus");
     }
   }, [props.history]);
 
@@ -45,7 +45,7 @@ function RegistrationSuccess(props) {
 
   return (
     <div className="reg-sec">
-      <Link to="/~students/Cepheus">
+      <Link to="/Cepheus">
         <i className="back-button fas fa-chevron-left"></i>
       </Link>
       <img className="building-reg" src={pantheon} alt="Building" />

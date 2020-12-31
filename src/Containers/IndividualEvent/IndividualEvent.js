@@ -19,7 +19,7 @@ function IndividualEvent(props) {
   return (
     <div className="ind-eve">
       <div className="ind-event-top">
-        <a href="/~students/Cepheus/#events-section">
+        <a href="/Cepheus/#events-section">
           <i className="ind-event-back  fas fa-chevron-left"></i>
         </a>
         <p className="ind-event-title">{eventData && eventData.label}</p>
@@ -35,7 +35,7 @@ function IndividualEvent(props) {
         </div>
       </div>
       <Link
-        to={`/~students/Cepheus/event/${props.match.params.eventName}/register`}
+        to={`/Cepheus/event/${props.match.params.eventName}/register`}
       >
         <button className="ind-register-btn">Register</button>
       </Link>
