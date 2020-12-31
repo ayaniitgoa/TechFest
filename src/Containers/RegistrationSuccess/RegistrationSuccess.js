@@ -4,15 +4,29 @@ import pantheon from "./pantheon.svg";
 import cepeus from "./cepheus-logo.svg";
 import Row from "react-bootstrap/Row";
 import { Link, withRouter } from "react-router-dom";
+import { data } from "../IndividualEvent/eventData";
 
 function RegistrationSuccess(props) {
   const [userId, setUserID] = useState("");
   const [userEmail, setUserEmail] = useState("");
+  const [userEvents, setUserEvents] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem("userID")) {
       setUserID(localStorage.getItem("userID"));
       setUserEmail(localStorage.getItem("userInfo"));
+      const eventsData = JSON.parse(localStorage.getItem("userEvents"));
+      setUserEvents([]);
+      for (var i = 0; i < eventsData.length; i++) {
+        for (var j = 0; j < data.length; j++) {
+          if (data[j].eventName === eventsData[i]) {
+            const label = data[j].label.replace(/\w\S*/g, function (txt) {
+              return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+            setUserEvents((userEvents) => [...userEvents, label]);
+          }
+        }
+      }
     } else {
       props.history.push("/~students/Cepheus");
     }
@@ -60,7 +74,13 @@ function RegistrationSuccess(props) {
           <br />
           Your ID: {userId}
           <br />
-          Please do not share this with anyone other than your teammates!
+          {userEvents.length > 0 ? "Events registered:" : null}
+          <ul>
+            {userEvents.map((e, i) => {
+              return <li key={i}>{e}</li>;
+            })}
+          </ul>
+          Please do not share your id with anyone other than your teammates!
         </div>
         <div className="timer-div">
           <h4 className="timer-div-title">COMING SOON</h4>

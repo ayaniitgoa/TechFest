@@ -44,6 +44,10 @@
   border-radius: 30px;
 }
 
+.select-college {
+  height: 7vh !important;
+}
+
 .go-back:focus {
   outline: none;
 }
@@ -206,7 +210,7 @@
 
   .reg-back-btn {
     font-size: 1.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     position: relative;
     top: 3.5rem;
     z-index: 15;

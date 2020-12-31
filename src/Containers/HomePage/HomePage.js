@@ -36,13 +36,14 @@ function HomePage(props) {
       )
       .then((res) => {
         if (res.data.user.email) {
-          console.log("user", res.data);
           localStorage.setItem("userID", res.data.user.uid);
           localStorage.setItem("userInfo", res.data.user.email);
-          console.log(res.data.user.uid);
+          localStorage.setItem(
+            "userEvents",
+            JSON.stringify(res.data.user.events)
+          );
           props.history.push("/~students/Cepheus/register/success");
         } else {
-          JSON.stringify([response.profileObj.name, response.profileObj.email]);
           localStorage.setItem("userInfo", response.profileObj.email);
           localStorage.setItem(
             "userInfo2",
@@ -51,7 +52,8 @@ function HomePage(props) {
               response.profileObj.email,
             ])
           );
-          console.log(props);
+          // console.log(props);
+
           props.history.push("/~students/Cepheus/register");
         }
 

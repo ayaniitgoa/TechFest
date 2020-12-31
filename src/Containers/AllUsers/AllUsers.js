@@ -23,7 +23,7 @@ function AllUsers() {
   return (
     <div className="allusers">
       <p>All Users</p>
-      <div className="container table-responsive">
+      <div className=" table-responsive">
         <table className="table table-hover table-bordered table-dark">
           <thead>
             <tr>
@@ -33,6 +33,8 @@ function AllUsers() {
               <th scope="col">Contact</th>
               <th scope="col">College</th>
               <th scope="col">UID</th>
+              <th scope="col">Events</th>
+              <th scope="col">No. of events</th>
             </tr>
           </thead>
           <tbody>
@@ -47,6 +49,12 @@ function AllUsers() {
                         <td>{user.contact}</td>
                         <td>{user.college}</td>
                         <td>{user.uid}</td>
+                        <td>
+                          {user.events.map((e, i) => {
+                            return <li key={i}>{e}</li>;
+                          })}
+                        </td>
+                        <td>{user.events.length}</td>
                       </React.Fragment>
                     </tr>
                   );

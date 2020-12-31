@@ -1,19 +1,10 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
-const passport = require("passport");
-const cookieParser = require("cookie-parser");
-const bcrypt = require("bcryptjs");
-const session = require("cookie-session");
 const bodyParser = require("body-parser");
 const app = express();
 const User = require("./user");
 const Event = require("./event");
-const { v4: uuidv4 } = require("uuid");
-const path = require("path");
-const jwt = require("jsonwebtoken");
-const pug = require("pug");
-const nodemailer = require("nodemailer");
 const morgan = require("morgan");
 const { nanoid } = require("nanoid");
 const helmet = require("helmet");
@@ -33,10 +24,6 @@ mongoose.connect(
     else console.log("Mongoose Is Connected");
   }
 );
-
-app.set("views", path.join(__dirname, "views"));
-
-app.set("view engine", "pug");
 
 // Middleware
 app.use(helmet());
@@ -152,6 +139,7 @@ app.post("/api/register/mail", async (req, res) => {
         return res.json({
           status: 400,
           msg: "User already registered!",
+          user: user,
         });
       }
       if (!user) {
@@ -318,6 +306,25 @@ app.post("/api/:eventName/register", async (req, res) => {
               ],
             });
             await newEvent.save();
+
+            console.log("reached");
+            for (var i = 0; i < req.body.ids.length; i++) {
+              console.log("reached", req.params.eventName, req.body.ids[i]);
+              await User.findOneAndUpdate(
+                { uid: req.body.ids[i] },
+                {
+                  $addToSet: { events: req.params.eventName },
+                },
+                (err, result) => {
+                  if (err)
+                    return res.send({
+                      status: 400,
+                      msg: "Registered Successfully",
+                    });
+                }
+              );
+            }
+
             return res.send({
               status: 201,
               msg: "Registration Complete!",
@@ -325,6 +332,7 @@ app.post("/api/:eventName/register", async (req, res) => {
           }
           if (doc) {
             const invalidData = [];
+            console.log("reached1");
             const doc = await Event.findOne({ name: req.params.eventName });
 
             for (var j = 0; j < doc.teams.length; j++) {
@@ -351,8 +359,8 @@ app.post("/api/:eventName/register", async (req, res) => {
             doc.teams.push({
               participants: userIds,
             });
-            await doc.save();
 
+            await doc.save();
             return res.send({
               status: 201,
               msg: "Registration complete!",

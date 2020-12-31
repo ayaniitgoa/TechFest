@@ -24,6 +24,10 @@ const user = new mongoose.Schema({
     type: String,
     trim: true,
   },
+
+  events: {
+    type: [{ type: String }],
+  },
 });
 
 module.exports = mongoose.model("User", user);

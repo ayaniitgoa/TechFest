@@ -11,14 +11,17 @@ import { variables } from "../../variables";
 import Loader from "../../loader.svg";
 import Axios from "axios";
 import { withRouter } from "react-router-dom";
+import Select from "react-select";
+
 function Register(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [college, setCollege] = useState("Other");
   const [contact, setContact] = useState("");
   const [msg, setMsg] = useState("");
   const [errMsg, setErrMsg] = useState("");
+  const [selectedCollege, setSelectedCollege] = useState("");
   const [showLoader, setShowLoader] = useState(false);
+  const [collegeOptions, setCollegeOptions] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem("userInfo")) {
@@ -30,9 +33,21 @@ function Register(props) {
     }
   }, [props.history]);
 
+  useEffect(() => {
+    var collegeData = [];
+    universities.map((u, i) => {
+      collegeData.push({
+        label: `${u.name + `${u.town ? ", " : ""}` + u.town}`,
+        value: u.name,
+      });
+      return null;
+    });
+
+    setCollegeOptions(collegeData);
+  }, []);
+
   const register = (e) => {
     e.preventDefault();
-    console.log(college);
     setShowLoader(true);
     Axios({
       method: "POST",
@@ -40,25 +55,39 @@ function Register(props) {
         email: email,
         name: name,
         contact: Number(contact).valueOf(),
-        college: college,
+        college: selectedCollege.value,
       },
 
       url: `${variables.backendURL}/api/register/mail`,
     }).then((res) => {
-      console.log(res);
       // setMsg(res.data);
       setShowLoader(false);
       if (res.data.status >= 400) {
         setErrMsg(res.data.msg);
         setMsg("");
       } else {
-        console.log(res.data);
+        console.log(res.data.user);
+
         setMsg(res.data.msg);
         setErrMsg("");
         localStorage.setItem("userID", res.data.uid);
+        localStorage.setItem("userEvents", JSON.stringify([]));
         props.history.push("/~students/Cepheus/register/success");
       }
     });
+  };
+
+  const handleCollegeChange = (selectedOption) => {
+    setSelectedCollege(selectedOption);
+    console.log(`Option selected:`, selectedCollege);
+  };
+
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      height: "7vh",
+      borderRadius: "30px",
+    }),
   };
   return (
     <div className="register-div">
@@ -96,6 +125,7 @@ function Register(props) {
             name="name"
             type="text"
             value={name}
+            placeholder="Name"
             required
             // placeholder="Name"
             onChange={(e) => {
@@ -110,23 +140,17 @@ function Register(props) {
           >
             College
           </label>
-          <select
-            className="form-control college-select"
-            id="exampleFormControlSelect1"
-            onChange={(e) => {
-              setCollege(e.target.value);
-            }}
-          >
-            {universities.map((university, i) => {
-              return (
-                <option key={i}>
-                  {" "}
-                  {university.name}
-                  {university.town ? "," : null} {university.town}{" "}
-                </option>
-              );
-            })}
-          </select>
+
+          <Select
+            value={selectedCollege}
+            onChange={handleCollegeChange}
+            options={collegeOptions}
+            styles={customStyles}
+            placeholder="College"
+            noOptionsMessage={() =>
+              "No colleges found, if your college is not found please choose the 'Other' option"
+            }
+          />
 
           <label className="label-register-form" htmlFor="contact">
             Contact
@@ -138,6 +162,7 @@ function Register(props) {
             name="contact"
             type="text"
             value={contact}
+            placeholder="Contact"
             required
             pattern="[1-9]{1}[0-9]{9}"
             onChange={(e) => {
