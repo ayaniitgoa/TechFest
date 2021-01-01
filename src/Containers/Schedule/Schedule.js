@@ -44,7 +44,7 @@ const Day2Content = () => {
         <p id="time">12:00PM TO 1:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino's Trial</p>
+        <p id="event">Arduino's Trial : Stage - 1</p>
         <p>|</p>
         <p id="time">2:00PM to 4:00PM</p>
       </div>
@@ -81,7 +81,7 @@ const Day3Content = () => {
         <p id="time">TIME</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino's Trial</p>
+        <p id="event">Arduino's Trial : Stage - 2</p>
         <p>|</p>
         <p id="time">11:00AM to 01:00PM</p>
       </div>
