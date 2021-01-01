@@ -20,7 +20,7 @@ export const data = [
     label: "UNITE FOR UNITY",
     posterLink: "uniteforunity.png",
     eventText:
-      "There’s no modern art as popular as coding. And there’s no pass-time as appealing as gaming. Unite for Unity invites the digital Picasso in you to develop a non-graphic terminal-based game on a given set of themes. It hardly matters if you enjoy the storyline or the multiplayer, because this event encourages both solo and team participation. Make sure to put your game-face on!",
+      "This is a game development event. The main objective of this event is to acquaint individuals with the tools and resources to design a game using the Unity Game Engine. Thus the event is divided into two themes:  1. Beginner - which is ideal for students just starting with game dev. 2. Intermediate - Ideal for students who have some experience with unity and have finished atleast some minor projects.",
     numOfFields: 4,
   },
   {
@@ -33,10 +33,10 @@ export const data = [
   },
   {
     eventName: "cyberexpert",
-    label: "CYBER EXPERT",
+    label: "CYBER EXPERT TALK",
     posterLink: "talk-three.png",
     eventText:
-      "Founder of Hackershala, is a veteran in the field of Cyber Security with an experience spanning over two decades during which he has worked as faculty at Police Academies & has taken workshops on Cyber Safety at FICCO, FLO, CII, UN Department of Security & Safety. He is working as a Cyber Security consultant for the IAMAI and is an Advisor to the Cyber Peace Foundation. His extensive contributions in Cyber Security have resulted in him bagging numerous coveted awards and he’s one of the most accomplished people in that field.",
+      "Mr. Rakshit Tandon, Co-Founder of Hackdev Technology Pvt Ltd, is a veteran in the field of Cyber Security with an experience spanning over two decades during which he has worked as faculty at Police Academies & has taken workshops on Cyber Safety at FICCO, FLO, CII, UN Department of Security & Safety. He is working as a Cyber Security consultant for the IAMAI and is an Advisor to the Cyber Peace Foundation. His extensive contributions in Cyber Security have resulted in him bagging numerous coveted awards and he’s one of the most accomplished people in that field.",
     date: "16th January, 2021- 11:00am to 12:00pm",
     numOfFields: 1,
   },
@@ -108,17 +108,17 @@ export const data = [
     label: "TAKE CHARGE",
     posterLink: "takecharge.png",
     eventText:
-      "This extremely informative event will teach you much about the magical powers Linux has in this field of Operating Systems! You’ll also learn how to install Windows Subsystem for Linux(WSL), and after that you’ll smoothly wander in the commands of linux, which go way beyond just navigation in the terminal. If you got any queries regarding these things, this hands-on workshop is the best opportunity for you to clear them up!",
+      "This is a workshop, where you'll be introduced to the wonders of the Linux Command Line Interface and get to learn some of the most powerful features that it provides. Don't have a Linux system? No worries! We'll take care of that too. Working with the Command Line offers you control and power as a user, so Take Charge of what you do on your system and let's embark on this journey to learn the Linux CLI.",
     date: "",
 
     numOfFields: 1,
   },
   {
     eventName: "theillusivereality",
-    label: "THE ILLUSIVE REALITY",
+    label: "AR and VR TALK",
     posterLink: "talk-one.png",
     eventText:
-      "Having 25+ years of experience in digital tech besides being Country Manager of Yahoo, Altavista, ViaMichelin, Lycos&Napster he founded “Second stAR VR” which is dedicated to adoption of AR and VR,  on which he’s also written a wide-selling book. He is a partner of the business schools in Italy for AR & VR. Since 2019, he is with PwC Technology Consulting as a Senior Advisor for AR & VR whose focus is on the link between AR, Industry 4.0 and IOT change the standards of integrated services.",
+      "Having 25+ years of experience in digital tech, Mr Lorenzo Montagna has been the Country Manager of Yahoo, Altavista, ViaMichelin and Lycos&Napster. He founded “Second stAR VR” in 2017 which is dedicated to the adoption of AR and VR for enterprises, an initiative for which he’s also written a wide-selling book. He is the Italian President of VRARA the first worldwide AR & VR association. Since 2019, he is with PwC Technology Consulting as a Senior Advisor for AR & VR whose focus is on the link between AR, Industry 4.0 and IOT to change the standards of integrated services.",
     date: "",
 
     numOfFields: 1,

@@ -12,9 +12,9 @@ const Day1Content = () => {
         <p id="time">TIME</p>
       </div>
       <div className="content-row">
-        <p id="event">HACKATHON</p>
+        <p id="event">HackOverflow</p>
         <p>|</p>
-        <p id="time">12:00PM to 12:00AM</p>
+        <p id="time">12:00PM Onwards (36 hour event)</p>
       </div>
       <div className="content-row">
         <p id="event">OPENING CEREMONY</p>
@@ -39,29 +39,29 @@ const Day2Content = () => {
         <p id="time">TIME</p>
       </div>
       <div className="content-row">
-        <p id="event">Linux CLI</p>
+        <p id="event">Take Charge!</p>
         <p>|</p>
         <p id="time">12:00PM TO 1:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino Challenge</p>
+        <p id="event">Arduino's Trial</p>
         <p>|</p>
-        <p id="time">2:00PM to 3:00PM</p>
+        <p id="time">2:00PM to 4:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Chat Bot</p>
+        <p id="event">Chit-Chat with Chat Bot</p>
         <p>|</p>
-        <p id="time">4:00PM to 5:00PM</p>
+        <p id="time">4:00PM to 6:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">CyberTalk </p>
+        <p id="event">Cyber Security Talk  </p>
         <p>|</p>
-        <p id="time">6:00PM to 6:30PM</p>
+        <p id="time">6:00PM to 7:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Coding competition</p>
+        <p id="event">FizzBuzz</p>
         <p>|</p>
-        <p id="time">7:00PM to 7:30PM</p>
+        <p id="time">7:00PM to 10:00PM</p>
       </div>
     </div>
   );
@@ -76,12 +76,12 @@ const Day3Content = () => {
         <p id="time">TIME</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino Challenge</p>
+        <p id="event">Arduino's Trial</p>
         <p>|</p>
-        <p id="time">11:00AM to 12:00PM</p>
+        <p id="time">11:00AM to 01:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Auto-py</p>
+        <p id="event">Pythonize Everything</p>
         <p>|</p>
         <p id="time">1:00PM to 2:00PM</p>
       </div>
@@ -91,14 +91,14 @@ const Day3Content = () => {
         <p id="time">2:00PM to 4:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Web/App Sec.</p>
+        <p id="event">Fiducia</p>
         <p>|</p>
         <p id="time">4:00PM to 5:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Kelly Talk</p>
+        <p id="event">Talk on ICE-EV</p>
         <p>|</p>
-        <p id="time">6:30PM to 7:00PM</p>
+        <p id="time">6:30PM to 7:30PM</p>
       </div>
       <div className="content-row">
         <p id="event">CLOSING CEREMONY + Prize Distribution</p>
