@@ -20,7 +20,7 @@ export const data = [
     label: "UNITE FOR UNITY",
     posterLink: "uniteforunity.png",
     eventText:
-      "This is a game development event. The main objective of this event is to acquaint individuals with the tools and resources to design a game using the Unity Game Engine. Thus the event is divided into two themes:  1. Beginner - which is ideal for students just starting with game dev. 2. Intermediate - Ideal for students who have some experience with unity and have finished atleast some minor projects.",
+      "This is a game development event. The main objective of this event is to acquaint individuals with the tools and resources to design a game using the Unity Game Engine. Thus the event is divided into two themes: 1. Beginner - which is ideal for students just starting with game dev. 2. Intermediate - Ideal for students who have some experience with unity and have finished atleast some minor projects.",
     numOfFields: 4,
   },
   {
