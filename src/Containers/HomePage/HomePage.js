@@ -18,13 +18,31 @@ import Loader from "../../loader.svg";
 function HomePage(props) {
   const [showNav, setShowNav] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
+  const [errMsg, setErrMsg] = useState("");
 
   const showNavbar = () => {
     setShowNav(!showNav);
   };
 
+  const responseGoogleCheckID = (response) => {
+    setShowLoader(true);
+    axios
+      .post(`${variables.backendURL}/api/checkuser`, {
+        email: response.profileObj.email,
+      })
+      .then((res) => {
+        if (res.data.user.email) {
+          localStorage.setItem("userID", res.data.user.uid);
+          localStorage.setItem("userInfo", res.data.user.email);
+          props.history.push("/Cepheus/register/success");
+        } else {
+          setErrMsg("Please Register to get your ID");
+        }
+        setShowLoader(false);
+      });
+  };
+
   const responseGoogle = (response) => {
-    console.log(response);
     setShowLoader(true);
     axios
       .post(
@@ -38,7 +56,6 @@ function HomePage(props) {
         if (res.data.user.email) {
           localStorage.setItem("userID", res.data.user.uid);
           localStorage.setItem("userInfo", res.data.user.email);
-          console.log(res.data.user.uid);
           props.history.push("/Cepheus/register/success");
         } else {
           localStorage.setItem("userInfo", response.profileObj.email);
@@ -49,7 +66,6 @@ function HomePage(props) {
               response.profileObj.email,
             ])
           );
-          console.log(props);
           props.history.push("/Cepheus/register");
         }
 
@@ -86,6 +102,11 @@ function HomePage(props) {
           src={sky}
           alt=""
         />
+        {errMsg && (
+          <div className="alert alert-danger alert-class-homepage" role="alert">
+            {errMsg}
+          </div>
+        )}
         {showLoader && <img className="homepage-loader" src={Loader} alt="" />}
         <div className="techfest-date">15th - 17th Jan 2021</div>
 
@@ -97,6 +118,14 @@ function HomePage(props) {
             onFailure={errorResponseGoogle}
             cookiePolicy={"single_host_origin"}
             className="google-button"
+          />
+          <GoogleLogin
+            clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
+            buttonText="Check ID"
+            onSuccess={responseGoogleCheckID}
+            onFailure={errorResponseGoogle}
+            cookiePolicy={"single_host_origin"}
+            className="google-button google-button-check-id"
           />
         </div>
 

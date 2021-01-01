@@ -47,7 +47,7 @@ export const data = [
     eventText:
       " “Coding is the language of the future.” This exciting event is bound to bring out your inner coding genius. You have to solve a total of 6 to 7 questions ranging in their difficulty level. But do not fret, even if you are an absolute beginner, this event ensures that everyone, no matter what their level is, will get something to solve. Do you have what it takes to survive Fizzbuzz and come out on top?",
     date: "16th January, 2021- 7pm to 10pm",
-    numOfFields: 3,
+    numOfFields: 1,
   },
   {
     eventName: "fiducia",

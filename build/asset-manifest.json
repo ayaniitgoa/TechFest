@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Cepheus/static/css/main.c5c26c25.chunk.css",
-    "main.js": "/Cepheus/static/js/main.e3fc7b46.chunk.js",
-    "main.js.map": "/Cepheus/static/js/main.e3fc7b46.chunk.js.map",
+    "main.css": "/Cepheus/static/css/main.10b91516.chunk.css",
+    "main.js": "/Cepheus/static/js/main.2ba69189.chunk.js",
+    "main.js.map": "/Cepheus/static/js/main.2ba69189.chunk.js.map",
     "runtime-main.js": "/Cepheus/static/js/runtime-main.e0da9b5c.js",
     "runtime-main.js.map": "/Cepheus/static/js/runtime-main.e0da9b5c.js.map",
     "static/css/2.5c501d9f.chunk.css": "/Cepheus/static/css/2.5c501d9f.chunk.css",
-    "static/js/2.61e9b218.chunk.js": "/Cepheus/static/js/2.61e9b218.chunk.js",
-    "static/js/2.61e9b218.chunk.js.map": "/Cepheus/static/js/2.61e9b218.chunk.js.map",
+    "static/js/2.95a79f41.chunk.js": "/Cepheus/static/js/2.95a79f41.chunk.js",
+    "static/js/2.95a79f41.chunk.js.map": "/Cepheus/static/js/2.95a79f41.chunk.js.map",
     "static/js/3.7b785cba.chunk.js": "/Cepheus/static/js/3.7b785cba.chunk.js",
     "static/js/3.7b785cba.chunk.js.map": "/Cepheus/static/js/3.7b785cba.chunk.js.map",
     "index.html": "/Cepheus/index.html",
     "static/css/2.5c501d9f.chunk.css.map": "/Cepheus/static/css/2.5c501d9f.chunk.css.map",
-    "static/css/main.c5c26c25.chunk.css.map": "/Cepheus/static/css/main.c5c26c25.chunk.css.map",
-    "static/js/2.61e9b218.chunk.js.LICENSE.txt": "/Cepheus/static/js/2.61e9b218.chunk.js.LICENSE.txt",
+    "static/css/main.10b91516.chunk.css.map": "/Cepheus/static/css/main.10b91516.chunk.css.map",
+    "static/js/2.95a79f41.chunk.js.LICENSE.txt": "/Cepheus/static/js/2.95a79f41.chunk.js.LICENSE.txt",
     "static/media/Aaryan.55931e7b.jpg": "/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
     "static/media/Darshay.8d0a931b.jpg": "/Cepheus/static/media/Darshay.8d0a931b.jpg",
@@ -34,6 +34,7 @@
     "static/media/pantheon.1efefdf2.svg": "/Cepheus/static/media/pantheon.1efefdf2.svg",
     "static/media/poseidon.734bc1c1.svg": "/Cepheus/static/media/poseidon.734bc1c1.svg",
     "static/media/rightButton.511686d3.svg": "/Cepheus/static/media/rightButton.511686d3.svg",
+    "static/media/saksham.1c642bd0.JPG": "/Cepheus/static/media/saksham.1c642bd0.JPG",
     "static/media/sands.38c2568f.svg": "/Cepheus/static/media/sands.38c2568f.svg",
     "static/media/shreyas.2afdf5be.jpg": "/Cepheus/static/media/shreyas.2afdf5be.jpg",
     "static/media/sky.cc0b0681.svg": "/Cepheus/static/media/sky.cc0b0681.svg",
@@ -44,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.e0da9b5c.js",
     "static/css/2.5c501d9f.chunk.css",
-    "static/js/2.61e9b218.chunk.js",
-    "static/css/main.c5c26c25.chunk.css",
-    "static/js/main.e3fc7b46.chunk.js"
+    "static/js/2.95a79f41.chunk.js",
+    "static/css/main.10b91516.chunk.css",
+    "static/js/main.2ba69189.chunk.js"
   ]
 }

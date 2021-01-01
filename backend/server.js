@@ -307,10 +307,9 @@ app.post("/api/:eventName/register", async (req, res) => {
                 },
               ],
             });
-            newEvent.save();
+            await newEvent.save();
 
             for (var i = 0; i < req.body.ids.length; i++) {
-              console.log("reached", req.params.eventName, req.body.ids[i]);
               await User.findOneAndUpdate(
                 { uid: req.body.ids[i] },
                 {

@@ -6,6 +6,7 @@ import shreyasPhoto from "./shreyas.jpg";
 import AnmoldeepPhoto from "./Anmoldeep.jpg";
 import DarshayPhoto from "./Darshay.jpg";
 import AaryanPhoto from "./Aaryan.jpg";
+import SakshamPhoto from "./saksham.JPG";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -73,7 +74,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={aadilPhoto} alt="" />
             <p className="contact-text contact-name">
-              Aadil Khan Pathan, Events Head
+              Aadil Pathan, Events Team Head
             </p>
             <p className="contact-text contact-number">+91 8652845505</p>
             <p className="contact-text contact-number">
@@ -83,7 +84,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={DarshayPhoto} alt="" />
             <p className="contact-text contact-name">
-              Darshay Naik, Events Head
+              Darshay Naik, Finance Team Head
             </p>
             <p className="contact-text contact-number">+91 9913759592</p>
             <p className="contact-text contact-number">
@@ -93,11 +94,21 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={AaryanPhoto} alt="" />
             <p className="contact-text contact-name">
-              Aaryan Kadam, Events Head
+              Aaryan Kadam, Design Team Head
             </p>
             <p className="contact-text contact-number">+91 9137901402</p>
             <p className="contact-text contact-number">
               aaryan.kadam.18002@iitgoa.ac.in
+            </p>
+          </div>
+          <div className="individual-contact">
+            <img className="contact-photo" src={SakshamPhoto} alt="" />
+            <p className="contact-text contact-name">
+              Saksham Goyal, Sponsorship Team Head
+            </p>
+            <p className="contact-text contact-number">+91 6283344251</p>
+            <p className="contact-text contact-number">
+              saksham.goyal.18003@iitgoa.ac.in
             </p>
           </div>
         </Slider>
@@ -153,6 +164,16 @@ function ContactUs() {
             <p className="contact-text contact-number">+91 9137901402</p>
             <p className="contact-text contact-number">
               aaryan.kadam.18002@iitgoa.ac.in
+            </p>
+          </div>
+          <div className="individual-contact">
+            <img className="contact-photo" src={SakshamPhoto} alt="" />
+            <p className="contact-text contact-name">
+              Saksham Goyal, Sponsorship Team Head
+            </p>
+            <p className="contact-text contact-number">+91 6283344251</p>
+            <p className="contact-text contact-number">
+              saksham.goyal.18003@iitgoa.ac.in
             </p>
           </div>
         </Slider>

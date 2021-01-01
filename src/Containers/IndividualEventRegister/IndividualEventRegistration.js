@@ -90,8 +90,8 @@ function IndividualEventRegistraion(props) {
           </div>
           {loader && <img src={Loader} alt="" />}
           <p className="please-text">
-            Please enter your ids <br /> You can get your ids by registering on
-            the Home Page.{" "}
+            Please enter your id(s) <br /> You can get your id(s) by registering
+            on the Home Page.{" "}
           </p>
           {msg && (
             <div className="alert alert-success alert-class" role="alert">
@@ -99,7 +99,7 @@ function IndividualEventRegistraion(props) {
             </div>
           )}
           {errMsg && (
-            <div className="alert alert-danger alert-class" role="alert">
+            <div className=" alert-danger alert-class" role="alert">
               {errMsg}
             </div>
           )}
