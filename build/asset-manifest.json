@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Cepheus/static/css/main.10b91516.chunk.css",
-    "main.js": "/Cepheus/static/js/main.2ba69189.chunk.js",
-    "main.js.map": "/Cepheus/static/js/main.2ba69189.chunk.js.map",
+    "main.js": "/Cepheus/static/js/main.882de805.chunk.js",
+    "main.js.map": "/Cepheus/static/js/main.882de805.chunk.js.map",
     "runtime-main.js": "/Cepheus/static/js/runtime-main.e0da9b5c.js",
     "runtime-main.js.map": "/Cepheus/static/js/runtime-main.e0da9b5c.js.map",
     "static/css/2.5c501d9f.chunk.css": "/Cepheus/static/css/2.5c501d9f.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/Anmoldeep.3c8db6ab.jpg": "/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
     "static/media/Darshay.8d0a931b.jpg": "/Cepheus/static/media/Darshay.8d0a931b.jpg",
     "static/media/IIT-Goa-Logo-White.cd575e9f.png": "/Cepheus/static/media/IIT-Goa-Logo-White.cd575e9f.png",
-    "static/media/Rulebook.366988f1.pdf": "/Cepheus/static/media/Rulebook.366988f1.pdf",
+    "static/media/Rulebook.7fd56860.pdf": "/Cepheus/static/media/Rulebook.7fd56860.pdf",
     "static/media/aadil.4cf02a17.jpeg": "/Cepheus/static/media/aadil.4cf02a17.jpeg",
     "static/media/bubble.d0afba60.svg": "/Cepheus/static/media/bubble.d0afba60.svg",
     "static/media/buildings-reflection.b690daec.svg": "/Cepheus/static/media/buildings-reflection.b690daec.svg",
@@ -47,6 +47,6 @@
     "static/css/2.5c501d9f.chunk.css",
     "static/js/2.95a79f41.chunk.js",
     "static/css/main.10b91516.chunk.css",
-    "static/js/main.2ba69189.chunk.js"
+    "static/js/main.882de805.chunk.js"
   ]
 }
