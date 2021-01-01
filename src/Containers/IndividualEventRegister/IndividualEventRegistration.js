@@ -90,7 +90,7 @@ function IndividualEventRegistraion(props) {
           </div>
           {loader && <img src={Loader} alt="" />}
           <p className="please-text">
-            Please enter your id(s) <br /> You can get your id(s) by registering
+            Please enter your ID(s) <br /> You can get your ID(s) by registering
             on the Home Page.{" "}
           </p>
           {msg && (
@@ -99,7 +99,7 @@ function IndividualEventRegistraion(props) {
             </div>
           )}
           {errMsg && (
-            <div className=" alert-danger alert-class" role="alert">
+            <div className="alert alert-danger alert-class" role="alert">
               {errMsg}
             </div>
           )}
@@ -111,15 +111,15 @@ function IndividualEventRegistraion(props) {
                     <div className="ind-reg-inp">
                       <label className="ind-register-label">
                         {numOfFields === 1
-                          ? "Please enter your id"
+                          ? "Please enter your ID"
                           : i === 0
                           ? "Team Leader"
                           : `Team Member ${i + 1}`}
                       </label>
                       <input
                         className="form-control"
-                        name={`id ${i + 1}`}
-                        placeholder={`id ${i + 1}`}
+                        name={`ID ${i + 1}`}
+                        placeholder={`ID ${i + 1}`}
                         autoComplete="none"
                         type="text"
                         onChange={(e) => {
