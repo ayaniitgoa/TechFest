@@ -74,7 +74,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={aadilPhoto} alt="" />
             <p className="contact-text contact-name">
-              Aadil Pathan, Events Team Head
+              Aadil Pathan, Event Manager
             </p>
             <p className="contact-text contact-number">+91 8652845505</p>
             <p className="contact-text contact-number">
