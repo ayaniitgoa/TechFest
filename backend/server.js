@@ -309,23 +309,22 @@ app.post("/api/:eventName/register", async (req, res) => {
                 },
               ],
             });
-            await newEvent.save().then((val) => {
-              req.body.ids.map(async (id) => {
-                await User.findOneAndUpdate(
-                  { uid: id },
-                  {
-                    $addToSet: { events: req.params.eventName },
-                  },
-                  (err, result) => {
-                    if (err)
-                      return res.send({
-                        status: 400,
-                        msg: "Registered Successfully",
-                      });
-                  }
-                );
-              });
-            });
+            await newEvent.save();
+            for (var i = 0; i < req.body.ids.length; i++) {
+              await User.findOneAndUpdate(
+                { uid: req.body.ids[i] },
+                {
+                  $addToSet: { events: req.params.eventName },
+                },
+                (err, result) => {
+                  if (err)
+                    return res.send({
+                      status: 400,
+                      msg: "Registered Successfully",
+                    });
+                }
+              );
+            }
 
             return res.send({
               status: 201,
@@ -362,6 +361,22 @@ app.post("/api/:eventName/register", async (req, res) => {
             });
 
             await doc.save();
+
+            for (var i = 0; i < req.body.ids.length; i++) {
+              await User.findOneAndUpdate(
+                { uid: req.body.ids[i] },
+                {
+                  $addToSet: { events: req.params.eventName },
+                },
+                (err, result) => {
+                  if (err)
+                    return res.send({
+                      status: 400,
+                      msg: "Registered Successfully",
+                    });
+                }
+              );
+            }
             return res.send({
               status: 201,
               msg: "Registration complete!",

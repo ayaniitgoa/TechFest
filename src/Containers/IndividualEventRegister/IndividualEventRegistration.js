@@ -58,7 +58,7 @@ function IndividualEventRegistraion(props) {
           setMsg("");
         }
         if (res.data.status < 400) {
-          setMsg(res.data.msg);
+          setMsg(`${res.data.msg} Please  `);
           setErrMsg("");
         }
         setLoader(false);
@@ -95,7 +95,15 @@ function IndividualEventRegistraion(props) {
           </p>
           {msg && (
             <div className="alert alert-success alert-class" role="alert">
-              {msg}
+              Registration Successfull! Please join the{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://discord.gg/bbnt3RFxzH"
+              >
+                Discord Link
+              </a>{" "}
+              for further information.
             </div>
           )}
           {errMsg && (

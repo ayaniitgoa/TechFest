@@ -4,14 +4,14 @@ import pantheon from "./pantheon.svg";
 import cepeus from "./cepheus-logo.svg";
 import Row from "react-bootstrap/Row";
 import { Link, withRouter } from "react-router-dom";
-// import { data } from "../IndividualEvent/eventData";
+import { data } from "../IndividualEvent/eventData";
 import axios from "axios";
 import { variables } from "../../variables";
 
 function RegistrationSuccess(props) {
   const [userId, setUserID] = useState("");
   const [userEmail, setUserEmail] = useState("");
-  // const [userEvents, setUserEvents] = useState([]);
+  const [userEvents, setUserEvents] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem("userID")) {
@@ -25,19 +25,19 @@ function RegistrationSuccess(props) {
         .then((res) => {
           if (res.data.user) {
             setUserID(res.data.user.uid);
-            // setUserEvents([]);
-            // for (var i = 0; i < res.data.user.events.length; i++) {
-            //   for (var j = 0; j < data.length; j++) {
-            //     if (data[j].eventName === res.data.user.events[i]) {
-            //       const label = data[j].label.replace(/\w\S*/g, function (txt) {
-            //         return (
-            //           txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-            //         );
-            //       });
-            //       setUserEvents((userEvents) => [...userEvents, label]);
-            //     }
-            //   }
-            // }
+            setUserEvents([]);
+            for (var i = 0; i < res.data.user.events.length; i++) {
+              for (var j = 0; j < data.length; j++) {
+                if (data[j].eventName === res.data.user.events[i]) {
+                  const label = data[j].label.replace(/\w\S*/g, function (txt) {
+                    return (
+                      txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+                    );
+                  });
+                  setUserEvents((userEvents) => [...userEvents, label]);
+                }
+              }
+            }
           } else {
             setUserID("");
             // setUserEmail([]);
@@ -89,13 +89,13 @@ function RegistrationSuccess(props) {
           <br />
           Your ID: {userId}
           <br />
-          {/* {userEvents.length > 0 ? "Events registered:" : null}
+          {userEvents.length > 0 ? "Events registered:" : null}
           <ul>
             {userEvents.length > 0 &&
               userEvents.map((e, i) => {
                 return <li key={i}>{e}</li>;
               })}
-          </ul> */}
+          </ul>
           Please do not share your id with anyone other than your teammates!
         </div>
         <div className="timer-div">
