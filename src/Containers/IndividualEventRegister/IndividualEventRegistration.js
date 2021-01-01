@@ -95,15 +95,15 @@ function IndividualEventRegistraion(props) {
           </p>
           {msg && (
             <div className="alert alert-success alert-class" role="alert">
-              Registration Successfull! Please join the{" "}
+              Registration Successfull! Please join our{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://discord.gg/bbnt3RFxzH"
               >
-                Discord Link
+                Discord Server
               </a>{" "}
-              for further information.
+              for more information.
             </div>
           )}
           {errMsg && (
