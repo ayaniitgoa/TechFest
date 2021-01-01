@@ -8,6 +8,8 @@ const Event = require("./event");
 const morgan = require("morgan");
 const { nanoid } = require("nanoid");
 const helmet = require("helmet");
+const path = require("path");
+const https = require("https");
 // const MongoStore = require("connect-mongo")(session);
 require("dotenv").config();
 //----------------------------------------- END OF IMPORTS---------------------------------------------------
@@ -307,23 +309,23 @@ app.post("/api/:eventName/register", async (req, res) => {
                 },
               ],
             });
-            await newEvent.save();
-
-            for (var i = 0; i < req.body.ids.length; i++) {
-              await User.findOneAndUpdate(
-                { uid: req.body.ids[i] },
-                {
-                  $addToSet: { events: req.params.eventName },
-                },
-                (err, result) => {
-                  if (err)
-                    return res.send({
-                      status: 400,
-                      msg: "Registered Successfully",
-                    });
-                }
-              );
-            }
+            await newEvent.save().then((val) => {
+              req.body.ids.map(async (id) => {
+                await User.findOneAndUpdate(
+                  { uid: id },
+                  {
+                    $addToSet: { events: req.params.eventName },
+                  },
+                  (err, result) => {
+                    if (err)
+                      return res.send({
+                        status: 400,
+                        msg: "Registered Successfully",
+                      });
+                  }
+                );
+              });
+            });
 
             return res.send({
               status: 201,
@@ -379,6 +381,7 @@ app.post("/api/:eventName/register", async (req, res) => {
 //----------------------------------------- END OF ROUTES---------------------------------------------------
 //Start Server
 PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log("Server Has Started");
 });
