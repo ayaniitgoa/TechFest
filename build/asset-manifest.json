@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Cepheus/static/css/main.7a0374a4.chunk.css",
-    "main.js": "/Cepheus/static/js/main.62cd2f7b.chunk.js",
-    "main.js.map": "/Cepheus/static/js/main.62cd2f7b.chunk.js.map",
+    "main.js": "/Cepheus/static/js/main.83ced37a.chunk.js",
+    "main.js.map": "/Cepheus/static/js/main.83ced37a.chunk.js.map",
     "runtime-main.js": "/Cepheus/static/js/runtime-main.ffde0769.js",
     "runtime-main.js.map": "/Cepheus/static/js/runtime-main.ffde0769.js.map",
     "static/css/2.5c501d9f.chunk.css": "/Cepheus/static/css/2.5c501d9f.chunk.css",
@@ -47,6 +47,6 @@
     "static/css/2.5c501d9f.chunk.css",
     "static/js/2.3067c55d.chunk.js",
     "static/css/main.7a0374a4.chunk.css",
-    "static/js/main.62cd2f7b.chunk.js"
+    "static/js/main.83ced37a.chunk.js"
   ]
 }

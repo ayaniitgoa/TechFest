@@ -11,7 +11,7 @@ const Day1Content = () => {
         <p>|</p>
         <p id="time">TIME</p>
       </div>
-     <div className="content-row">
+      <div className="content-row">
         <p id="event">HackOverflow</p>
         <p>|</p>
         <p id="time">12:00PM Onwards (36 hour event)</p>
@@ -59,7 +59,7 @@ const Day2Content = () => {
         <p id="time">4:00PM Onwards (24 hour Event)</p>
       </div>
       <div className="content-row">
-        <p id="event">Cyber Security Talk  </p>
+        <p id="event">Cyber Security Talk </p>
         <p>|</p>
         <p id="time">6:00PM to 7:00PM</p>
       </div>
@@ -161,9 +161,9 @@ function Schedule() {
           <div label="Day 3">
             <Day3Content />
           </div>
-        //<div label="OPEN CHALLENGES">
-         //  <DayXContent />
-        //</div>
+          {/* <div label="OPEN CHALLENGES">
+          <DayXContent />
+        </div> */}
         </Tabs>
       </div>
     </div>
