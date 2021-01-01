@@ -11,7 +11,7 @@ const Day1Content = () => {
         <p>|</p>
         <p id="time">TIME</p>
       </div>
-      <div className="content-row">
+     <div className="content-row">
         <p id="event">HackOverflow</p>
         <p>|</p>
         <p id="time">12:00PM Onwards (36 hour event)</p>
@@ -44,7 +44,7 @@ const Day2Content = () => {
         <p id="time">12:00PM TO 1:00PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino's Trial</p>
+        <p id="event">Arduino's Trial : Stage - 1</p>
         <p>|</p>
         <p id="time">2:00PM to 4:00PM</p>
       </div>
@@ -52,6 +52,11 @@ const Day2Content = () => {
         <p id="event">Chit-Chat with Chat Bot</p>
         <p>|</p>
         <p id="time">4:00PM to 6:00PM</p>
+      </div>
+      <div className="content-row">
+        <p id="event">Pandora's Box</p>
+        <p>|</p>
+        <p id="time">4:00PM Onwards (24 hour Event)</p>
       </div>
       <div className="content-row">
         <p id="event">Cyber Security Talk  </p>
@@ -76,7 +81,7 @@ const Day3Content = () => {
         <p id="time">TIME</p>
       </div>
       <div className="content-row">
-        <p id="event">Arduino's Trial</p>
+        <p id="event">Arduino's Trial : Stage - 2</p>
         <p>|</p>
         <p id="time">11:00AM to 01:00PM</p>
       </div>
@@ -109,6 +114,34 @@ const Day3Content = () => {
   );
 };
 
+// on going work...
+/*const DayXContent = () => {
+  return (
+    <div className="content-container">
+      <div className="content-row">
+        <p id="event">EVENT</p>
+        <p>|</p>
+        <p id="time">TIME</p>
+      </div>
+     <div className="content-row">
+        <p id="event">HackOverflow</p>
+        <p>|</p>
+        <p id="time">12:00PM Onwards (36 hour event)</p>
+      </div>
+      <div className="content-row">
+        <p id="event">OPENING CEREMONY</p>
+        <p>|</p>
+        <p id="time">6:00PM to 7:30PM</p>
+      </div>
+      <div className="content-row">
+        <p id="event">Declaration of all open challenges</p>
+        <p>|</p>
+        <p id="time">8:00PM to 10:00PM</p>
+      </div>
+    </div>
+  );
+};
+*/
 function Schedule() {
   return (
     <div id="schedule-section" className="schedule">
@@ -128,6 +161,9 @@ function Schedule() {
           <div label="Day 3">
             <Day3Content />
           </div>
+        //<div label="OPEN CHALLENGES">
+         //  <DayXContent />
+        //</div>
         </Tabs>
       </div>
     </div>
