@@ -12,9 +12,9 @@ function AllUsers() {
     axios
       .get(`${variables.backendURL}/api/allusers/${variables.protectedToken}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setUserData(res.data);
-        console.log(res.data.data.length);
+        // console.log(res.data.data.length);
       })
       .catch((e) => {
         console.log(e);

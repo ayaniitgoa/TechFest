@@ -67,7 +67,7 @@ function Register(props) {
         setErrMsg(res.data.msg);
         setMsg("");
       } else {
-        console.log(res.data.user);
+        // console.log(res.data.user);
 
         setMsg(res.data.msg);
         setErrMsg("");
@@ -80,7 +80,7 @@ function Register(props) {
 
   const handleCollegeChange = (selectedOption) => {
     setSelectedCollege(selectedOption);
-    console.log(`Option selected:`, selectedCollege);
+    // console.log(`Option selected:`, selectedCollege);
   };
 
   const customStyles = {

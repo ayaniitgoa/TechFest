@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 import "./Participants.css";
 import { variables } from "../../variables";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
+// import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
 function Participants(props) {
   const [participantData, setParticipantData] = useState([[]]);
@@ -14,7 +14,7 @@ function Participants(props) {
         `${variables.backendURL}/api/teams/${props.match.params.eventName}/${variables.protectedToken}`
       )
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         if (res.data[0]) {
           setParticipantData(res.data);
         } else {
@@ -31,14 +31,14 @@ function Participants(props) {
         Participants
       </p>
 
-      <ReactHTMLTableToExcel
+      {/* <ReactHTMLTableToExcel
         id="export-to-excel-btn"
         className="button-excel download-table-xls-button"
         table="participants-table"
         filename="allusers"
         sheet="sheet 1"
         buttonText="Download as XLS"
-      />
+      /> */}
       <div className="container table-responsive">
         <table className="table table-bordered table-dark table-hover participants-table">
           <thead>

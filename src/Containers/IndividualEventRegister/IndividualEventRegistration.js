@@ -27,7 +27,7 @@ function IndividualEventRegistraion(props) {
     e.preventDefault();
     setLoader(true);
     var filteredIDS = [];
-    console.log(ids);
+    // console.log(ids);
     for (var i = 0; i < ids.length; i++) {
       if (ids[i]) {
         if (ids[i].length > 0) {
@@ -41,7 +41,7 @@ function IndividualEventRegistraion(props) {
       })
       .then((res) => {
         if (res.data.status >= 400) {
-          console.log(res.data);
+          // console.log(res.data);
           var msgInvalid = "";
           if (res.data.userId) {
             res.data.userId.map((id, i) => {
@@ -52,7 +52,7 @@ function IndividualEventRegistraion(props) {
               `Following id(s) are already registered:   ${msgInvalid}`
             );
           } else {
-            console.log(msg);
+            // console.log(msg);
             setErrMsg(res.data.msg);
           }
           setMsg("");
