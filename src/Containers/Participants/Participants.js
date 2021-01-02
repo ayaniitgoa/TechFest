@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 import "./Participants.css";
 import { variables } from "../../variables";
+import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
 function Participants(props) {
   const [participantData, setParticipantData] = useState([[]]);
@@ -29,15 +30,24 @@ function Participants(props) {
           props.match.params.eventName.slice(1)}{" "}
         Participants
       </p>
+
+      <ReactHTMLTableToExcel
+        id="export-to-excel-btn"
+        className="button-excel download-table-xls-button"
+        table="participants-table"
+        filename="allusers"
+        sheet="sheet 1"
+        buttonText="Download as XLS"
+      />
       <div className="container table-responsive">
-        <table className="table table-bordered table-dark table-hover">
+        <table className="table table-bordered table-dark table-hover participants-table">
           <thead>
             <tr>
               <th scope="col">Team No.</th>
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Contact</th>
-              <th scope="col">UID</th>
+              {/* <th scope="col">UID</th> */}
             </tr>
           </thead>
           <tbody>
@@ -55,7 +65,7 @@ function Participants(props) {
                         <td>{each.name}</td>
                         <td>{each.email}</td>
                         <td>{each.contact}</td>
-                        <td>{each.uid}</td>
+                        {/* <td>{each.uid}</td> */}
                       </tr>
                     );
                   })}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./AllUsers.css";
 import axios from "axios";
 import { variables } from "../../variables";
+import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
 function AllUsers() {
   const [userData, setUserData] = useState({
@@ -23,8 +24,20 @@ function AllUsers() {
   return (
     <div className="allusers">
       <p>All Users</p>
+
+      <ReactHTMLTableToExcel
+        id="export-to-excel-btn"
+        className="button-excel download-table-xls-button"
+        table="allusers-table"
+        filename="allusers"
+        sheet="sheet 1"
+        buttonText="Download as XLS"
+      />
       <div className=" table-responsive">
-        <table className="table table-hover table-bordered table-dark">
+        <table
+          className="table table-hover table-bordered table-dark"
+          id="allusers-table"
+        >
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -32,7 +45,7 @@ function AllUsers() {
               <th scope="col">Email</th>
               <th scope="col">Contact</th>
               <th scope="col">College</th>
-              <th scope="col">UID</th>
+              {/* <th scope="col">UID</th> */}
               <th scope="col">Events</th>
               <th scope="col">No. of events</th>
             </tr>
@@ -48,7 +61,7 @@ function AllUsers() {
                         <td>{user.email}</td>
                         <td>{user.contact}</td>
                         <td>{user.college}</td>
-                        <td>{user.uid}</td>
+                        {/* <td>{user.uid}</td> */}
                         <td>
                           {user.events.map((e, i) => {
                             return <li key={i}>{e}</li>;

@@ -7,11 +7,15 @@ import { Link, withRouter } from "react-router-dom";
 import { data } from "../IndividualEvent/eventData";
 import axios from "axios";
 import { variables } from "../../variables";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+// import Tippy from "@tippyjs/react";
+// import "tippy.js/dist/tippy.css";
 
 function RegistrationSuccess(props) {
   const [userId, setUserID] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userEvents, setUserEvents] = useState([]);
+  const [copyId, setCopyId] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("userID")) {
@@ -87,7 +91,20 @@ function RegistrationSuccess(props) {
         <div className="user-id">
           Your Email: {userEmail}
           <br />
-          Your ID: {userId}
+          Your ID:
+          <span className="user-id-reg-suc">{userId}</span>
+          <CopyToClipboard text={userId} onCopy={() => setCopyId(true)}>
+            {/* <Tippy content="Click to copy"> */}
+            <button
+              style={{ backgroundColor: `${copyId ? " #d2f4ff" : "white"}` }}
+              type="button"
+              className="id-button-reg-suc"
+            >
+              <i className="far fa-copy"></i>
+            </button>
+            {/* </Tippy> */}
+          </CopyToClipboard>
+          <p className="copy-text">{copyId ? "ID Copied!" : ""}</p>
           <br />
           {userEvents.length > 0 ? "Events registered:" : null}
           <ul>

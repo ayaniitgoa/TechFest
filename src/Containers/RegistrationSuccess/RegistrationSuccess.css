@@ -8,6 +8,28 @@
   z-index: -3;
   padding-bottom: 5vh;
 }
+
+.id-button-reg-suc {
+  padding: 4px 9px;
+  margin-left: 5px;
+  /* background-color: #d2f4ff; */
+  border-radius: 30px;
+  border: black solid 1px;
+}
+
+.id-button-reg-suc:focus {
+  outline: none;
+}
+
+.copy-text {
+  display: inline;
+  margin-left: 5px;
+}
+
+.user-id-reg-suc {
+  margin-left: 3px;
+}
+
 .building-reg {
   width: 80vw;
   position: absolute;
