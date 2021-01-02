@@ -115,7 +115,7 @@ const Day3Content = () => {
 };
 
 // on going work...
-/*const DayXContent = () => {
+const DayXContent = () => {
   return (
     <div className="content-container">
       <div className="content-row">
@@ -123,7 +123,7 @@ const Day3Content = () => {
         <p>|</p>
         <p id="time">TIME</p>
       </div>
-     <div className="content-row">
+      <div className="content-row">
         <p id="event">HackOverflow</p>
         <p>|</p>
         <p id="time">12:00PM Onwards (36 hour event)</p>
@@ -141,7 +141,7 @@ const Day3Content = () => {
     </div>
   );
 };
-*/
+
 function Schedule() {
   return (
     <div id="schedule-section" className="schedule">
@@ -161,9 +161,9 @@ function Schedule() {
           <div label="Day 3">
             <Day3Content />
           </div>
-          {/* <div label="OPEN CHALLENGES">
-          <DayXContent />
-        </div> */}
+          <div label="OPEN CHALLENGES">
+            <DayXContent />
+          </div>
         </Tabs>
       </div>
     </div>

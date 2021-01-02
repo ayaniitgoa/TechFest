@@ -41,22 +41,24 @@
   border: 0px solid #ccc;
   background-color: gainsboro;
   border-radius: 49px;
-  width: 21rem;
-  height: 3rem;
+  width: 48vw;
+  height: 3.5rem;
   display: flex;
   justify-content: space-evenly;
   z-index: 12;
+  font-size: 0.9rem;
 }
 
 .tab-list-item {
   list-style-type: none;
-  width: 7rem;
+  width: 12vw;
   height: 100%;
   border-radius: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-align: center;
 }
 
 .tab-list-active {
@@ -118,6 +120,14 @@
     padding-bottom: 0rem;
     padding-top: 2rem;
   }
+
+  .tab-list {
+    width: 72vw;
+  }
+  .tab-list-item {
+    width: 18vw;
+    /* font-size: 0.7rem; */
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -154,6 +164,15 @@
     width: 120vw;
     top: 10%;
   }
+
+  .tab-list {
+    width: 76vw;
+    height: 3rem;
+  }
+  .tab-list-item {
+    width: 19vw;
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -163,7 +182,12 @@
     /* margin-top: 1em; */
     border-radius: 20px;
   }
+
   .tab-list {
-    width: 19rem;
+    width: 96vw;
+  }
+  .tab-list-item {
+    width: 24vw;
+    font-size: 0.7rem;
   }
 }
