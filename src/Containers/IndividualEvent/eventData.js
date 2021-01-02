@@ -114,7 +114,7 @@ export const data = [
     numOfFields: 1,
   },
   {
-    eventName: "theillusivereality",
+    eventName: "arandvr",
     label: "AR and VR TALK",
     posterLink: "talk-one.png",
     eventText:
