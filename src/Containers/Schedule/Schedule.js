@@ -17,14 +17,24 @@ const Day1Content = () => {
         <p id="time">12:00PM Onwards (36 hour event)</p>
       </div>
       <div className="content-row">
+        <p id="event">Unite For Unity</p>
+        <p>|</p>
+        <p id="time">12:00PM Onwards (48 hour event)</p>
+      </div>
+     <div className="content-row">
+        <p id="event">Circuital Dilemma - Stage 1</p>
+        <p>|</p>
+        <p id="time">04:30PM - 6:00PM</p>
+      </div>
+      <div className="content-row">
         <p id="event">OPENING CEREMONY</p>
         <p>|</p>
         <p id="time">6:00PM to 7:30PM</p>
       </div>
       <div className="content-row">
-        <p id="event">Declaration of all open challenges</p>
+        <p id="event">Circuital Dilemma - Stage 2</p>
         <p>|</p>
-        <p id="time">8:00PM to 10:00PM</p>
+        <p id="time">09:00PM Onwards (39 hour event)</p>
       </div>
     </div>
   );
@@ -114,8 +124,8 @@ const Day3Content = () => {
   );
 };
 
-// on going work...
-/*const DayXContent = () => {
+
+const DayXContent = () => {
   return (
     <div className="content-container">
       <div className="content-row">
@@ -123,25 +133,20 @@ const Day3Content = () => {
         <p>|</p>
         <p id="time">TIME</p>
       </div>
-     <div className="content-row">
-        <p id="event">HackOverflow</p>
+      <div className="content-row">
+        <p id="event">Cool Your Engine</p>
         <p>|</p>
-        <p id="time">12:00PM Onwards (36 hour event)</p>
+        <p id="time">12:00PM on 12th Jan to 03:00PM on 16 Jan</p>
       </div>
       <div className="content-row">
-        <p id="event">OPENING CEREMONY</p>
+        <p id="event">Frame The Crane</p>
         <p>|</p>
-        <p id="time">6:00PM to 7:30PM</p>
-      </div>
-      <div className="content-row">
-        <p id="event">Declaration of all open challenges</p>
-        <p>|</p>
-        <p id="time">8:00PM to 10:00PM</p>
+        <p id="time">12:00PM on 12th Jan to 03:00PM on 16 Jan</p>
       </div>
     </div>
   );
 };
-*/
+
 function Schedule() {
   return (
     <div id="schedule-section" className="schedule">
@@ -161,9 +166,9 @@ function Schedule() {
           <div label="Day 3">
             <Day3Content />
           </div>
-          {/* <div label="OPEN CHALLENGES">
-          <DayXContent />
-        </div> */}
+          <div label="OPEN CHALLENGES">
+            <DayXContent />
+          </div> 
         </Tabs>
       </div>
     </div>
