@@ -21,7 +21,7 @@
 }
 
 .poseidon-img {
-  width: 25em;
+  width: 28em;
   position: relative;
   left: -20px;
   margin-top: -20vh;
@@ -39,61 +39,54 @@
 }
 
 .bubble-img {
-  width: 10em;
+  width: 22em;
   /* position: relative; */
-  margin-top: 3vh;
+  margin-top: 5vh;
   position: relative;
   z-index: 13;
   /* display: none; */
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 .bubble-img-1 {
   position: relative;
-  left: 36vw;
+  left: 26vw;
   top: 8vh;
 }
 .bubble-img-2 {
   position: relative;
-  left: 45vw;
-  top: 15vh;
+  background-color: white;
+  padding: 10px;
+  left: 35vw;
+  top: 25vh;
 }
-
 .bubble-img-3 {
   position: relative;
-  left: 40vw;
-  top: 15vh;
+  left: 30vw;
+  top: 18vh;
 }
 .bubble-img-4 {
   position: relative;
-  left: 50vw;
-  top: 23vh;
+  left: 35vw;
+  top: 30vh;
 }
 
 @media only screen and (max-width: 820px) {
   .sponsors-section {
     padding-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .sponsors-title {
+  }.sponsors-title {
     text-align: center;
     margin-left: 0;
     font-size: 1.5rem;
   }
-  .coming-soon-text {
-    font-size: 2.5rem;
-  }
-
   .bubble-img {
-    width: 7em;
+    width:10em;
+    height: 40%;
   }
-
   .poseidon-img {
     width: 20em;
     opacity: 0.5;
   }
-
   .bubble-col-1 {
     display: flex;
     justify-content: space-evenly;
@@ -109,18 +102,18 @@
 
   .bubble-img-1 {
     position: relative;
-    left: 0vw;
+    left: 0;
     top: 0;
   }
 
   .bubble-img-2 {
     position: relative;
     left: 0;
-    top: 0vh;
+    top: 0;
   }
   .bubble-img-3 {
     position: relative;
-    left: 0vw;
+    left: 0;
     top: 0;
   }
 
@@ -130,7 +123,7 @@
     top: 0vh;
   }
 }
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1350px) {
   .bubble-img-1 {
     position: relative;
     left: 40vw;
@@ -140,41 +133,17 @@
   .bubble-img-2 {
     position: relative;
     left: 50vw;
-    top: 10vh;
+    top: 15vh;
   }
   .bubble-img-3 {
-    position: relative;
-    left: 45vw;
-    top: 5vh;
-  }
-
-  .bubble-img-4 {
-    position: relative;
-    left: 55vw;
-    top: 10vh;
-  }
-}
-@media only screen and (min-width: 2200px) {
-  .bubble-img-1 {
     position: relative;
     left: 40vw;
-    top: 0vh;
-  }
-
-  .bubble-img-2 {
-    position: relative;
-    left: 50vw;
-    top: 5vh;
-  }
-  .bubble-img-3 {
-    position: relative;
-    left: 45vw;
-    top: 0vh;
+    top: 10vh;
   }
 
   .bubble-img-4 {
     position: relative;
-    left: 55vw;
-    top: 5vh;
+    left: 50vw;
+    top: 16vh;
   }
 }
