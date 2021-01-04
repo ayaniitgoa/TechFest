@@ -8,6 +8,9 @@
   flex-wrap: wrap;
   width: 100vw;
   font-family: "Raleway", sans-serif;
+  margin-top: -14vh;
+  position: relative;
+  z-index: 100000;
 }
 
 .social-left-section {

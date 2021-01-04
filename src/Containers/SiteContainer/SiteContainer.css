@@ -1,6 +1,6 @@
 .back-to-top-btn {
   position: fixed;
-  z-index: 1000;
+  z-index: 1000000;
   bottom: 2rem;
   right: 1.7rem;
   color: white;

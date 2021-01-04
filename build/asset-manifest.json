@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Cepheus/static/css/main.4e2df05d.chunk.css",
-    "main.js": "/Cepheus/static/js/main.ea1db30f.chunk.js",
-    "main.js.map": "/Cepheus/static/js/main.ea1db30f.chunk.js.map",
+    "main.css": "/Cepheus/static/css/main.924a2ebc.chunk.css",
+    "main.js": "/Cepheus/static/js/main.1e77da93.chunk.js",
+    "main.js.map": "/Cepheus/static/js/main.1e77da93.chunk.js.map",
     "runtime-main.js": "/Cepheus/static/js/runtime-main.42dbd89d.js",
     "runtime-main.js.map": "/Cepheus/static/js/runtime-main.42dbd89d.js.map",
     "static/css/2.5c501d9f.chunk.css": "/Cepheus/static/css/2.5c501d9f.chunk.css",
@@ -12,15 +12,16 @@
     "static/js/3.e910bc57.chunk.js.map": "/Cepheus/static/js/3.e910bc57.chunk.js.map",
     "index.html": "/Cepheus/index.html",
     "static/css/2.5c501d9f.chunk.css.map": "/Cepheus/static/css/2.5c501d9f.chunk.css.map",
-    "static/css/main.4e2df05d.chunk.css.map": "/Cepheus/static/css/main.4e2df05d.chunk.css.map",
+    "static/css/main.924a2ebc.chunk.css.map": "/Cepheus/static/css/main.924a2ebc.chunk.css.map",
     "static/js/2.6420c6a9.chunk.js.LICENSE.txt": "/Cepheus/static/js/2.6420c6a9.chunk.js.LICENSE.txt",
+    "static/media/AM.09859f8d.png": "/Cepheus/static/media/AM.09859f8d.png",
     "static/media/Aaryan.55931e7b.jpg": "/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
+    "static/media/Convergent.97af8fe8.png": "/Cepheus/static/media/Convergent.97af8fe8.png",
     "static/media/Darshay.8d0a931b.jpg": "/Cepheus/static/media/Darshay.8d0a931b.jpg",
     "static/media/IIT-Goa-Logo-White.cd575e9f.png": "/Cepheus/static/media/IIT-Goa-Logo-White.cd575e9f.png",
     "static/media/Rulebook.7fd56860.pdf": "/Cepheus/static/media/Rulebook.7fd56860.pdf",
     "static/media/aadil.4cf02a17.jpeg": "/Cepheus/static/media/aadil.4cf02a17.jpeg",
-    "static/media/bubble.d0afba60.svg": "/Cepheus/static/media/bubble.d0afba60.svg",
     "static/media/buildings-reflection.b690daec.svg": "/Cepheus/static/media/buildings-reflection.b690daec.svg",
     "static/media/buildings.6d525537.svg": "/Cepheus/static/media/buildings.6d525537.svg",
     "static/media/buildingsv2.ddbb4dff.svg": "/Cepheus/static/media/buildingsv2.ddbb4dff.svg",
@@ -39,6 +40,7 @@
     "static/media/shreyas.2afdf5be.jpg": "/Cepheus/static/media/shreyas.2afdf5be.jpg",
     "static/media/sky.cc0b0681.svg": "/Cepheus/static/media/sky.cc0b0681.svg",
     "static/media/slick-theme.css": "/Cepheus/static/media/slick.c94f7671.ttf",
+    "static/media/snpm.a001b4ab.png": "/Cepheus/static/media/snpm.a001b4ab.png",
     "static/media/techfestlogo.fe7a0099.svg": "/Cepheus/static/media/techfestlogo.fe7a0099.svg",
     "static/media/underwater-cityv2.656f8ce6.svg": "/Cepheus/static/media/underwater-cityv2.656f8ce6.svg"
   },
@@ -46,7 +48,7 @@
     "static/js/runtime-main.42dbd89d.js",
     "static/css/2.5c501d9f.chunk.css",
     "static/js/2.6420c6a9.chunk.js",
-    "static/css/main.4e2df05d.chunk.css",
-    "static/js/main.ea1db30f.chunk.js"
+    "static/css/main.924a2ebc.chunk.css",
+    "static/js/main.1e77da93.chunk.js"
   ]
 }

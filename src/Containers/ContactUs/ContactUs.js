@@ -139,7 +139,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={aadilPhoto} alt="" />
             <p className="contact-text contact-name">
-              Aadil Khan Pathan, Events Head
+              Aadil Khan Pathan, Event Manager
             </p>
             <p className="contact-text contact-number">+91 8652845505</p>
             <p className="contact-text contact-number">
@@ -149,7 +149,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={DarshayPhoto} alt="" />
             <p className="contact-text contact-name">
-              Darshay Naik, Events Head
+              Darshay Naik, Finance Team Head
             </p>
             <p className="contact-text contact-number">+91 9913759592</p>
             <p className="contact-text contact-number">
@@ -159,7 +159,7 @@ function ContactUs() {
           <div className="individual-contact">
             <img className="contact-photo" src={AaryanPhoto} alt="" />
             <p className="contact-text contact-name">
-              Aaryan Kadam, Events Head
+              Aaryan Kadam, Design Team Head
             </p>
             <p className="contact-text contact-number">+91 9137901402</p>
             <p className="contact-text contact-number">
