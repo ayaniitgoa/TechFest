@@ -2173,7 +2173,7 @@ export const universities = [
     town: "Bareilly",
   },
   {
-    name: "M.S. Ramaiah University of Applied Sciences",
+    name: "M.S. Ramaiah Institute of Technology (MSRIT)",
     url: "https://www.4icu.org/reviews/16052.htm",
     town: "Bangalore",
   },
