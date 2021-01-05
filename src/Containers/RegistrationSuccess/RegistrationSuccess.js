@@ -114,6 +114,8 @@ function RegistrationSuccess(props) {
               })}
           </ul>
           Please do not share your id with anyone other than your teammates!
+          <br/>
+          Go to the Events Section to register for individual events.
         </div>
         <div className="timer-div">
           <h4 className="timer-div-title">COMING SOON</h4>

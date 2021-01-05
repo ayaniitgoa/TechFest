@@ -65,7 +65,7 @@ const competitionData = [
     label: "PANDORA’S BOX CTF",
     posterLink: "pandora.png",
     eventText:
-      "We all know, CTF’s are the king of all the Cyber Security events. This CTF is going to be a Jeopardy Style CTF involving things like Web Cryptography, OSINT, Stephanography, and many others. You’ll get tasks or challenges and all of them have the same mission, to find the Hidden Flag. Let’s see if you’re the Dora the Explorer or the Marco Polo of finding hidden flags in CTF’s xD!",
+      "We all know, CTF’s are the king of all the Cyber Security events. This CTF is going to be a Jeopardy Style CTF involving things like Web Cryptography, OSINT, Stephanography, and many others. You’ll get tasks or challenges and all of them have the same mission, to find the Hidden Flag. Let’s see if you’re the Dora the Explorer or the Marco Polo of finding hidden flags in CTF’s xD! *Limited registrations only!",
     date: "",
     numOfFields: 3,
   },
