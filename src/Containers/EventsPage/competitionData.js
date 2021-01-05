@@ -69,6 +69,15 @@ const competitionData = [
     date: "",
     numOfFields: 3,
   },
+  {
+    eventName: "chitchatwithchatbot",
+    label: "CHIT CHAT WITH CHAT-BOT",
+    posterLink:
+      "https://images.unsplash.com/photo-1606681170317-9042ca2b8e98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1868&q=80",
+    eventText:
+      "Has the lockdown put a halt to your hangouts? We understand. Join us in a live coding workshop that’ll teach you how to build a chat-bot, without any prior knowledge about the same. You can also test your ability in a contest that will follow, where you’ll be asked to design a chat-bot of your own adhering to the given problem statement, so you never have to worry about having no one to talk to.",
+    numOfFields: 3,
+  },
 ];
 
 export default competitionData;
