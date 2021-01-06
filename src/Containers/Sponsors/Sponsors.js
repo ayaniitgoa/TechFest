@@ -13,7 +13,7 @@ function Sponsors() {
       <div className="bubble">
         <div className="bubble-col-1">
           <div>
-            <p className="bubble-img-1-title">Title Sponsors</p>
+            <p className="bubble-img-1-title">Title Sponsor</p>
             <img src={snpm} className="bubble-img bubble-img-1" alt="" />
           </div>
         </div>

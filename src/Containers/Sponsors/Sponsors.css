@@ -15,7 +15,7 @@
   font-size: 3rem;
   text-align: left;
   margin-left: 1.5em;
-  top: 5rem;
+  top: 2rem;
   color: white;
   z-index: 13;
 }
@@ -78,33 +78,45 @@
 
 .bubble-img-1-title {
   position: relative;
-  left: 50vw;
+  width: 25vw;
+  left: 30vw;
   top: 20vh;
   color: white;
-  z-index: 100000;
+  font-size: 20px;
+  text-align: center;
+  z-index: 100;
+  margin-top: -5rem;
 }
 .bubble-img-2-title {
   position: relative;
-  left: 35vw;
+  width: 25vw;
+  z-index: 100;
+  left: 20vw;
   top: 20vh;
   color: white;
-  z-index: 100000;
+  font-size: 20px;
+  text-align: center;
 }
 .bubble-img-3-title {
   position: relative;
-
+  width: 25vw;
+  z-index: 100;
   padding: 10px;
-  left: 45vw;
+  left: 35vw;
   top: 20vh;
   color: white;
-  z-index: 100000;
+  font-size: 20px;
+  text-align: center;
 }
 .bubble-img-4-title {
   position: relative;
-  left: 50vw;
+  z-index: 100;
+  width: 25vw;
+  left: 30vw;
   top: 20vh;
-  z-index: 100000;
   color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -128,20 +140,20 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 15vh;
+    top: 12vh;
   }
   .bubble-col-2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: 20vh;
+    top: 12vh;
   }
   .bubble-col-3 {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 20vh;
+    top: 12vh;
   }
 
   .bubble-img-2 {
@@ -163,41 +175,123 @@
 
   .bubble-img-1 {
     position: relative;
+    width: 40vw;
+
+    object-fit: contain;
     left: 0;
     top: 0vh;
   }
 
   .bubble-img-1-title {
     position: relative;
-    left: 0;
+    width: 33vw;
+    left: 30px;
     top: 5vh;
     margin-top: 5vh;
+    text-align: center;
   }
   .bubble-img-2-title {
     position: relative;
-    left: 0;
+    width: 25vw;
+    left: 30px;
     top: 5vh;
+    text-align: center;
   }
   .bubble-img-3-title {
     position: relative;
-    left: 0;
+    width: 25vw;
+    left: 30px;
     top: 5vh;
+    text-align: center;
   }
   .bubble-img-4-title {
     position: relative;
-    left: 0;
+    width: 25vw;
+    left: 30px;
     top: 5vh;
+    text-align: center;
   }
   .poseidon-img {
     width: 26em;
     position: relative;
     left: -20px;
-    margin-top: -35vh;
+    margin-top: -55vh;
+    opacity: 0.5;
   }
   .bubble {
     margin-top: -10vh;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .sponsors-section {
+    padding-top: 8vh;
+  }
+  .poseidon-img {
+    width: 26em;
+    position: relative;
+    left: -20px;
+    margin-top: -45vh;
+    opacity: 0.3;
+  }
+  .bubble-img-1-title {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 6vh;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .bubble-img-2-title {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 5vh;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bubble-col-3 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 8vh;
+  }
+  .bubble-img-3-title {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    left: 0;
+    top: 6vh;
+    text-align: center;
+  }
+  .bubble-img-4-title {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    left: 0;
+    top: 5vh;
+    text-align: center;
+  }
+
+  .bubble-col-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 8vh;
+  }
+
+  .bubble-col-1 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 8vh;
+  }
+}
+
 @media only screen and (min-width: 1350px) {
   .bubble-img-2 {
     position: relative;
@@ -223,29 +317,40 @@
   }
   .bubble-img-1-title {
     position: relative;
+    width: 18em;
     left: 50vw;
     top: 20vh;
     color: white;
+    font-size: 20px;
+    text-align: center;
   }
   .bubble-img-2-title {
     position: relative;
+    width: 18em;
     left: 30vw;
     top: 20vh;
     color: white;
+    font-size: 20px;
+    text-align: center;
   }
   .bubble-img-3-title {
     position: relative;
-
+    width: 18em;
     padding: 10px;
     left: 45vw;
     top: 20vh;
     color: white;
+    font-size: 20px;
+    text-align: center;
   }
   .bubble-img-4-title {
     position: relative;
+    width: 18em;
     left: 50vw;
     top: 20vh;
     color: white;
+    font-size: 20px;
+    text-align: center;
   }
   .bubble-col-2 {
     max-width: 500px;
