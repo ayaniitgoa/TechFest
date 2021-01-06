@@ -1086,6 +1086,11 @@ export const universities = [
     town: "Taleigao",
   },
   {
+    name: "Goa Engineering College (GEC)",
+    url: "https://www.4icu.org/reviews/2016.htm",
+    town: "Farmagudi, Ponda",
+  },
+  {
     name: "Gokhale Institute of Politics and Economics",
     url: "https://www.4icu.org/reviews/13190.htm",
     town: "Pune",
