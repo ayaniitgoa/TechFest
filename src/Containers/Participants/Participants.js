@@ -47,6 +47,7 @@ function Participants(props) {
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Contact</th>
+              <th scope="col">College</th>
               {/* <th scope="col">UID</th> */}
             </tr>
           </thead>
@@ -65,6 +66,7 @@ function Participants(props) {
                         <td>{each.name}</td>
                         <td>{each.email}</td>
                         <td>{each.contact}</td>
+                        <td>{each.college}</td>
                         {/* <td>{each.uid}</td> */}
                       </tr>
                     );

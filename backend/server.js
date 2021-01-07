@@ -51,18 +51,22 @@ async function preProcess(data, res) {
   for (var i = 0; i < data[0].teams.length; i++) {
     var pd = [];
     for (var j = 0; j < data[0].teams[i].participants.length; j++) {
-      await User.findOne(
-        { _id: data[0].teams[i].participants[j] },
-        (err, pD) => {
-          if (err)
-            return res.send({
-              msg: "Error",
-            });
-          if (pD) {
-            pd.push(pD);
-          }
-        }
-      ).exec();
+      const doc = await User.findOne({ _id: data[0].teams[i].participants[j] });
+      if (doc) {
+        pd.push(doc);
+      }
+      // await User.findOne(
+      //   { _id: data[0].teams[i].participants[j] },
+      //   (err, pD) => {
+      //     if (err)
+      //       return res.send({
+      //         msg: "Error",
+      //       });
+      //     if (pD) {
+      //       pd.push(pD);
+      //     }
+      //   }
+      // )
     }
     participantData.push(pd);
   }
