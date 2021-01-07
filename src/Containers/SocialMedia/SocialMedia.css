@@ -22,7 +22,7 @@
 
 .social-icons {
   color: white;
-  width: 15rem;
+  width: 17rem;
   text-align: center;
 }
 
@@ -37,3 +37,11 @@
   margin: 20px 20px;
   font-size: 0.85rem;
 }
+
+/* @media screen and (max-width: 1025px) {
+  .social-icons a i {
+    font-size: 25px;
+    margin: 0 7px;
+    color: white;
+  }
+} */
