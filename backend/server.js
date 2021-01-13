@@ -8,8 +8,6 @@ const Event = require("./event");
 const morgan = require("morgan");
 const { nanoid } = require("nanoid");
 const helmet = require("helmet");
-const path = require("path");
-const https = require("https");
 // const MongoStore = require("connect-mongo")(session);
 require("dotenv").config();
 //----------------------------------------- END OF IMPORTS---------------------------------------------------
@@ -44,6 +42,39 @@ app.get("/", (req, res) => {
   res.send({
     success: "true",
   });
+});
+
+function getDuplicates(arr) {
+  const hashTable = {};
+  const duplicate = [];
+  arr.forEach((item) => {
+    if (hashTable[item.contact]) {
+      if (hashTable[item.contact] === 1) {
+        duplicate.push(item);
+      }
+      hashTable[item.contact] = hashTable[item.contact] + 1;
+    } else {
+      hashTable[item.contact] = 1;
+    }
+  });
+
+  return duplicate;
+}
+
+app.get("/getDups", async (req, res) => {
+  try {
+    const allUsers = await User.find({});
+    const dupContacts = [];
+    allUsers.map((user, i) => {
+      dupContacts.push({ name: user.name, contact: user.contact });
+    });
+
+    const dups = getDuplicates(allUsers);
+
+    res.send(dups);
+  } catch (error) {
+    res.send([]);
+  }
 });
 
 async function preProcess(data, res) {

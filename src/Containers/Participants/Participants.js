@@ -3,10 +3,12 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 import "./Participants.css";
 import { variables } from "../../variables";
+import { CSVLink } from "react-csv";
 // import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
 function Participants(props) {
   const [participantData, setParticipantData] = useState([[]]);
+  const [eA, setEA] = useState([[]]);
   useEffect(() => {
     // console.log(props.match.params.eventName);
     axios
@@ -17,6 +19,20 @@ function Participants(props) {
         // console.log(res.data);
         if (res.data[0]) {
           setParticipantData(res.data);
+          let emailArr = [["Team No", "Name", "Email", "Contact", "College"]];
+          res.data.map((participants, i) => {
+            return participants.map((team, j) => {
+              return emailArr.push([
+                i + 1,
+                team.name,
+                team.email,
+                team.contact,
+                team.college,
+              ]);
+            });
+          });
+          setEA(emailArr);
+          // console.log(emailArr);
         } else {
           setParticipantData([[]]);
         }
@@ -30,6 +46,14 @@ function Participants(props) {
           props.match.params.eventName.slice(1)}{" "}
         Participants
       </p>
+
+      <CSVLink
+        data={eA}
+        filename={`${props.match.params.eventName}Data.csv`}
+        className="csv-link-ind"
+      >
+        Download {`${props.match.params.eventName}`} Data
+      </CSVLink>
 
       {/* <ReactHTMLTableToExcel
         id="export-to-excel-btn"

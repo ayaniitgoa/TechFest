@@ -11,3 +11,10 @@
   justify-content: center;
   font-size: 1.5rem;
 }
+
+.csv-link-ind {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}

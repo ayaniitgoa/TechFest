@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Cepheus/static/css/main.b43c21c8.chunk.css",
-    "main.js": "/Cepheus/static/js/main.c1ca3f75.chunk.js",
-    "main.js.map": "/Cepheus/static/js/main.c1ca3f75.chunk.js.map",
-    "runtime-main.js": "/Cepheus/static/js/runtime-main.42dbd89d.js",
-    "runtime-main.js.map": "/Cepheus/static/js/runtime-main.42dbd89d.js.map",
+    "main.css": "/Cepheus/static/css/main.6fe3eada.chunk.css",
+    "main.js": "/Cepheus/static/js/main.eb1bf89e.chunk.js",
+    "main.js.map": "/Cepheus/static/js/main.eb1bf89e.chunk.js.map",
+    "runtime-main.js": "/Cepheus/static/js/runtime-main.a174171d.js",
+    "runtime-main.js.map": "/Cepheus/static/js/runtime-main.a174171d.js.map",
     "static/css/2.5c501d9f.chunk.css": "/Cepheus/static/css/2.5c501d9f.chunk.css",
-    "static/js/2.6420c6a9.chunk.js": "/Cepheus/static/js/2.6420c6a9.chunk.js",
-    "static/js/2.6420c6a9.chunk.js.map": "/Cepheus/static/js/2.6420c6a9.chunk.js.map",
-    "static/js/3.e910bc57.chunk.js": "/Cepheus/static/js/3.e910bc57.chunk.js",
-    "static/js/3.e910bc57.chunk.js.map": "/Cepheus/static/js/3.e910bc57.chunk.js.map",
+    "static/js/2.f8f420d9.chunk.js": "/Cepheus/static/js/2.f8f420d9.chunk.js",
+    "static/js/2.f8f420d9.chunk.js.map": "/Cepheus/static/js/2.f8f420d9.chunk.js.map",
+    "static/js/3.3a9d62a0.chunk.js": "/Cepheus/static/js/3.3a9d62a0.chunk.js",
+    "static/js/3.3a9d62a0.chunk.js.map": "/Cepheus/static/js/3.3a9d62a0.chunk.js.map",
     "index.html": "/Cepheus/index.html",
     "static/css/2.5c501d9f.chunk.css.map": "/Cepheus/static/css/2.5c501d9f.chunk.css.map",
-    "static/css/main.b43c21c8.chunk.css.map": "/Cepheus/static/css/main.b43c21c8.chunk.css.map",
-    "static/js/2.6420c6a9.chunk.js.LICENSE.txt": "/Cepheus/static/js/2.6420c6a9.chunk.js.LICENSE.txt",
+    "static/css/main.6fe3eada.chunk.css.map": "/Cepheus/static/css/main.6fe3eada.chunk.css.map",
+    "static/js/2.f8f420d9.chunk.js.LICENSE.txt": "/Cepheus/static/js/2.f8f420d9.chunk.js.LICENSE.txt",
     "static/media/AM.09859f8d.png": "/Cepheus/static/media/AM.09859f8d.png",
     "static/media/Aaryan.55931e7b.jpg": "/Cepheus/static/media/Aaryan.55931e7b.jpg",
     "static/media/Anmoldeep.3c8db6ab.jpg": "/Cepheus/static/media/Anmoldeep.3c8db6ab.jpg",
@@ -45,10 +45,10 @@
     "static/media/underwater-cityv2.656f8ce6.svg": "/Cepheus/static/media/underwater-cityv2.656f8ce6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.42dbd89d.js",
+    "static/js/runtime-main.a174171d.js",
     "static/css/2.5c501d9f.chunk.css",
-    "static/js/2.6420c6a9.chunk.js",
-    "static/css/main.b43c21c8.chunk.css",
-    "static/js/main.c1ca3f75.chunk.js"
+    "static/js/2.f8f420d9.chunk.js",
+    "static/css/main.6fe3eada.chunk.css",
+    "static/js/main.eb1bf89e.chunk.js"
   ]
 }

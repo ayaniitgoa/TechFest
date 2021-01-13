@@ -15,16 +15,9 @@
 
 .download-table-xls-button {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2rem;
-  background-color: white;
-  padding: 0.5em;
-  border: none;
-  box-shadow: 1px -1px 10px -3px rgba(0, 0, 0, 0.49);
-  -webkit-box-shadow: 1px -1px 10px -3px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 1px -1px 10px -3px rgba(0, 0, 0, 0.49);
-  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .download-table-xls-button:focus {
