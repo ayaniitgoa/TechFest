@@ -17,6 +17,7 @@
   text-align: right;
   margin-right: 2.5em;
   top: 5rem;
+  z-index: 100;
   font-family: "Raleway", sans-serif;
 }
 

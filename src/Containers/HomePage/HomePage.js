@@ -9,73 +9,79 @@ import cepheusLogo from "./cepheus-logo-2.svg";
 import moonLogo from "./moon.svg";
 import NavbarTwo from "../../Components/NavbarTwo/NavbarTwo";
 import { motion } from "framer-motion";
-import { GoogleLogin } from "react-google-login";
+// import { GoogleLogin } from "react-google-login";
 import { withRouter } from "react-router-dom";
-import axios from "axios";
-import { variables } from "../../variables";
-import Loader from "../../loader.svg";
+// import axios from "axios";
+// import { variables } from "../../variables";
+// import Loader from "../../loader.svg";
+import Winners from "./winners.pdf";
 
 function HomePage(props) {
   const [showNav, setShowNav] = useState(false);
-  const [showLoader, setShowLoader] = useState(false);
+  // const [showLoader, setShowLoader] = useState(false);
   const [errMsg, setErrMsg] = useState("");
 
   const showNavbar = () => {
     setShowNav(!showNav);
   };
 
-  const responseGoogleCheckID = (response) => {
-    setShowLoader(true);
-    axios
-      .post(`${variables.backendURL}/api/checkuser`, {
-        email: response.profileObj.email,
-      })
-      .then((res) => {
-        if (res.data.user.email) {
-          localStorage.setItem("userID", res.data.user.uid);
-          localStorage.setItem("userInfo", res.data.user.email);
-          props.history.push("/Cepheus/register/success");
-        } else {
-          setErrMsg("Please Register to get your ID");
-        }
-        setShowLoader(false);
-      });
+  // const responseGoogleCheckID = (response) => {
+  //   setShowLoader(true);
+  //   axios
+  //     .post(`${variables.backendURL}/api/checkuser`, {
+  //       email: response.profileObj.email,
+  //     })
+  //     .then((res) => {
+  //       if (res.data.user.email) {
+  //         localStorage.setItem("userID", res.data.user.uid);
+  //         localStorage.setItem("userInfo", res.data.user.email);
+  //         props.history.push("/Cepheus/register/success");
+  //       } else {
+  //         setErrMsg("Please Register to get your ID");
+  //       }
+  //       setShowLoader(false);
+  //     });
+  // };
+
+  // const responseGoogle = (response) => {
+  //   setShowLoader(true);
+  //   setErrMsg("Registrations are over!");
+  //   axios
+  //     .post(
+  //       `${variables.backendURL}/api/checkuser`,
+
+  //       {
+  //         email: response.profileObj.email,
+  //       }
+  //     )
+  //     .then((res) => {
+  //       if (res.data.user.email) {
+  //         localStorage.setItem("userID", res.data.user.uid);
+  //         localStorage.setItem("userInfo", res.data.user.email);
+  //         props.history.push("/Cepheus/register/success");
+  //       } else {
+  //         localStorage.setItem("userInfo", response.profileObj.email);
+  //         localStorage.setItem(
+  //           "userInfo2",
+  //           JSON.stringify([
+  //             response.profileObj.name,
+  //             response.profileObj.email,
+  //           ])
+  //         );
+  //         props.history.push("/Cepheus/register");
+  //       }
+
+  //       setShowLoader(false);
+  //     });
+  // };
+
+  const registerOnClick = () => {
+    setErrMsg("Registrations are over!");
   };
 
-  const responseGoogle = (response) => {
-    setShowLoader(true);
-    axios
-      .post(
-        `${variables.backendURL}/api/checkuser`,
-
-        {
-          email: response.profileObj.email,
-        }
-      )
-      .then((res) => {
-        if (res.data.user.email) {
-          localStorage.setItem("userID", res.data.user.uid);
-          localStorage.setItem("userInfo", res.data.user.email);
-          props.history.push("/Cepheus/register/success");
-        } else {
-          localStorage.setItem("userInfo", response.profileObj.email);
-          localStorage.setItem(
-            "userInfo2",
-            JSON.stringify([
-              response.profileObj.name,
-              response.profileObj.email,
-            ])
-          );
-          props.history.push("/Cepheus/register");
-        }
-
-        setShowLoader(false);
-      });
-  };
-
-  const errorResponseGoogle = (response) => {
-    setShowLoader(false);
-  };
+  // const errorResponseGoogle = (response) => {
+  //   setShowLoader(false);
+  // };
 
   return (
     <div id="home-page" className="home-page">
@@ -107,26 +113,32 @@ function HomePage(props) {
             {errMsg}
           </div>
         )}
-        {showLoader && <img className="homepage-loader" src={Loader} alt="" />}
+        {/* {showLoader && <img className="homepage-loader" src={Loader} alt="" />} */}
         <div className="techfest-date">15th - 17th Jan 2021</div>
 
         <div className="auth-buttons">
-          <GoogleLogin
+          <button onClick={registerOnClick} className="authButtonReg">
+            Register
+          </button>
+          <a className="" rel="noreferrer" target="_blank" href={Winners}>
+            <button className="resButton">Results</button>
+          </a>
+          {/* <GoogleLogin
             clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
             buttonText="Register"
             onSuccess={responseGoogle}
             onFailure={errorResponseGoogle}
             cookiePolicy={"single_host_origin"}
             className="google-button"
-          />
-          <GoogleLogin
+          /> */}
+          {/* <GoogleLogin
             clientId="346424399983-t7glo1j3j3vbjdm8ou6uokvadsjoc309.apps.googleusercontent.com"
             buttonText="Check ID"
             onSuccess={responseGoogleCheckID}
             onFailure={errorResponseGoogle}
             cookiePolicy={"single_host_origin"}
             className="google-button google-button-check-id"
-          />
+          /> */}
         </div>
 
         <motion.img

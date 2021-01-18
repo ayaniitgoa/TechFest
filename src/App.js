@@ -4,9 +4,9 @@ import SiteContainer from "./Containers/SiteContainer/SiteContainer";
 import PageNotFound from "./Containers/404Page/PageNotFound";
 
 import IndividualEvent from "./Containers/IndividualEvent/IndividualEvent";
-import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
-import Register from "./Containers/Register/Register";
-import RegistrationSuccess from "./Containers/RegistrationSuccess/RegistrationSuccess";
+// import IndividualEventRegistraion from "./Containers/IndividualEventRegister/IndividualEventRegistration";
+// import Register from "./Containers/Register/Register";
+// import RegistrationSuccess from "./Containers/RegistrationSuccess/RegistrationSuccess";
 import Participants from "./Containers/Participants/Participants";
 import AllUsers from "./Containers/AllUsers/AllUsers";
 import HttpsRedirect from "react-https-redirect";
@@ -24,17 +24,17 @@ function App() {
               path="/Cepheus/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|arandvr|iceevhybrid)"
               exact
             />
-            <Route
+            {/* <Route
               component={IndividualEventRegistraion}
               path="/Cepheus/event/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|arandvr|iceevhybrid)/register"
               exact
-            />
-            <Route component={Register} path="/Cepheus/register" exact />
+            /> */}
+            {/* <Route component={Register} path="/Cepheus/register" exact />
             <Route
               component={RegistrationSuccess}
               path="/Cepheus/register/success"
               exact
-            />
+            /> */}
             <Route
               component={Participants}
               path="/Cepheus/participants/:eventName(fizzbuzz|fiducia|coolyourengine|arduinostrial|uniteforunity|chitchatwithchatbot|cyberexpert|framethecrane|hackoverflow|circuitaldilemma|pandorasboxctf|pythonizeeverything|takecharge|arandvr|iceevhybrid)/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmVzdCI6IkNlcGhldXNpaXRnb2F0ZWNoZmVzdDgzMjA2NTM5NTkxMjM0IiwiaWF0IjoxNTE2MjM5MDIyfQ.mSWZCRAJlS7sKxxwgSDMOtZgiHqmpPAADcRZm-BF5X8"

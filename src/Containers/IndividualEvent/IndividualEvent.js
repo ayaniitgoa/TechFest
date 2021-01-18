@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { data } from "./eventData";
 import "./IndividualEvent.css";
 import pantheon from "./pantheon.svg";
@@ -34,12 +34,15 @@ function IndividualEvent(props) {
           <p>{eventData && eventData.eventText}</p>
         </div>
       </div>
-      <Link
+      {/* <Link
+        className="ind-register-btn"
         to={`/Cepheus/event/${props.match.params.eventName}/register`}
       >
-        <button className="ind-register-btn">Register</button>
-      </Link>
-      {/* <Link to={`/register`}>
+        Register
+      </Link> */}
+
+      <button className="ind-register-btn">Registration Over</button>
+      {/* <Link to={`/Cepheus/event/${props.match.params.eventName}/register`}>
         <button className="ind-register-btn">Register</button>
       </Link> */}
       <img className="ind-pantheon" src={pantheon} alt="" />

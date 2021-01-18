@@ -44,6 +44,17 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/uc", (req, res) => {
+  let col = [];
+  User.find({}, (err, users) => {
+    for (var i = 0; i < users.length; i++) {
+      col.push(users[i].college);
+    }
+    let unique = col.filter((item, i, ar) => ar.indexOf(item) === i);
+    res.send(unique);
+  });
+});
+
 function getDuplicates(arr) {
   const hashTable = {};
   const duplicate = [];
