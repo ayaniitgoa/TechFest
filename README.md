@@ -7,3 +7,5 @@ git clone https://github.com/ayaniitgoa/TechFest.git
 yarn (to install all packages)
 yarn start (to start the app)
 ```
+
+#### URL: https://techfestcepheus.netlify.app/
